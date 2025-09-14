@@ -1,0 +1,510 @@
+Entity,Code,Year,Annual number of objects launched into outer space
+China,CHN,1970,1
+China,CHN,1971,1
+China,CHN,1974,1
+China,CHN,1975,3
+China,CHN,1976,2
+China,CHN,1978,1
+China,CHN,1981,3
+China,CHN,1982,1
+China,CHN,1983,1
+China,CHN,1984,3
+China,CHN,1985,1
+China,CHN,1986,2
+China,CHN,1987,2
+China,CHN,1988,4
+China,CHN,1990,6
+China,CHN,1991,1
+China,CHN,1992,2
+China,CHN,1993,1
+China,CHN,1994,5
+China,CHN,1995,1
+China,CHN,1996,3
+China,CHN,1997,7
+China,CHN,1998,10
+China,CHN,1999,10
+China,CHN,2000,6
+China,CHN,2001,2
+China,CHN,2002,7
+China,CHN,2003,9
+China,CHN,2004,10
+China,CHN,2005,7
+China,CHN,2006,8
+China,CHN,2007,10
+China,CHN,2008,17
+China,CHN,2009,8
+China,CHN,2010,20
+China,CHN,2011,20
+China,CHN,2012,26
+China,CHN,2013,19
+China,CHN,2014,25
+China,CHN,2015,38
+China,CHN,2016,38
+China,CHN,2017,31
+China,CHN,2018,95
+China,CHN,2019,76
+China,CHN,2020,73
+China,CHN,2021,110
+China,CHN,2022,182
+China,CHN,2023,210
+China,CHN,2024,266
+European Space Agency,,1968,5
+European Space Agency,,1969,2
+European Space Agency,,1972,6
+European Space Agency,,1975,2
+European Space Agency,,1977,1
+European Space Agency,,1978,2
+European Space Agency,,1979,1
+European Space Agency,,1981,3
+European Space Agency,,1983,2
+European Space Agency,,1985,1
+European Space Agency,,1988,2
+European Space Agency,,1989,2
+European Space Agency,,1990,2
+European Space Agency,,1991,1
+European Space Agency,,1992,1
+European Space Agency,,1995,3
+European Space Agency,,1997,3
+European Space Agency,,1998,1
+European Space Agency,,1999,1
+European Space Agency,,2000,4
+European Space Agency,,2001,2
+European Space Agency,,2002,4
+European Space Agency,,2003,3
+European Space Agency,,2004,2
+European Space Agency,,2005,6
+European Space Agency,,2008,3
+European Space Agency,,2009,5
+European Space Agency,,2010,1
+European Space Agency,,2011,3
+European Space Agency,,2012,3
+European Space Agency,,2013,6
+European Space Agency,,2014,2
+European Space Agency,,2015,3
+European Space Agency,,2016,4
+European Space Agency,,2017,2
+European Space Agency,,2018,4
+European Space Agency,,2019,2
+European Space Agency,,2020,2
+European Space Agency,,2023,2
+European Space Agency,,2024,5
+France,FRA,1965,3
+France,FRA,1966,1
+France,FRA,1967,2
+France,FRA,1970,2
+France,FRA,1971,2
+France,FRA,1972,1
+France,FRA,1974,2
+France,FRA,1975,7
+France,FRA,1977,2
+France,FRA,1984,1
+France,FRA,1985,1
+France,FRA,1986,1
+France,FRA,1988,2
+France,FRA,1990,2
+France,FRA,1991,2
+France,FRA,1992,2
+France,FRA,1993,3
+France,FRA,1995,3
+France,FRA,1996,1
+France,FRA,1998,1
+France,FRA,1999,2
+France,FRA,2001,1
+France,FRA,2002,3
+France,FRA,2004,7
+France,FRA,2005,1
+France,FRA,2006,3
+France,FRA,2008,1
+France,FRA,2009,3
+France,FRA,2010,9
+France,FRA,2011,19
+France,FRA,2012,5
+France,FRA,2013,8
+France,FRA,2014,2
+France,FRA,2016,2
+France,FRA,2017,2
+France,FRA,2018,2
+France,FRA,2019,7
+France,FRA,2020,4
+France,FRA,2021,9
+France,FRA,2022,10
+France,FRA,2023,12
+France,FRA,2024,22
+Germany,DEU,1969,1
+Germany,DEU,1970,1
+Germany,DEU,1972,1
+Germany,DEU,1974,4
+Germany,DEU,1975,2
+Germany,DEU,1976,1
+Germany,DEU,1983,1
+Germany,DEU,1984,1
+Germany,DEU,1987,1
+Germany,DEU,1988,1
+Germany,DEU,1989,2
+Germany,DEU,1990,2
+Germany,DEU,1991,1
+Germany,DEU,1992,1
+Germany,DEU,1993,1
+Germany,DEU,1994,3
+Germany,DEU,1995,2
+Germany,DEU,1996,1
+Germany,DEU,1997,2
+Germany,DEU,1998,3
+Germany,DEU,1999,2
+Germany,DEU,2000,3
+Germany,DEU,2001,1
+Germany,DEU,2002,5
+Germany,DEU,2005,1
+Germany,DEU,2006,1
+Germany,DEU,2007,3
+Germany,DEU,2008,9
+Germany,DEU,2009,4
+Germany,DEU,2010,2
+Germany,DEU,2012,1
+Germany,DEU,2013,6
+Germany,DEU,2014,1
+Germany,DEU,2016,2
+Germany,DEU,2017,2
+Germany,DEU,2018,11
+Germany,DEU,2019,11
+Germany,DEU,2020,5
+Germany,DEU,2021,9
+Germany,DEU,2022,5
+Germany,DEU,2023,9
+Germany,DEU,2024,7
+India,IND,1975,1
+India,IND,1979,1
+India,IND,1980,1
+India,IND,1981,3
+India,IND,1982,2
+India,IND,1983,2
+India,IND,1988,3
+India,IND,1990,2
+India,IND,1991,1
+India,IND,1992,2
+India,IND,1993,1
+India,IND,1994,2
+India,IND,1995,2
+India,IND,1996,1
+India,IND,1997,2
+India,IND,1999,2
+India,IND,2000,1
+India,IND,2001,2
+India,IND,2002,2
+India,IND,2003,4
+India,IND,2004,1
+India,IND,2005,3
+India,IND,2007,5
+India,IND,2008,4
+India,IND,2009,4
+India,IND,2010,2
+India,IND,2011,7
+India,IND,2012,2
+India,IND,2013,5
+India,IND,2014,4
+India,IND,2015,4
+India,IND,2016,12
+India,IND,2017,9
+India,IND,2018,10
+India,IND,2019,10
+India,IND,2020,3
+India,IND,2021,5
+India,IND,2022,11
+India,IND,2023,7
+India,IND,2024,10
+Japan,JPN,1970,1
+Japan,JPN,1971,2
+Japan,JPN,1972,1
+Japan,JPN,1974,1
+Japan,JPN,1975,2
+Japan,JPN,1976,1
+Japan,JPN,1977,4
+Japan,JPN,1978,4
+Japan,JPN,1979,2
+Japan,JPN,1980,2
+Japan,JPN,1981,3
+Japan,JPN,1982,1
+Japan,JPN,1983,3
+Japan,JPN,1984,3
+Japan,JPN,1985,2
+Japan,JPN,1986,4
+Japan,JPN,1987,3
+Japan,JPN,1988,2
+Japan,JPN,1989,4
+Japan,JPN,1990,7
+Japan,JPN,1991,2
+Japan,JPN,1992,4
+Japan,JPN,1993,1
+Japan,JPN,1994,4
+Japan,JPN,1995,4
+Japan,JPN,1996,3
+Japan,JPN,1997,7
+Japan,JPN,1998,3
+Japan,JPN,1999,1
+Japan,JPN,2000,3
+Japan,JPN,2001,4
+Japan,JPN,2002,10
+Japan,JPN,2003,7
+Japan,JPN,2004,2
+Japan,JPN,2005,5
+Japan,JPN,2006,11
+Japan,JPN,2007,6
+Japan,JPN,2008,6
+Japan,JPN,2009,12
+Japan,JPN,2010,9
+Japan,JPN,2011,4
+Japan,JPN,2012,9
+Japan,JPN,2013,5
+Japan,JPN,2014,24
+Japan,JPN,2015,4
+Japan,JPN,2016,11
+Japan,JPN,2017,16
+Japan,JPN,2018,18
+Japan,JPN,2019,21
+Japan,JPN,2020,9
+Japan,JPN,2021,24
+Japan,JPN,2022,12
+Japan,JPN,2023,13
+Japan,JPN,2024,26
+Russia,RUS,1957,2
+Russia,RUS,1958,1
+Russia,RUS,1959,3
+Russia,RUS,1960,3
+Russia,RUS,1961,7
+Russia,RUS,1962,20
+Russia,RUS,1963,17
+Russia,RUS,1964,35
+Russia,RUS,1965,64
+Russia,RUS,1966,44
+Russia,RUS,1967,66
+Russia,RUS,1968,74
+Russia,RUS,1969,70
+Russia,RUS,1970,88
+Russia,RUS,1971,98
+Russia,RUS,1972,88
+Russia,RUS,1973,109
+Russia,RUS,1974,95
+Russia,RUS,1975,111
+Russia,RUS,1976,121
+Russia,RUS,1977,104
+Russia,RUS,1978,119
+Russia,RUS,1979,101
+Russia,RUS,1980,110
+Russia,RUS,1981,124
+Russia,RUS,1982,119
+Russia,RUS,1983,116
+Russia,RUS,1984,115
+Russia,RUS,1985,119
+Russia,RUS,1986,114
+Russia,RUS,1987,116
+Russia,RUS,1988,109
+Russia,RUS,1989,99
+Russia,RUS,1990,96
+Russia,RUS,1991,83
+Russia,RUS,1992,78
+Russia,RUS,1993,59
+Russia,RUS,1994,64
+Russia,RUS,1995,36
+Russia,RUS,1996,28
+Russia,RUS,1997,28
+Russia,RUS,1998,27
+Russia,RUS,1999,15
+Russia,RUS,2000,23
+Russia,RUS,2001,30
+Russia,RUS,2002,19
+Russia,RUS,2003,22
+Russia,RUS,2004,19
+Russia,RUS,2005,19
+Russia,RUS,2006,16
+Russia,RUS,2007,18
+Russia,RUS,2008,21
+Russia,RUS,2009,30
+Russia,RUS,2010,24
+Russia,RUS,2011,24
+Russia,RUS,2012,23
+Russia,RUS,2013,29
+Russia,RUS,2014,35
+Russia,RUS,2015,27
+Russia,RUS,2016,14
+Russia,RUS,2017,25
+Russia,RUS,2018,23
+Russia,RUS,2019,30
+Russia,RUS,2020,24
+Russia,RUS,2021,21
+Russia,RUS,2022,50
+Russia,RUS,2023,66
+Russia,RUS,2024,98
+United Kingdom,GBR,1962,1
+United Kingdom,GBR,1964,1
+United Kingdom,GBR,1967,1
+United Kingdom,GBR,1969,2
+United Kingdom,GBR,1970,1
+United Kingdom,GBR,1971,2
+United Kingdom,GBR,1974,4
+United Kingdom,GBR,1979,2
+United Kingdom,GBR,1981,2
+United Kingdom,GBR,1984,2
+United Kingdom,GBR,1988,1
+United Kingdom,GBR,1989,2
+United Kingdom,GBR,1990,5
+United Kingdom,GBR,1991,1
+United Kingdom,GBR,1994,2
+United Kingdom,GBR,1998,1
+United Kingdom,GBR,1999,2
+United Kingdom,GBR,2000,4
+United Kingdom,GBR,2001,1
+United Kingdom,GBR,2003,1
+United Kingdom,GBR,2005,3
+United Kingdom,GBR,2007,2
+United Kingdom,GBR,2008,3
+United Kingdom,GBR,2009,3
+United Kingdom,GBR,2010,3
+United Kingdom,GBR,2011,2
+United Kingdom,GBR,2012,4
+United Kingdom,GBR,2013,7
+United Kingdom,GBR,2014,10
+United Kingdom,GBR,2015,7
+United Kingdom,GBR,2016,1
+United Kingdom,GBR,2017,7
+United Kingdom,GBR,2018,12
+United Kingdom,GBR,2019,14
+United Kingdom,GBR,2020,104
+United Kingdom,GBR,2021,289
+United Kingdom,GBR,2022,112
+United Kingdom,GBR,2023,145
+United Kingdom,GBR,2024,27
+United States,USA,1958,7
+United States,USA,1959,11
+United States,USA,1960,17
+United States,USA,1961,31
+United States,USA,1962,55
+United States,USA,1963,54
+United States,USA,1964,71
+United States,USA,1965,94
+United States,USA,1966,99
+United States,USA,1967,85
+United States,USA,1968,61
+United States,USA,1969,62
+United States,USA,1970,31
+United States,USA,1971,46
+United States,USA,1972,37
+United States,USA,1973,28
+United States,USA,1974,19
+United States,USA,1975,30
+United States,USA,1976,26
+United States,USA,1977,24
+United States,USA,1978,35
+United States,USA,1979,19
+United States,USA,1980,16
+United States,USA,1981,20
+United States,USA,1982,20
+United States,USA,1983,26
+United States,USA,1984,31
+United States,USA,1985,30
+United States,USA,1986,11
+United States,USA,1987,10
+United States,USA,1988,19
+United States,USA,1989,25
+United States,USA,1990,44
+United States,USA,1991,32
+United States,USA,1992,28
+United States,USA,1993,31
+United States,USA,1994,35
+United States,USA,1995,40
+United States,USA,1996,41
+United States,USA,1997,88
+United States,USA,1998,91
+United States,USA,1999,80
+United States,USA,2000,56
+United States,USA,2001,34
+United States,USA,2002,33
+United States,USA,2003,28
+United States,USA,2004,21
+United States,USA,2005,21
+United States,USA,2006,36
+United States,USA,2007,46
+United States,USA,2008,24
+United States,USA,2009,38
+United States,USA,2010,36
+United States,USA,2011,29
+United States,USA,2012,33
+United States,USA,2013,80
+United States,USA,2014,95
+United States,USA,2015,104
+United States,USA,2016,105
+United States,USA,2017,286
+United States,USA,2018,190
+United States,USA,2019,362
+United States,USA,2020,984
+United States,USA,2021,1232
+United States,USA,2022,1939
+United States,USA,2023,2234
+United States,USA,2024,2263
+World,OWID_WRL,1957,2
+World,OWID_WRL,1958,8
+World,OWID_WRL,1959,14
+World,OWID_WRL,1960,20
+World,OWID_WRL,1961,38
+World,OWID_WRL,1962,77
+World,OWID_WRL,1963,71
+World,OWID_WRL,1964,107
+World,OWID_WRL,1965,161
+World,OWID_WRL,1966,145
+World,OWID_WRL,1967,159
+World,OWID_WRL,1968,140
+World,OWID_WRL,1969,138
+World,OWID_WRL,1970,130
+World,OWID_WRL,1971,156
+World,OWID_WRL,1972,133
+World,OWID_WRL,1973,138
+World,OWID_WRL,1974,128
+World,OWID_WRL,1975,158
+World,OWID_WRL,1976,158
+World,OWID_WRL,1977,137
+World,OWID_WRL,1978,165
+World,OWID_WRL,1979,124
+World,OWID_WRL,1980,130
+World,OWID_WRL,1981,158
+World,OWID_WRL,1982,145
+World,OWID_WRL,1983,154
+World,OWID_WRL,1984,163
+World,OWID_WRL,1985,165
+World,OWID_WRL,1986,134
+World,OWID_WRL,1987,135
+World,OWID_WRL,1988,145
+World,OWID_WRL,1989,139
+World,OWID_WRL,1990,170
+World,OWID_WRL,1991,137
+World,OWID_WRL,1992,130
+World,OWID_WRL,1993,108
+World,OWID_WRL,1994,123
+World,OWID_WRL,1995,105
+World,OWID_WRL,1996,100
+World,OWID_WRL,1997,152
+World,OWID_WRL,1998,157
+World,OWID_WRL,1999,129
+World,OWID_WRL,2000,121
+World,OWID_WRL,2001,86
+World,OWID_WRL,2002,96
+World,OWID_WRL,2003,88
+World,OWID_WRL,2004,74
+World,OWID_WRL,2005,72
+World,OWID_WRL,2006,95
+World,OWID_WRL,2007,111
+World,OWID_WRL,2008,109
+World,OWID_WRL,2009,125
+World,OWID_WRL,2010,121
+World,OWID_WRL,2011,129
+World,OWID_WRL,2012,134
+World,OWID_WRL,2013,210
+World,OWID_WRL,2014,241
+World,OWID_WRL,2015,222
+World,OWID_WRL,2016,221
+World,OWID_WRL,2017,456
+World,OWID_WRL,2018,452
+World,OWID_WRL,2019,586
+World,OWID_WRL,2020,1274
+World,OWID_WRL,2021,1814
+World,OWID_WRL,2022,2477
+World,OWID_WRL,2023,2895
+World,OWID_WRL,2024,2849

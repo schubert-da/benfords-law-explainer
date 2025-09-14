@@ -1,0 +1,7 @@
+filename,title,description,source
+population-since-10000bc.csv,"Population, 10,000 BCE to 2023","Population by country, available from 10,000 BCE to 2023, based on data and estimates from different sources.",HYDE (2023); Gapminder (2022); UN WPP (2024)
+yearly-number-of-objects-launched-into-outer-space.csv,Annual number of objects launched into space,"Annual number of satellites, probes, landers, crewed spacecrafts, and space station flight elements, launched into Earth orbit or beyond.",UNOOSA
+fish-seafood-production.csv,Fish and Seafood Production,Fish and seafood production is measured as the sum of seafood from wild catch and fish farming (aquaculture).,Food and Agriculture Organization of the United Nations (2024)
+number-of-people-living-in-extreme-poverty.csv,"Number of people living in extreme poverty, 2024","Extreme poverty is defined as living below the International Poverty Line of $3 per day. This data is adjusted for inflation and for
+differences in living costs between countries.",World Bank Poverty and Inequality Platform (2025)
+annual-co2-emissions-per-country.csv,Annual CO? emissions by country,"Annual total emissions of carbon dioxide (CO?), excluding land-use change, measured in tonnes.",Global Carbon Budget (2024)
