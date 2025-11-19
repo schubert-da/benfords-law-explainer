@@ -10,8 +10,9 @@
 </svelte:head>
 
 <div class="opening-scrolly">
-	<div class="placeholder h-100 !w-screen !max-w-none">
+	<div class="placeholder h-100 flex !w-screen !max-w-none flex-col items-center justify-center">
 		<h1>Benford's Law Explainer</h1>
+		<p>Opening Scrolly</p>
 	</div>
 </div>
 <main>

@@ -1,13 +1,14 @@
 <script>
+	import SectionTitle from '$lib/components/common/SectionTitle.svelte';
 	import FormulaBox from '$lib/components/FormulaBox.svelte';
 </script>
 
 <section class="title-section">
-	<h2 class="text-4xl font-bold">Benford's Law Explainer</h2>
-	<p>An exploration of how real-world data often deviates from randomness.</p>
-</section>
+	<SectionTitle
+		title="Benford's Law Explainer"
+		subtitle="An exploration of how real-world data often deviates from randomness."
+	></SectionTitle>
 
-<section class="introduction">
 	<p>
 		So what is Benford's Law and how does it magically govern the distributions of datasets in the
 		wild? The basic principle of this law is that the leading digit of numbers in a dataset are more
@@ -16,7 +17,7 @@
 
 	<p>“How small”, you ask? Well the math behind the exact probability of a leading digit is:</p>
 
-	<FormulaBox formula="P(d) = \\log_{10}(d + 1) - \\log_{10}(d)"></FormulaBox>
+	<FormulaBox formula="P(d) = \\log_10(d + 1) - \\log_10(d)"></FormulaBox>
 
 	<p>
 		where d is the digit we want to find the probability of. So essentially this boils down to the
@@ -25,7 +26,7 @@
 
 	<p>When graphed, this formula produces the following distribution:</p>
 
-	<div class="placeholder h-100">Graph of Benford's Law Distribution Here</div>
+	<div class="placeholder h-100">Graph of Benford's Law Distribution</div>
 
 	<p>
 		In an even distribution we would expect each to have a probability of 11.11%, but in practice
@@ -36,5 +37,101 @@
 </section>
 
 <section class="deep-dive">
-	<h2 class="text-4xl font-bold">The more interesting ones</h2>
+	<SectionTitle title="An Explanation"></SectionTitle>
+
+	<p>
+		This is a section where I will briefly go over some of the intuition behind why this works...
+		This can include maybe a graphic or explanation about how we things grow exponentially and we
+		"stick around" at smaller leading digits longer than larger ones.
+	</p>
+</section>
+
+<section class="deep-dive">
+	<SectionTitle title="A Deeper Dive"></SectionTitle>
+
+	<p>
+		Here are a couple more examples where Benford’s law holds true in the wild. Most importantly I
+		need to figure out how to segue into the whole "let's look at other datasets that will surely
+		make you start to understand that this is a thing" bit.
+	</p>
+
+	<div class="placeholder h-100 flex w-full !max-w-none flex-col items-center justify-center">
+		<h2>Explorer showing different datasets and how closely they obey Benford's Law</h2>
+	</div>
+</section>
+
+<section class="deep-dive">
+	<SectionTitle title="Limitations" description="Where Benford' Law starts to fall apart"
+	></SectionTitle>
+
+	<p>
+		While the previous examples showed you how well this works in practice, but there are a few
+		exceptions to the rule. Benford’s law generally applies to data that fit some of the following
+		guidelines:
+	</p>
+
+	<ul class="list-inside list-disc">
+		<li class="">Quantitative data.</li>
+		<li class="">Data that are measured rather than assigned.</li>
+		<li class="">Ranges over orders of magnitudes.</li>
+		<li class="">Not artificially restricted by minimums or maximums.</li>
+		<li class="">Mixed populations.</li>
+		<li class="">Larger datasets are better.</li>
+	</ul>
+
+	<p>
+		So does this always hold true? Not really - there are a few key things we need to look out for
+		when trying to check for Benford’s law. Particularly, this only applies to quantitative data
+		that is measured rather than assigned.
+	</p>
+
+	<p>
+		Phone numbers in a state wouldn’t follow Benford’s law because being an assigned (and not
+		“measured”), they would simply run down their list of available numbers causing numbers to be
+		assigned with equal probabilities. Additionally they may even have a fixed area code as the
+		prefix, further throwing off the leading digit distribution.
+	</p>
+
+	<div class="placeholder flex h-40 w-full !max-w-none flex-col items-center justify-center">
+		<h2>Graphic Explaining assigned values and Benford's Law</h2>
+	</div>
+
+	<p>
+		Another requirement is that the numerical values should span several ranges of magnitude. A good
+		rule of thumb is that it should span at least 3 ranges of magnitude (eg. 1 to 1000 ie, 10^0 to
+		10^3) - in general the more orders of magnitude, the more pronounced the effect is.
+	</p>
+	<p>
+		You might have noticed that a column I routinely left out in all the datasets is the year - it
+		has a very limited range in most datasets and it's not a naturally occurring “measured” value
+		which grows exponentially.
+	</p>
+
+	<div class="placeholder flex h-40 w-full !max-w-none flex-col items-center justify-center">
+		<h2>All columns with years and dates</h2>
+	</div>
+</section>
+
+<section class="deep-dive">
+	<SectionTitle title="Applications" description="So what can I do with this?"></SectionTitle>
+
+	<p>
+		Naturally occurring datasets which fit the above criteria can be expected to have their first
+		digits follow Benford’s Law. The key word being “naturally occurring” here - fabricated or
+		randomly generated data will often not follow this principle.
+	</p>
+
+	<p>
+		This leads to it often being applied in fraud detection. From fake election data to accounting
+		fraud, Benford’s Law is applied by testing the first digits of the data.
+	</p>
+
+	<div class="placeholder h-100 flex w-full !max-w-none flex-col items-center justify-center">
+		<h2>Examples of fraud detection</h2>
+	</div>
+
+	<p>
+		Remember that while it is helpful, this is by no means a sure way to detect manipulation, it is
+		merely indicative of foul play.
+	</p>
 </section>
