@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    padding: 2rem var(--body-padding);
+    padding: 2rem 0;
 }
 
 section {
@@ -23,8 +23,9 @@ section {
 
     width: 100%;
     max-width: 1000px;
+    padding: 0 var(--body-padding);
 
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
 }
 
 p {
