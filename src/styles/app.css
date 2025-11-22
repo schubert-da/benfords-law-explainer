@@ -1,5 +1,19 @@
 @import 'tailwindcss';
 
+@font-face {
+    font-family: 'Encode Sans';
+    src: url('/fonts/EncodeSans-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gloock';
+    src: url('/fonts/Gloock-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
     --body-padding: clamp(1rem, -0.071rem + 3.429vw, 2.5rem);
 }
@@ -9,6 +23,7 @@ body {
     margin: 0;
     padding: 0;
 
+    font-family: 'Encode Sans', sans-serif;
     font-size: 20px;
 }
 
@@ -26,6 +41,17 @@ section {
     padding: 0 var(--body-padding);
 
     margin: 0 auto 5rem auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gloock', serif;
+    font-weight: 400;
+    margin: 0;
 }
 
 p {
