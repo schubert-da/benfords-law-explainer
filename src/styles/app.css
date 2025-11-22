@@ -14,6 +14,20 @@
     font-style: normal;
 }
 
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Font antialiasing */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 :root {
     --body-padding: clamp(1rem, -0.071rem + 3.429vw, 2.5rem);
 }
@@ -40,7 +54,7 @@ section {
     max-width: 1000px;
     padding: 0 var(--body-padding);
 
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 7rem auto;
 }
 
 h1,
