@@ -7,7 +7,7 @@
 	const benfordProportions = [0.301, 0.176, 0.125, 0.097, 0.079, 0.067, 0.058, 0.051, 0.046];
 	$: currentProportions = data?.first_digits_proportions || [];
 
-	$: chartWidth = 500;
+	$: chartWidth = null;
 	let shapePath = '';
 
 	function getPathData(index, totalWidth = 500, borderWidth = 4) {
@@ -84,7 +84,6 @@
 		let currentValue =
 			Math.abs(proportions[pathIndex] - benfordProportions[pathIndex]) /
 				benfordProportions[pathIndex] || 0;
-		const palette = ['#ED6E43', '#F18C6A', '#EEEEEE', '#B8C1C3', '#89989B'];
 
 		let index = 0;
 		if (currentValue <= 0.05) {
@@ -100,7 +99,7 @@
 		}
 
 		let styleParams = {
-			fill: palette[index],
+			fill: `var(--color-scale-diverging-${index})`,
 			borderWidth: index >= 2 ? 2 : 4,
 			opacity: 1
 		};

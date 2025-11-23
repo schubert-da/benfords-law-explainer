@@ -3,7 +3,30 @@
 
 	export let data;
 
-	console.log(data);
+	function getResultStyling(result) {
+		let styleParams = {};
+
+		console.log('result: ', result);
+
+		if (result === 'Non-conformity') {
+			styleParams = {
+				background: 'var(--color-scale-diverging-4)',
+				text: '#ffffff'
+			};
+		} else if (result === 'Acceptable conformity') {
+			styleParams = {
+				background: 'var(--color-scale-diverging-2)',
+				text: '#222222'
+			};
+		} else {
+			styleParams = {
+				background: 'var(--color-scale-diverging-0)',
+				text: '#fff'
+			};
+		}
+
+		return styleParams;
+	}
 </script>
 
 <div class="chart-container max-w-90 rounded-2xl border-[1px] border-[#aaa] px-4 py-4">
@@ -26,13 +49,20 @@
 				</p>
 			</div>
 
-			<div
-				class="chart-details-result flex min-w-40 items-center justify-center rounded-sm bg-[#ED6E43] px-4 py-1"
-			>
-				<p class="font-display whitespace-nowrap text-nowrap text-center text-[16px] text-white">
-					{data.mad_first_category}
-				</p>
-			</div>
+			{#if data.mad_first_category}
+				{@const resultStyling = getResultStyling(data.mad_first_category)}
+				<div
+					class="chart-details-result flex min-w-40 items-center justify-center rounded-sm border-[1px] border-[#444] px-4 py-1"
+					style="background: {resultStyling.background};"
+				>
+					<p
+						style="color: {resultStyling.text}"
+						class="font-display whitespace-nowrap text-nowrap text-center text-[16px] tracking-wide text-white"
+					>
+						{data.mad_first_category}
+					</p>
+				</div>
+			{/if}
 		</div>
 	</div>
 
