@@ -41,6 +41,14 @@ body {
     font-size: 20px;
 }
 
+.font-display {
+    font-family: 'Gloock', serif;
+}
+
+.font-body {
+    font-family: 'Encode Sans', sans-serif;
+}
+
 main {
     padding: 2rem 0;
 }
@@ -92,4 +100,14 @@ p {
     display: flex;
     gap: 2px;
     /* optional: aligns better with text */
+}
+
+.content-clamp {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
