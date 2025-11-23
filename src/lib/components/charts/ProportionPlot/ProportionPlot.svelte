@@ -27,8 +27,8 @@
 		}
 
 		if (index === currentProportions.length - 1) {
-			C = { x: totalWidth + borderWidth, y: totalWidth };
-			D = { x: 0 - borderWidth, y: totalWidth };
+			C = { x: totalWidth + borderWidth, y: totalWidth + borderWidth };
+			D = { x: 0 - borderWidth, y: totalWidth + borderWidth };
 		} else {
 			const runningSumCurrent = d3.sum(currentProportions.slice(0, index + 1));
 			const runningSumBenford = d3.sum(benfordProportions.slice(0, index + 1));
@@ -84,7 +84,7 @@
 		let currentValue =
 			Math.abs(proportions[pathIndex] - benfordProportions[pathIndex]) /
 				benfordProportions[pathIndex] || 0;
-		const palette = ['#ED6E43', '#F18C6A', '#EEEEEE', '#89989B', '#89989B'];
+		const palette = ['#ED6E43', '#F18C6A', '#EEEEEE', '#B8C1C3', '#89989B'];
 
 		let index = 0;
 		if (currentValue <= 0.05) {

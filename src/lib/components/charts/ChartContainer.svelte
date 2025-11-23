@@ -14,7 +14,7 @@
 			{data.title}
 		</h2>
 
-		<div class="chart-details mb-2 flex flex-col items-start justify-between gap-3">
+		<div class="chart-details mb-2 flex flex-col items-start justify-between gap-2">
 			<div class="chart-details-text">
 				<p
 					class="content-clamp block text-pretty border-b-[1px] border-b-[#444] py-1 text-sm uppercase leading-snug text-[#444]"
