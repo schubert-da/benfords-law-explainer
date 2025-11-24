@@ -51,7 +51,7 @@ body {
 }
 
 main {
-    padding: 2rem 0;
+    padding: 0;
 }
 
 section {
@@ -111,4 +111,8 @@ p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
+}
+
+svelte-scroller-background-container {
+    z-index: 1000 !important;
 }
