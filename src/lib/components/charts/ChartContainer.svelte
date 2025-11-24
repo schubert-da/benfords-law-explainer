@@ -27,7 +27,7 @@
 	}
 </script>
 
-<div class="chart-container max-w-90 rounded-2xl border-[1px] border-[#aaa] px-4 py-4">
+<div class="chart-container max-w-90 rounded-2xl border-[1px] border-[#ccc] px-4 py-4">
 	<div class="title-content">
 		<h2
 			class="title clamp-content mb-1 !line-clamp-3 border-b-[3px] border-b-[#363636] pb-1.5 text-[26px] leading-[1.1]"
@@ -64,12 +64,18 @@
 		</div>
 	</div>
 
-	<div class="chart relative w-full overflow-hidden rounded-md border-[1px] border-[#444444]">
+	<div class="chart relative w-full overflow-hidden rounded-md border-[1px] border-[#888]">
 		<ProportionPlot {data} />
 	</div>
 </div>
 
 <style>
+	.chart-container {
+		box-shadow:
+			rgba(0, 0, 0, 0.12) 0px 1px 3px,
+			rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	}
+
 	.chart::after {
 		content: '';
 		position: absolute;
