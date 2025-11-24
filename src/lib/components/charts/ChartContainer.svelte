@@ -6,8 +6,6 @@
 	function getResultStyling(result) {
 		let styleParams = {};
 
-		console.log('result: ', result);
-
 		if (result === 'Non-conformity') {
 			styleParams = {
 				background: 'var(--color-scale-diverging-4)',
