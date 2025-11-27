@@ -78,8 +78,6 @@
 		return [cp, cp];
 	}
 
-	$: currentValuesList = [];
-
 	function getPathStyles(pathIndex, proportions) {
 		let currentValue =
 			Math.abs(proportions[pathIndex] - benfordProportions[pathIndex]) /
@@ -109,7 +107,7 @@
 </script>
 
 <div
-	class="proportion-plot w-full bg-gray-200"
+	class="proportion-plot relative w-full overflow-hidden rounded-md border-[1px] border-[#888] bg-gray-200"
 	style:height={chartWidth + 'px'}
 	bind:clientWidth={chartWidth}
 >
@@ -134,3 +132,16 @@
 		{/each}
 	</svg>
 </div>
+
+<style>
+	.proportion-plot::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		box-shadow: inset -4px 5px 7px rgba(0, 0, 0, 0.32);
+	}
+</style>
