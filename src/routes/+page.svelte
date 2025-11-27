@@ -1,20 +1,23 @@
 <script>
+	import OpeningSection from '$components/OpeningSection/OpeningSection.svelte';
 	import SectionTitle from '$lib/components/common/SectionTitle.svelte';
 	import FormulaBox from '$lib/components/FormulaBox.svelte';
 	import Scroller from '@sveltejs/svelte-scroller';
 
+	// params for scroller
 	let count;
 	let index;
 	let offset;
 	let progress;
 	let top = 0;
 	let threshold = 0.4;
-	let bottom = 1;
-	let scroll = 0; // vertical scroll on window
+	let bottom = 0.9;
 </script>
 
 <Scroller {top} {threshold} {bottom} bind:count bind:index bind:offset bind:progress>
 	<div slot="foreground" class="relative z-10">
+		<OpeningSection></OpeningSection>
+
 		<section class="title-section">
 			<SectionTitle
 				title="Benford's Law Explainer"
@@ -52,9 +55,27 @@
 			<SectionTitle title="An Explanation"></SectionTitle>
 
 			<p>
-				This is a section where I will briefly go over some of the intuition behind why this
-				works... This can include maybe a graphic or explanation about how we things grow
-				exponentially and we "stick around" at smaller leading digits longer than larger ones.
+				There are several explanations for this, some more mathematically involved than the others.
+				But I want to stick to a more intuitive explanation for Benford’s Law. Many real-world
+				examples of Benford's Law are affected by multiplicative growth - e.g. money compounds,
+				populations change exponentially with each generation, prices are influenced by a percentage
+				of inflation, etc.
+			</p>
+
+			<p>
+				What we find in multiplicative growth is that the leading digit tends to stick around at
+				lower values for a lot longer than digits on the higher end of the range. For example,
+				suppose you deposit 100 dollars in a bank which gives you a [questionably generous] [10% -
+				dropdown to change value] interest per year. This is what the next 100 years would look
+				like.
+			</p>
+
+			<div class="placeholder h-100">grid of 100 values with the leading digits highlighted</div>
+			<div class="placeholder h-40">corresponding leading digits distribution</div>
+
+			<p>
+				As you can see in the range [100, … 10 digits ] multiplying by [x] generates a bunch of 1s,
+				2s but largely skips over the larger digits.
 			</p>
 		</section>
 
