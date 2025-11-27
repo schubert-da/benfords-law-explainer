@@ -66,6 +66,12 @@ section {
     margin: 0 auto 7rem auto;
 }
 
+.plot-grid {
+    max-width: min(1600px, 90vw);
+    padding: 0 calc(var(--body-padding) / 2);
+    margin: 0 auto 4rem auto;
+}
+
 h1,
 h2,
 h3,

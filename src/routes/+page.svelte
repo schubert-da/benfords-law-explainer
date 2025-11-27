@@ -1,5 +1,6 @@
 <script>
 	import OpeningSection from '$components/OpeningSection/OpeningSection.svelte';
+	import LimitationsSection from '$components/sections/LimitationsSection.svelte';
 	import SectionTitle from '$lib/components/common/SectionTitle.svelte';
 	import FormulaBox from '$lib/components/FormulaBox.svelte';
 	import Scroller from '@sveltejs/svelte-scroller';
@@ -93,59 +94,9 @@
 			</div>
 		</section>
 
-		<section class="deep-dive">
-			<SectionTitle title="Limitations" description="Where Benford' Law starts to fall apart"
-			></SectionTitle>
+		<LimitationsSection></LimitationsSection>
 
-			<p>
-				While the previous examples showed you how well this works in practice, but there are a few
-				exceptions to the rule. Benford’s law generally applies to data that fit some of the
-				following guidelines:
-			</p>
-
-			<ul class="list-inside list-disc">
-				<li class="">Quantitative data.</li>
-				<li class="">Data that are measured rather than assigned.</li>
-				<li class="">Ranges over orders of magnitudes.</li>
-				<li class="">Not artificially restricted by minimums or maximums.</li>
-				<li class="">Mixed populations.</li>
-				<li class="">Larger datasets are better.</li>
-			</ul>
-
-			<p>
-				So does this always hold true? Not really - there are a few key things we need to look out
-				for when trying to check for Benford’s law. Particularly, this only applies to quantitative
-				data that is measured rather than assigned.
-			</p>
-
-			<p>
-				Phone numbers in a state wouldn’t follow Benford’s law because being an assigned (and not
-				“measured”), they would simply run down their list of available numbers causing numbers to
-				be assigned with equal probabilities. Additionally they may even have a fixed area code as
-				the prefix, further throwing off the leading digit distribution.
-			</p>
-
-			<div class="placeholder flex h-40 w-full !max-w-none flex-col items-center justify-center">
-				<h2>Graphic Explaining assigned values and Benford's Law</h2>
-			</div>
-
-			<p>
-				Another requirement is that the numerical values should span several ranges of magnitude. A
-				good rule of thumb is that it should span at least 3 ranges of magnitude (eg. 1 to 1000 ie,
-				10^0 to 10^3) - in general the more orders of magnitude, the more pronounced the effect is.
-			</p>
-			<p>
-				You might have noticed that a column I routinely left out in all the datasets is the year -
-				it has a very limited range in most datasets and it's not a naturally occurring “measured”
-				value which grows exponentially.
-			</p>
-
-			<div class="placeholder flex h-40 w-full !max-w-none flex-col items-center justify-center">
-				<h2>All columns with years and dates</h2>
-			</div>
-		</section>
-
-		<section class="deep-dive">
+		<section class="applications">
 			<SectionTitle title="Applications" description="So what can I do with this?"></SectionTitle>
 
 			<p>
@@ -158,10 +109,6 @@
 				This leads to it often being applied in fraud detection. From fake election data to
 				accounting fraud, Benford’s Law is applied by testing the first digits of the data.
 			</p>
-
-			<div class="placeholder h-100 flex w-full !max-w-none flex-col items-center justify-center">
-				<h2>Examples of fraud detection</h2>
-			</div>
 
 			<p>
 				Remember that while it is helpful, this is by no means a sure way to detect manipulation, it
