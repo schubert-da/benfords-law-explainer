@@ -32,22 +32,24 @@
 <div
 	class="chart-container max-w-100 flex h-full flex-col justify-between rounded-2xl border-[1px] border-[#ccc] px-4 py-4"
 >
-	<div class="title-content">
-		<h2
-			class="title clamp-content mb-1 !line-clamp-3 border-b-[3px] border-b-[#363636] pb-1.5 text-[26px] leading-[1.1]"
-		>
-			{data.title}
-		</h2>
+	<div class="title-content min-w-0">
+		<div class="title-wrapper w-full border-b-[3px] border-b-[#363636] pb-1.5">
+			<h2
+				class="title mb-1 !line-clamp-2 min-w-0 overflow-hidden whitespace-normal text-[26px] leading-[1.1]"
+			>
+				{data.column}
+			</h2>
+		</div>
 
 		<div class="chart-details mb-2 flex flex-col items-start justify-between gap-2">
 			<div class="chart-details-text">
 				<p
 					class="content-clamp block text-pretty border-b-[1px] border-b-[#444] py-1 text-sm uppercase leading-snug text-[#444]"
 				>
-					{data.source}
+					{data.title}
 				</p>
 				<p class="content-clamp block text-pretty py-1 text-sm uppercase leading-snug text-[#444]">
-					COLUMN: {data.column}
+					{data.source}
 				</p>
 			</div>
 
