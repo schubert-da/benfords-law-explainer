@@ -21,7 +21,6 @@
 	</p>
 
 	<ExplanationGrid></ExplanationGrid>
-	<div class="placeholder h-40">corresponding leading digits distribution</div>
 
 	<p>
 		As you can see in the range [100, … 10 digits ] multiplying by [x] generates a bunch of 1s, 2s
