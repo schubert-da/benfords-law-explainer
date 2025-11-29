@@ -1,6 +1,7 @@
 <script>
 	import OpeningSection from '$components/OpeningSection/OpeningSection.svelte';
 	import LimitationsSection from '$components/sections/LimitationsSection.svelte';
+	import TitleSection from '$components/sections/TitleSection.svelte';
 	import SectionTitle from '$lib/components/common/SectionTitle.svelte';
 	import FormulaBox from '$lib/components/FormulaBox.svelte';
 	import Scroller from '@sveltejs/svelte-scroller';
@@ -19,38 +20,7 @@
 	<div slot="foreground" class="relative z-10">
 		<OpeningSection></OpeningSection>
 
-		<section class="title-section">
-			<SectionTitle
-				title="Benford's Law Explainer"
-				subtitle="An exploration of how real-world data often deviates from randomness."
-			></SectionTitle>
-
-			<p>
-				So what is Benford's Law and how does it magically govern the distributions of datasets in
-				the wild? The basic principle of this law is that the leading digit of numbers in a dataset
-				are more frequently smaller going to be small.
-			</p>
-
-			<p>“How small”, you ask? Well the math behind the exact probability of a leading digit is:</p>
-
-			<FormulaBox formula="P(d) = \\log_10(d + 1) - \\log_10(d)"></FormulaBox>
-
-			<p>
-				where d is the digit we want to find the probability of. So essentially this boils down to
-				the difference between the logarithm of the next digit and that of the current digit.
-			</p>
-
-			<p>When graphed, this formula produces the following distribution:</p>
-
-			<div class="placeholder h-100">Graph of Benford's Law Distribution</div>
-
-			<p>
-				In an even distribution we would expect each to have a probability of 11.11%, but in
-				practice Benford's law puts the odds of a leading digit of 1 to be 30.1% - almost three
-				times more likely! Additionally, you are more than 6 times more likely to find a digit with
-				a leading digit of 1 than a 9!
-			</p>
-		</section>
+		<TitleSection></TitleSection>
 
 		<section class="deep-dive">
 			<SectionTitle title="An Explanation"></SectionTitle>
