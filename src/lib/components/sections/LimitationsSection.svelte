@@ -68,6 +68,6 @@
 
 	<div class="limitation flex flex-col gap-4">
 		<h3 class="text-2xl">4. Larger datasets work better</h3>
-		<p>Because when does it not.</p>
+		<p>Because when do they not.</p>
 	</div>
 </section>

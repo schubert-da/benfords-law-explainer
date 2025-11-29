@@ -80,6 +80,13 @@
 			</p>
 		</section>
 
+		<section>
+			<SectionTitle title="Reading the charts"></SectionTitle>
+			<div class="placeholder h-100 flex w-full !max-w-none flex-col items-center justify-center">
+				<h2>Carousel showing how to work the charts</h2>
+			</div>
+		</section>
+
 		<section class="deep-dive">
 			<SectionTitle title="A Deeper Dive"></SectionTitle>
 
