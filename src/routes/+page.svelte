@@ -1,6 +1,7 @@
 <script>
 	import OpeningSection from '$components/OpeningSection/OpeningSection.svelte';
 	import ExplanationSection from '$components/sections/ExplanationSection.svelte';
+	import HowToSection from '$components/sections/HowToSection.svelte';
 	import LimitationsSection from '$components/sections/LimitationsSection.svelte';
 	import TitleSection from '$components/sections/TitleSection.svelte';
 	import SectionTitle from '$lib/components/common/SectionTitle.svelte';
@@ -25,12 +26,7 @@
 
 		<ExplanationSection></ExplanationSection>
 
-		<section>
-			<SectionTitle title="Reading the charts"></SectionTitle>
-			<div class="placeholder h-100 flex w-full !max-w-none flex-col items-center justify-center">
-				<h2>Carousel showing how to work the charts</h2>
-			</div>
-		</section>
+		<HowToSection></HowToSection>
 
 		<section class="deep-dive">
 			<SectionTitle title="A Deeper Dive"></SectionTitle>
@@ -40,10 +36,6 @@
 				I need to figure out how to segue into the whole "let's look at other datasets that will
 				surely make you start to understand that this is a thing" bit.
 			</p>
-
-			<div class="placeholder h-100 flex w-full !max-w-none flex-col items-center justify-center">
-				<h2>Explorer showing different datasets and how closely they obey Benford's Law</h2>
-			</div>
 		</section>
 
 		<LimitationsSection></LimitationsSection>
