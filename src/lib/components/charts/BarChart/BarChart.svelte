@@ -2,11 +2,12 @@
 	import * as d3 from 'd3';
 
 	export let data;
+	export let customHeight = null;
 
 	const benfordProportions = [0.301, 0.176, 0.125, 0.097, 0.079, 0.067, 0.058, 0.051, 0.046];
 	$: currentProportions = data?.first_digits_proportions || [];
 	$: chartWidth = 100;
-	$: chartHeight = chartWidth * 0.8;
+	$: chartHeight = customHeight || chartWidth * 0.8;
 
 	$: xScale =
 		currentProportions && chartWidth
