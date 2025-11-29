@@ -3,6 +3,7 @@
 
 	export let data;
 	export let customHeight = null;
+	export let colorMapping = null;
 
 	const benfordProportions = [0.301, 0.176, 0.125, 0.097, 0.079, 0.067, 0.058, 0.051, 0.046];
 	$: currentProportions = data?.first_digits_proportions || [];
@@ -20,7 +21,11 @@
 
 	$: yScale =
 		currentProportions && chartHeight
-			? d3.scaleLinear().domain(d3.extent(currentProportions)).range([chartHeight, 0]).nice() // pixel range
+			? d3
+					.scaleLinear()
+					.domain([0, d3.max(currentProportions)])
+					.range([chartHeight, 0])
+					.nice() // pixel range
 			: null;
 
 	function getPathStyles(pathIndex, proportions) {
@@ -43,7 +48,8 @@
 
 		let styleParams = {
 			fill: `var(--color-scale-diverging-${index})`,
-			stroke: index === 2 ? '#222' : 'transparent'
+			stroke: index === 2 ? '#222' : 'transparent',
+			annotationColor: index < 2 && proportions[pathIndex] > 0.06 ? '#fff' : '#444'
 		};
 
 		return styleParams;
@@ -52,12 +58,12 @@
 
 {#if xScale && yScale}
 	<div
-		class="barchart min-w-50 relative mb-2 w-full overflow-hidden rounded-md border-[1px] border-[#888]"
+		class="barchart min-w-50 relative mb-2 min-h-[200px] w-full overflow-hidden rounded-md border-[1px] border-[#888]"
 		style:height={chartHeight + 'px'}
 		bind:clientWidth={chartWidth}
 	>
 		<svg
-			class="barchart-svg"
+			class="barchart-svg min-h-[200px]"
 			width={chartWidth}
 			height={chartHeight}
 			viewBox={`0 0 ${chartWidth} ${chartHeight}`}
@@ -74,13 +80,31 @@
 					x={xScale(index + 1)}
 					y={yScale(currentProportionValue)}
 					width={xScale.bandwidth()}
-					height="100%"
+					height={chartHeight - yScale(currentProportionValue)}
 					stroke={pathStyles.stroke}
 					stroke-width="0.6"
-					fill={pathStyles.fill}
+					fill={colorMapping ? colorMapping[index] : pathStyles.fill}
 				></rect>
 			{/each}
 		</svg>
+
+		<div
+			class="plot-labels absolute bottom-2 left-0 mb-[-4px] flex w-full flex-row items-center justify-center"
+		>
+			{#each currentProportions as _, index}
+				{@const pathStyles = getPathStyles(index, currentProportions)}
+				{@const currentProportionValue = currentProportions[index]}
+				<div class="label flex w-full items-center justify-center">
+					<p
+						class="text-sm font-semibold leading-[1] text-[#333]"
+						class:opacity-0={Math.floor(currentProportionValue * 100) === 0}
+						style:color={pathStyles?.annotationColor}
+					>
+						{Math.floor(currentProportionValue * 100)}
+					</p>
+				</div>
+			{/each}
+		</div>
 	</div>
 
 	<div class="plot-labels mb-[-4px] flex w-full flex-row items-center justify-center">

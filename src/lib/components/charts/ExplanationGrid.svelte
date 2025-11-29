@@ -16,8 +16,6 @@
 	$: gridWidth = 1000;
 	$: tileHeight = gridWidth / 10;
 
-	$: console.log('firstDigitsList: ', firstDigitsList);
-
 	function getTileStyling(value) {
 		const firstDigit = getFirstDigit(value);
 
@@ -61,7 +59,7 @@
 				acc[num] = (acc[num] || 0) + 1;
 				return acc;
 			}, {})
-		).map((count) => (count / numTiles) * 100);
+		).map((count) => count / numTiles);
 
 		return percentages;
 	}
@@ -69,6 +67,10 @@
 	function getFirstDigit(value) {
 		return +value.toString().replace(/[.0]/g, '')[0];
 	}
+
+	$: colorMapping = Array.from({ length: 9 }).map((value, index) => {
+		return getTileStyling(index + 1).color;
+	});
 </script>
 
 <div class="charts flex flex-col items-center justify-center gap-5">
@@ -80,7 +82,7 @@
 				style="height: min({tileHeight}px, 70px); background: {tileStyling?.color}; border: {tileStyling?.borderWidth}px solid black;"
 			>
 				<span
-					class="text-lg font-medium text-gray-600 first-letter:text-xl first-letter:font-semibold first-letter:text-gray-900"
+					class="text-lg font-medium text-[#333] first-letter:text-xl first-letter:font-semibold first-letter:text-gray-800"
 					>{tile.toFixed(2).toString()}</span
 				>
 			</div>
@@ -94,6 +96,7 @@
 
 		<BarChart
 			customHeight="200"
+			{colorMapping}
 			data={{ first_digits_proportions: getProportionsData(firstDigitsList) }}
 		></BarChart>
 	</div>
