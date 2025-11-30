@@ -13,7 +13,7 @@
 	>
 		{#each columnData.slice() as column}
 			<div class="proportion-plot-container">
-				<ChartContainer data={column} chartType="barchart"></ChartContainer>
+				<ChartContainer data={column} isCompact={false} chartType="barchart"></ChartContainer>
 			</div>
 		{/each}
 	</div>

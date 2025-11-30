@@ -1,10 +1,19 @@
-<section class="opening-section">
+<script>
+	import OpeningTable from './OpeningTable.svelte';
+	import tableData from '$assets/data/opening-table-samples.json';
+
+	$: chosenDataset = tableData['deaths-in-armed-conflicts'];
+</script>
+
+<section class="opening-section !mt-[25vh]">
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. For example,
 		if I were to give you this dataset of the [areas of water bodies across the globe]
 	</p>
 
-	<div class="placeholder h-100">table showing values</div>
+	<div class="table-container relative">
+		<OpeningTable data={chosenDataset}></OpeningTable>
+	</div>
 
 	<p>
 		and asked you what was the distribution of the leading digits of all the [areas], would you say
@@ -36,3 +45,21 @@
 		Fill out the entire grid with benford’s charts - Parallax w/ title
 	</div>
 </section>
+
+<style>
+	.table-container::after {
+		content: '';
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		width: 100%;
+		height: 90px; /* control depth of fade */
+		pointer-events: none;
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 1) 80%,
+			rgba(255, 255, 255, 1) 100%
+		);
+	}
+</style>
