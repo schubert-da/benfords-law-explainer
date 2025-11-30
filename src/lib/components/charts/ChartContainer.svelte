@@ -7,6 +7,7 @@
 	export let showTitle = false;
 	export let maxWidth = 400;
 	export let chartType = 'proportion';
+	export let colorMapping = null;
 
 	function getResultStyling(result) {
 		let styleParams = {};
@@ -39,7 +40,8 @@
 >
 	<div class="title-content min-w-0">
 		<div class="title-wrapper w-full border-b-[3px] border-b-[#363636] pb-1.5">
-			{#if showTitle === true}<h2
+			{#if showTitle === true}
+				<h2
 					class="title mb-1 !line-clamp-2 min-w-0 overflow-hidden whitespace-normal text-[26px] leading-[1.15]"
 				>
 					{data.title}
@@ -92,7 +94,7 @@
 		{#if chartType === 'proportion'}
 			<ProportionPlot {data} />
 		{:else if chartType === 'barchart'}
-			<BarChart {data}></BarChart>
+			<BarChart {colorMapping} {data}></BarChart>
 		{/if}
 	</div>
 </div>
@@ -120,6 +122,6 @@
 	}
 
 	:global(.chart-container.compact-chart .plot-labels .label) {
-		opacity: 0.5;
+		opacity: 1;
 	}
 </style>

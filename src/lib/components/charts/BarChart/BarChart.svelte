@@ -58,7 +58,7 @@
 
 {#if xScale && yScale}
 	<div
-		class="barchart min-w-50 relative mb-2 min-h-[200px] w-full overflow-hidden rounded-md border-[1px] border-[#888]"
+		class="barchart min-w-50 relative mb-2 min-h-[160px] w-full overflow-hidden rounded-md border-[1px] border-[#888]"
 		style:height={chartHeight + 'px'}
 		bind:clientWidth={chartWidth}
 	>
