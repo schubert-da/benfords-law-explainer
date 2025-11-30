@@ -24,7 +24,8 @@
 						deviates in different scenarios. The following chart shows the difference in women's
 						representation in labour force vs men's.
 					</p>
-					<p class="description-text !text-sm opacity-80">
+
+					<p class="description-text !text-sm opacity-90">
 						Source: Periodic Labour Force Survey 2023-2024, National Sample Surveys, National
 						Statistics Office via <span class="font-medium">Data For India</span>
 					</p>
@@ -41,7 +42,8 @@
 		<div class="card-content flex h-full w-full flex-row items-stretch justify-between gap-4">
 			<div class="text-col">
 				<p class="description-text !max-w-[30ch] text-pretty text-right">
-					This is the share of leading digits from our distribution, from 1 to 9.
+					The digits on the left are share of leading digits from our observed distribution, from 1
+					to 9.
 				</p>
 			</div>
 			<div class="image-container h-full max-h-full w-[65%] rounded border-[1px] border-[#555]">
@@ -53,7 +55,7 @@
 			</div>
 			<div class="text-col flex h-full flex-col justify-between">
 				<p class="description-text !max-w-[30ch]">
-					This is the expected proportion according to Benford’s Law.
+					Those on the right are the expected proportion according to Benford’s Law.
 				</p>
 
 				<p class="description-text !max-w-[30ch]">
@@ -194,9 +196,9 @@
 
 			<p class="description-text">
 				While I will still show these results, I urge you to eyeball the chart and decide if you
-				still feel that that the general takeaway of “<span class="italic"
-					>smaller numbers are more likely</span
-				>” feels apt.
+				still feel that that the general takeaway of <span class="italic"
+					>“smaller numbers are more likely”</span
+				> feels apt.
 			</p>
 		</div>
 	</div>
