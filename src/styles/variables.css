@@ -9,3 +9,12 @@
     --color-scale-diverging-4: #59757a;
 
 }
+
+@theme {
+    /* DIVERGING SCALES */
+    --color-scale-diverging-0: #ED6E43;
+    --color-scale-diverging-1: #F18C6A;
+    --color-scale-diverging-2: #f9f9f9;
+    --color-scale-diverging-3: #9ab6bd;
+    --color-scale-diverging-4: #59757a;
+}
