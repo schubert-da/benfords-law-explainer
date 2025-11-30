@@ -1,11 +1,14 @@
 <script>
 	import OpeningTable from './OpeningTable.svelte';
 	import tableData from '$assets/data/opening-table-samples.json';
+	import ChartContainer from '$components/charts/ChartContainer.svelte';
 
-	$: chosenDataset = tableData['deaths-in-armed-conflicts'];
+	$: chosenIndex = 0;
+
+	$: chosenDataset = tableData[Object.keys(tableData)[chosenIndex]];
 </script>
 
-<section class="opening-section !mt-[25vh]">
+<section class="opening-section flecol !gap-25 !mt-[25vh] flex">
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. For example,
 		if I were to give you this dataset of the [areas of water bodies across the globe]
@@ -16,11 +19,20 @@
 	</div>
 
 	<p>
-		and asked you what was the distribution of the leading digits of all the [areas], would you say
-		that it was:
+		If I were to ask you how often the [area] would start with a 2, what would you say? Would your
+		answer change if I asked the same those starting with a 9? There is no reason why the leading
+		digit wouldn't be random so all 9 digits (0 isn't a valid starting digit) should be equal right?
+		Except in the real world it looks a bit more like this:
 	</p>
 
-	<div class="placeholder h-100">two options</div>
+	<div class="barchart-container relative flex w-full items-center justify-center">
+		<ChartContainer
+			isCompact={true}
+			showTitle={true}
+			chartType={'barchart'}
+			data={{ ...chosenDataset }}
+		></ChartContainer>
+	</div>
 
 	<p>
 		So the numbers do pool around a certain value and their probability drops off as you move away
@@ -28,8 +40,19 @@
 		time we're looking at the [ages of all buildings in Narnia]
 	</p>
 
-	<div class="placeholder h-100">
-		“another dataset” results in the middle, old result moved to the side
+	<div class="barchart-container relative flex w-full items-center justify-between gap-4">
+		<div class="wrapper h-full w-1/2">
+			<ChartContainer isCompact={true} showTitle={true} chartType={'barchart'} data={chosenDataset}
+			></ChartContainer>
+		</div>
+		<div class="wrapper h-full w-1/2">
+			<ChartContainer
+				isCompact={true}
+				showTitle={true}
+				chartType={'barchart'}
+				data={tableData[Object.keys(tableData)[(chosenIndex + 1) % 3]]}
+			></ChartContainer>
+		</div>
 	</div>
 
 	<p>

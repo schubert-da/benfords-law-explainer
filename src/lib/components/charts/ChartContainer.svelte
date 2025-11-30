@@ -4,6 +4,7 @@
 
 	export let data;
 	export let isCompact = false;
+	export let showTitle = false;
 	export let maxWidth = 400;
 	export let chartType = 'proportion';
 
@@ -38,12 +39,19 @@
 >
 	<div class="title-content min-w-0">
 		<div class="title-wrapper w-full border-b-[3px] border-b-[#363636] pb-1.5">
-			<h2
-				class="title mb-1 !line-clamp-2 min-w-0 overflow-hidden whitespace-normal text-[26px] leading-[1.15]"
-			>
-				{data.column}
-				<span class=" text-base text-[#333]"> {isCompact ? `(${data.title})` : ''}</span>
-			</h2>
+			{#if showTitle === true}<h2
+					class="title mb-1 !line-clamp-2 min-w-0 overflow-hidden whitespace-normal text-[26px] leading-[1.15]"
+				>
+					{data.title}
+				</h2>
+			{:else}
+				<h2
+					class="title mb-1 !line-clamp-2 min-w-0 overflow-hidden whitespace-normal text-[26px] leading-[1.15]"
+				>
+					{data.column}
+					<span class=" text-base text-[#333]"> {isCompact ? `(${data.title})` : ''}</span>
+				</h2>
+			{/if}
 		</div>
 
 		{#if isCompact === false}
@@ -54,6 +62,7 @@
 					>
 						{data.title}
 					</p>
+
 					<p
 						class="content-clamp block text-pretty py-1 text-sm uppercase leading-snug text-[#444]"
 					>
