@@ -1,0 +1,392 @@
+{
+    "deaths-in-armed-conflicts": {
+        "dataset": "exploration-datasets\/deaths-in-armed-conflicts-by-region.csv",
+        "title": "Estimated Deaths in Armed Conflicts",
+        "description": "The best estimate of the number of deaths of combatants and civilians due to fighting in interstate, intrastate, extrasystemic, non-state conflicts, and one-sided violence that were ongoing that year.",
+        "column": "Deaths in ongoing conflicts (best estimate) - Conflict type: all",
+        "source": "Uppsala Conflict Data Program (2025); geoBoundaries (2023)",
+        "url": "https:\/\/ourworldindata.org\/grapher\/deaths-in-armed-conflicts-by-region",
+        "data": [
+            {
+                "Entity": "Nigeria",
+                "Code": "NGA",
+                "Year": 2020,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 2909
+            },
+            {
+                "Entity": "Sudan",
+                "Code": "SDN",
+                "Year": 2001,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 910
+            },
+            {
+                "Entity": "El Salvador",
+                "Code": "SLV",
+                "Year": 1989,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 4924
+            },
+            {
+                "Entity": "Cote d'Ivoire",
+                "Code": "CIV",
+                "Year": 2011,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 1234
+            },
+            {
+                "Entity": "Chad",
+                "Code": "TCD",
+                "Year": 1989,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 50
+            },
+            {
+                "Entity": "Mexico",
+                "Code": "MEX",
+                "Year": 2008,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 3736
+            },
+            {
+                "Entity": "Democratic Republic of Congo",
+                "Code": "COD",
+                "Year": 2006,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 363
+            },
+            {
+                "Entity": "Colombia",
+                "Code": "COL",
+                "Year": 2018,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 213
+            },
+            {
+                "Entity": "Central African Republic",
+                "Code": "CAF",
+                "Year": 2011,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 184
+            },
+            {
+                "Entity": "Europe",
+                "Code": null,
+                "Year": 2002,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 1493
+            },
+            {
+                "Entity": "Papua New Guinea",
+                "Code": "PNG",
+                "Year": 1996,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 106
+            },
+            {
+                "Entity": "Middle East",
+                "Code": null,
+                "Year": 2007,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 5582
+            },
+            {
+                "Entity": "India",
+                "Code": "IND",
+                "Year": 2009,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 1500
+            },
+            {
+                "Entity": "Egypt",
+                "Code": "EGY",
+                "Year": 1993,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 103
+            },
+            {
+                "Entity": "Russia",
+                "Code": "RUS",
+                "Year": 2007,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 176
+            },
+            {
+                "Entity": "Thailand",
+                "Code": "THA",
+                "Year": 2011,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 277
+            },
+            {
+                "Entity": "World",
+                "Code": "OWID_WRL",
+                "Year": 1995,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 62301
+            },
+            {
+                "Entity": "Algeria",
+                "Code": "DZA",
+                "Year": 2000,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 1191
+            },
+            {
+                "Entity": "Americas",
+                "Code": null,
+                "Year": 1990,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 3586
+            },
+            {
+                "Entity": "Pakistan",
+                "Code": "PAK",
+                "Year": 1990,
+                "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 379
+            }
+        ]
+    },
+    "population-historical": {
+        "dataset": "exploration-datasets\/population.csv",
+        "column": "Population (historical)",
+        "title": "Population",
+        "source": "HYDE (2023); Gapminder (2022); UN WPP (2024)",
+        "description": "Population by country, available from 10,000 BCE to 2023, based on data and estimates from different sources.",
+        "url": "https:\/\/ourworldindata.org\/grapher\/population",
+        "data": [
+            {
+                "Entity": "Honduras",
+                "Code": "HND",
+                "Year": 2018,
+                "Population (historical)": 9765162
+            },
+            {
+                "Entity": "Belize",
+                "Code": "BLZ",
+                "Year": 1898,
+                "Population (historical)": 36642
+            },
+            {
+                "Entity": "United Kingdom",
+                "Code": "GBR",
+                "Year": 1813,
+                "Population (historical)": 14263733
+            },
+            {
+                "Entity": "Burundi",
+                "Code": "BDI",
+                "Year": 1965,
+                "Population (historical)": 3141333
+            },
+            {
+                "Entity": "Tuvalu",
+                "Code": "TUV",
+                "Year": 1932,
+                "Population (historical)": 4320
+            },
+            {
+                "Entity": "Serbia and Montenegro",
+                "Code": "OWID_SRM",
+                "Year": 1840,
+                "Population (historical)": 1892065
+            },
+            {
+                "Entity": "Tanzania",
+                "Code": "TZA",
+                "Year": 200,
+                "Population (historical)": 212023
+            },
+            {
+                "Entity": "Lithuania",
+                "Code": "LTU",
+                "Year": -3000,
+                "Population (historical)": 5806
+            },
+            {
+                "Entity": "Malawi",
+                "Code": "MWI",
+                "Year": 1964,
+                "Population (historical)": 3997271
+            },
+            {
+                "Entity": "Guinea-Bissau",
+                "Code": "GNB",
+                "Year": 1896,
+                "Population (historical)": 285775
+            },
+            {
+                "Entity": "Israel",
+                "Code": "ISR",
+                "Year": 1938,
+                "Population (historical)": 810947
+            },
+            {
+                "Entity": "Central African Republic",
+                "Code": "CAF",
+                "Year": 2012,
+                "Population (historical)": 4610805
+            },
+            {
+                "Entity": "Mauritania",
+                "Code": "MRT",
+                "Year": 1949,
+                "Population (historical)": 644899
+            },
+            {
+                "Entity": "Iceland",
+                "Code": "ISL",
+                "Year": 1997,
+                "Population (historical)": 271147
+            },
+            {
+                "Entity": "Low-income countries",
+                "Code": null,
+                "Year": 1818,
+                "Population (historical)": 52063407
+            },
+            {
+                "Entity": "Europe",
+                "Code": null,
+                "Year": 1835,
+                "Population (historical)": 254265378
+            },
+            {
+                "Entity": "Libya",
+                "Code": "LBY",
+                "Year": 1839,
+                "Population (historical)": 256137
+            },
+            {
+                "Entity": "Liberia",
+                "Code": "LBR",
+                "Year": 2012,
+                "Population (historical)": 4373007
+            },
+            {
+                "Entity": "North Korea",
+                "Code": "PRK",
+                "Year": 1999,
+                "Population (historical)": 23497555
+            },
+            {
+                "Entity": "Nigeria",
+                "Code": "NGA",
+                "Year": 1805,
+                "Population (historical)": 12100860
+            }
+        ]
+    },
+    "electricity-from-gas": {
+        "dataset": "exploration-datasets\/electricity-prod-source-stacked.csv",
+        "column": "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+        "title": "Electricity production by source",
+        "source": "Ember (2025); Energy Institute - Statistical Review of World Energy (2025)",
+        "description": "Measured in [terawatt-hours](#dod:watt-hours).",
+        "url": "https:\/\/ourworldindata.org\/grapher\/electricity-prod-source-stacked",
+        "data": [
+            {
+                "Entity": "Honduras",
+                "Code": "HND",
+                "Year": 2018,
+                "Population (historical)": 9765162
+            },
+            {
+                "Entity": "Belize",
+                "Code": "BLZ",
+                "Year": 1898,
+                "Population (historical)": 36642
+            },
+            {
+                "Entity": "United Kingdom",
+                "Code": "GBR",
+                "Year": 1813,
+                "Population (historical)": 14263733
+            },
+            {
+                "Entity": "Burundi",
+                "Code": "BDI",
+                "Year": 1965,
+                "Population (historical)": 3141333
+            },
+            {
+                "Entity": "Tuvalu",
+                "Code": "TUV",
+                "Year": 1932,
+                "Population (historical)": 4320
+            },
+            {
+                "Entity": "Serbia and Montenegro",
+                "Code": "OWID_SRM",
+                "Year": 1840,
+                "Population (historical)": 1892065
+            },
+            {
+                "Entity": "Tanzania",
+                "Code": "TZA",
+                "Year": 200,
+                "Population (historical)": 212023
+            },
+            {
+                "Entity": "Lithuania",
+                "Code": "LTU",
+                "Year": -3000,
+                "Population (historical)": 5806
+            },
+            {
+                "Entity": "Malawi",
+                "Code": "MWI",
+                "Year": 1964,
+                "Population (historical)": 3997271
+            },
+            {
+                "Entity": "Guinea-Bissau",
+                "Code": "GNB",
+                "Year": 1896,
+                "Population (historical)": 285775
+            },
+            {
+                "Entity": "Israel",
+                "Code": "ISR",
+                "Year": 1938,
+                "Population (historical)": 810947
+            },
+            {
+                "Entity": "Central African Republic",
+                "Code": "CAF",
+                "Year": 2012,
+                "Population (historical)": 4610805
+            },
+            {
+                "Entity": "Mauritania",
+                "Code": "MRT",
+                "Year": 1949,
+                "Population (historical)": 644899
+            },
+            {
+                "Entity": "Iceland",
+                "Code": "ISL",
+                "Year": 1997,
+                "Population (historical)": 271147
+            },
+            {
+                "Entity": "Low-income countries",
+                "Code": null,
+                "Year": 1818,
+                "Population (historical)": 52063407
+            },
+            {
+                "Entity": "Europe",
+                "Code": null,
+                "Year": 1835,
+                "Population (historical)": 254265378
+            },
+            {
+                "Entity": "Libya",
+                "Code": "LBY",
+                "Year": 1839,
+                "Population (historical)": 256137
+            },
+            {
+                "Entity": "Liberia",
+                "Code": "LBR",
+                "Year": 2012,
+                "Population (historical)": 4373007
+            },
+            {
+                "Entity": "North Korea",
+                "Code": "PRK",
+                "Year": 1999,
+                "Population (historical)": 23497555
+            },
+            {
+                "Entity": "Nigeria",
+                "Code": "NGA",
+                "Year": 1805,
+                "Population (historical)": 12100860
+            }
+        ]
+    }
+}
