@@ -1,16 +1,35 @@
+<script>
+	import workforceProportionImage from '$assets/image/proportion-plot-workforce.jpg';
+	import exampleProportionImage from '$assets/image/proportion-plot-example.jpg';
+	import porportionExampleGood from '$assets/image/proportion-example-good.jpg';
+	import porportionExampleBad from '$assets/image/proportion-example-bad.jpg';
+	import proportionExampleColors from '$assets/image/proportion-example-colors.jpg';
+	import proportionGoodEnough from '$assets/image/proportion-good-enough.jpg';
+</script>
+
 <div class="bento-grid w-full">
 	<div class="bento-card bg-gray-300" style="grid-row: 1 / 2; grid-column: 1 / 6;">
-		<div class="title-content">
-			<h2>Proportion Plots</h2>
-		</div>
-
 		<div class="card-content flex h-full flex-row items-stretch justify-between gap-4">
-			<div class="placeholder"></div>
-			<p class="description-text">
-				Proportion plots take a look at two different distributions and show how the same value
-				deviates in different scenarios. The following chart shows the difference in women's
-				representation in STEM vs in the overall population.
-			</p>
+			<img
+				src={workforceProportionImage}
+				alt="proportion plot showing the differences in the nature of male and female employment"
+				class="rounded border-[1px] border-[#555]"
+			/>
+			<div class="title-content h-full">
+				<h2 class="!mb-4">Proportion Plots</h2>
+
+				<div class="description-text-content flex flex-1 flex-col justify-between gap-5">
+					<p class="description-text mb-auto">
+						Proportion plots take a look at two different distributions and show how the same value
+						deviates in different scenarios. The following chart shows the difference in women's
+						representation in labour force vs men's.
+					</p>
+					<p class="description-text !text-sm opacity-80">
+						Source: Periodic Labour Force Survey 2023-2024, National Sample Surveys, National
+						Statistics Office via <span class="font-medium">Data For India</span>
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -19,13 +38,19 @@
 			<h2>So what does this mean for us?</h2>
 		</div>
 
-		<div class="card-content flex w-full flex-row items-stretch justify-between gap-4">
+		<div class="card-content flex h-full w-full flex-row items-stretch justify-between gap-4">
 			<div class="text-col">
 				<p class="description-text !max-w-[30ch] text-pretty text-right">
 					This is the share of leading digits from our distribution, from 1 to 9.
 				</p>
 			</div>
-			<div class="placeholder w-50 h-80"></div>
+			<div class="image-container h-full max-h-full w-[65%] rounded border-[1px] border-[#555]">
+				<img
+					src={exampleProportionImage}
+					alt="example of how a proportion looks with all annotations"
+					class="h-full w-full object-contain"
+				/>
+			</div>
 			<div class="text-col flex h-full flex-col justify-between">
 				<p class="description-text !max-w-[30ch]">
 					This is the expected proportion according to Benford’s Law.
@@ -46,12 +71,28 @@
 		<div class="card-content flex w-full flex-col gap-5">
 			<p class="description-text">
 				If the distribution fits Benford’s Law you will see largely horizontal bands across the
-				chart as opposed to heavily sloping bands when the are large deviations.
+				chart as opposed to heavily sloping bands when the two sides don't match.
 			</p>
 
 			<div class="flex flex-row gap-3">
-				<div class="placeholder h-35"></div>
-				<div class="placeholder h-35"></div>
+				<div
+					class="image-container h-full max-h-full w-1/2 overflow-hidden rounded border-[1px] border-[#555]"
+				>
+					<img
+						src={porportionExampleGood}
+						alt="example of a good proportion plot"
+						class="h-full w-full object-contain"
+					/>
+				</div>
+				<div
+					class="image-container h-full max-h-full w-1/2 overflow-hidden rounded border-[1px] border-[#555]"
+				>
+					<img
+						src={porportionExampleBad}
+						alt="example of a bad proportion plot"
+						class="h-full w-full object-contain"
+					/>
+				</div>
 			</div>
 
 			<p class="description-text">
@@ -60,7 +101,15 @@
 			</p>
 
 			<div class="flex flex-row gap-3">
-				<div class="placeholder h-35"></div>
+				<div
+					class="image-container h-full max-h-full w-1/2 overflow-hidden rounded border-[1px] border-[#555]"
+				>
+					<img
+						src={proportionExampleColors}
+						alt="example of how colours are used in proportion plot"
+						class="h-full w-full object-contain"
+					/>
+				</div>
 
 				<div class="legend flex flex-col items-start justify-center gap-[1px]">
 					<h3 class="legend-title font-body !mb-1 block text-[14px] !font-semibold uppercase">
@@ -98,7 +147,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="bento-card bg-gray-300" style="grid-row: 4 / 6; grid-column: 3 / 6;">
+	<div class="bento-card bg-gray-300" style="grid-row: 4 / 7; grid-column: 3 / 6;">
 		<div class="title-content">
 			<h2>... and the good enough</h2>
 		</div>
@@ -129,17 +178,29 @@
 				to many seemingly close results failing the test:
 			</p>
 
-			<div class="flex flex-row gap-3">
-				<div class="placeholder h-35"></div>
+			<div class="flex flex-row items-center gap-3">
+				<div class="image-container h-full max-h-full w-1/2 overflow-hidden">
+					<img
+						src={proportionGoodEnough}
+						alt="example of a convincingly close benford's graph which fails the test"
+						class="h-full w-full object-contain"
+					/>
+				</div>
 
-				<p class="description-text !max-w-[30ch]">
-					Sloping lines between the two sides indicates that there is some deviation from the
-					expected behaviour.
+				<p class="description-text !max-w-[30ch] text-pretty">
+					For example this falls under “Doesn’t conform”
 				</p>
 			</div>
+
+			<p class="description-text">
+				While I will still show these results, I urge you to eyeball the chart and decide if you
+				still feel that that the general takeaway of “<span class="italic"
+					>smaller numbers are more likely</span
+				>” feels apt.
+			</p>
 		</div>
 	</div>
-	<div class="bento-card bg-gray-300" style="grid-row: 6 / 7; grid-column: 3/ 6;">
+	<div class="bento-card bg-gray-300" style="grid-row: 7 / 8; grid-column: 3/ 6;">
 		<div class="title-content">
 			<h2>Flipping the Switch</h2>
 
@@ -168,7 +229,7 @@
 	.bento-grid {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: 300px repeat(5, 200px);
+		grid-template-rows: 300px repeat(5, 200px) 200px;
 		gap: 12px;
 	}
 
