@@ -6,6 +6,8 @@
         "column": "Deaths in ongoing conflicts (best estimate) - Conflict type: all",
         "source": "Uppsala Conflict Data Program (2025); geoBoundaries (2023)",
         "url": "https:\/\/ourworldindata.org\/grapher\/deaths-in-armed-conflicts-by-region",
+        "mad_first": 0.0104369858,
+        "mad_first_category": "Acceptable conformity",
         "data": [
             {
                 "Entity": "Nigeria",
@@ -127,6 +129,17 @@
                 "Year": 1990,
                 "Deaths in ongoing conflicts (best estimate) - Conflict type: all": 379
             }
+        ],
+        "first_digits_proportions": [
+            0.2843035343,
+            0.196985447,
+            0.1429313929,
+            0.104989605,
+            0.0774428274,
+            0.0613305613,
+            0.0556133056,
+            0.0415800416,
+            0.0348232848
         ]
     },
     "population-historical": {
@@ -257,6 +270,19 @@
                 "Year": 1805,
                 "Population (historical)": 12100860
             }
+        ],
+        "mad_first": 0.0055784959,
+        "mad_first_category": "Close conformity",
+        "first_digits_proportions": [
+            0.2835795551,
+            0.186296485,
+            0.1330616403,
+            0.1019527933,
+            0.0809135677,
+            0.0654270674,
+            0.0549329258,
+            0.0487688912,
+            0.0450670742
         ]
     },
     "electricity-from-gas": {
