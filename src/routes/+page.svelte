@@ -1,5 +1,6 @@
 <script>
 	import OpeningSection from '$components/OpeningSection/OpeningSection.svelte';
+	import DeepDiveSection from '$components/sections/DeepDiveSection.svelte';
 	import ExplanationSection from '$components/sections/ExplanationSection.svelte';
 	import HowToSection from '$components/sections/HowToSection.svelte';
 	import LimitationsSection from '$components/sections/LimitationsSection.svelte';
@@ -28,15 +29,7 @@
 
 		<HowToSection></HowToSection>
 
-		<section class="deep-dive">
-			<SectionTitle title="A Deeper Dive"></SectionTitle>
-
-			<p>
-				Here are a couple more examples where Benford’s law holds true in the wild. Most importantly
-				I need to figure out how to segue into the whole "let's look at other datasets that will
-				surely make you start to understand that this is a thing" bit.
-			</p>
-		</section>
+		<DeepDiveSection></DeepDiveSection>
 
 		<LimitationsSection></LimitationsSection>
 
