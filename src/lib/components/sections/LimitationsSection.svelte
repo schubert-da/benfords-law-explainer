@@ -5,7 +5,7 @@
 
 	const yearColumns = columnData.filter((c) => c.column.toLowerCase() === 'year').slice(0, 15);
 
-	const COLS_WIDTH = 300;
+	const COLS_WIDTH = 250;
 </script>
 
 <section class="limitations">
