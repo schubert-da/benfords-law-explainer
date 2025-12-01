@@ -3,6 +3,8 @@
 	import columnData from '$assets/data/columns_overview.json';
 	import SectionTitle from '$components/common/SectionTitle.svelte';
 	import DeepDiveTextCard from '$components/layout/DeepDiveTextCard.svelte';
+	import BarChart from '$components/charts/BarChart/BarChart.svelte';
+	import SiteRectanglesImage from '$assets/image/rects-screenshot.png';
 
 	$: filteredColumnData = columnData
 		.filter((col) => col.column.toLocaleLowerCase().includes('year') === false)
@@ -15,6 +17,8 @@
 		isCompact: true,
 		chartType: 'barchart'
 	};
+
+	const rectsProportions = [0.3022, 0.0969, 0.1343, 0.03321, 0.0128, 0.0469, 0.0387, 0.012, 0.0241];
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} />
@@ -64,9 +68,38 @@
 		<ChartContainer {...chartProps} data={filteredColumnData[chartIndex]}></ChartContainer>
 	{/each}
 	<DeepDiveTextCard
-		text="But even when they fail we still see the leading digits being the most common ..."
+		text="But even when they fail, we still see smaller leading digits being more common..."
 	></DeepDiveTextCard>
 	{#each [27, 8, 16] as chartIndex}
 		<ChartContainer {...chartProps} data={filteredColumnData[chartIndex]}></ChartContainer>
 	{/each}
 </div>
+
+<section class="deep-dive-continued !mt-30">
+	<h3 class="mx-auto text-center text-3xl">All the boxes</h3>
+	<p>
+		At its core, everything on the web is just a bunch of tiny rectangles styled and rearranged
+		together to form the content you see on a daily basis. I wrote a bit of code that would go
+		through every HTML element on this page and create a dataset of all their areas. This is what we
+		get when we analyse these areas.
+	</p>
+
+	<div class="image-container">
+		<img
+			class="mb-1 rounded border-[1px] border-[#555]"
+			src={SiteRectanglesImage}
+			alt="site with all the individual HTML elements border box drawn"
+		/>
+		<p class="caption mx-auto text-center text-base opacity-60">
+			All HTML elements with their boundary boxes drawn in different colours
+		</p>
+	</div>
+
+	<div
+		class="custom-barchart-container mx-auto flex w-full max-w-[600px] flex-col items-center justify-center"
+	>
+		<h3 class="!mb-2 block">Distribution of Leading Digits</h3>
+
+		<BarChart customHeight="200" data={{ first_digits_proportions: rectsProportions }}></BarChart>
+	</div>
+</section>
