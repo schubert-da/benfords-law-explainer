@@ -63,7 +63,7 @@
 		bind:clientWidth={chartWidth}
 	>
 		<svg
-			class="barchart-svg min-h-[200px]"
+			class="barchart-svg"
 			width={chartWidth}
 			height={chartHeight}
 			viewBox={`0 0 ${chartWidth} ${chartHeight}`}
@@ -73,7 +73,12 @@
 				{@const pathStyles = getPathStyles(index, currentProportions)}
 				{@const currentProportionValue = currentProportions[index]}
 
-				<rect x={xScale(index + 1)} y="0" width={xScale.bandwidth()} height="100%" fill="#f5f5f5"
+				<rect
+					x={xScale(index + 1)}
+					y="0"
+					width={xScale.bandwidth()}
+					height={chartHeight}
+					fill="#f5f5f5"
 				></rect>
 
 				<rect
