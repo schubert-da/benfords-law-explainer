@@ -1,4 +1,5 @@
 <script>
+	import DialogBox from '$components/DialogBox/DialogBox.svelte';
 	import OpeningSection from '$components/OpeningSection/OpeningSection.svelte';
 	import DeepDiveSection from '$components/sections/DeepDiveSection.svelte';
 	import ExplanationSection from '$components/sections/ExplanationSection.svelte';
@@ -8,6 +9,7 @@
 	import SectionTitle from '$lib/components/common/SectionTitle.svelte';
 	import FormulaBox from '$lib/components/FormulaBox.svelte';
 	import Scroller from '@sveltejs/svelte-scroller';
+	import { scrollerState } from '$utils/stores';
 
 	// params for scroller
 	let count;
@@ -19,7 +21,15 @@
 	let bottom = 0.9;
 </script>
 
-<Scroller {top} {threshold} {bottom} bind:count bind:index bind:offset bind:progress>
+<Scroller
+	{top}
+	{threshold}
+	{bottom}
+	bind:count
+	bind:index={$scrollerState.index}
+	bind:offset
+	bind:progress={$scrollerState.progress}
+>
 	<div slot="foreground" class="relative z-10">
 		<OpeningSection></OpeningSection>
 
@@ -55,10 +65,6 @@
 	</div>
 
 	<div slot="background" class="relative z-50">
-		<div class="dialog-box-container flex h-screen w-full items-end justify-center pb-3">
-			<div class="dialog-box border-[1px] bg-white opacity-100">
-				CURRENTLY IN SECTION: {index} - PROGRESS: {progress?.toFixed(2)}
-			</div>
-		</div>
+		<DialogBox {index} {progress}></DialogBox>
 	</div>
 </Scroller>
