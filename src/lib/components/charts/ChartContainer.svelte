@@ -49,7 +49,7 @@
 
 <div
 	class:compact-chart={isCompact}
-	class="chart-container hover:hovered-chart flex h-full flex-col justify-between rounded-2xl border-[1px] border-[#ccc] px-4 py-4"
+	class="chart-container flex h-full flex-col justify-between rounded-2xl border-[1px] border-[#ccc] px-4 py-4"
 	style:max-width="{maxWidth}px"
 	role="region"
 	aria-label="Chart container"

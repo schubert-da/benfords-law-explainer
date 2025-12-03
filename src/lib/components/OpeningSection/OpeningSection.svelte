@@ -5,7 +5,7 @@
 	import ChartContainer from '$components/charts/ChartContainer.svelte';
 	import { resetDialogBox } from '$utils/utils';
 
-	$: chosenIndex = 0;
+	$: chosenIndex = 1;
 
 	$: chosenDataset = tableData[Object.keys(tableData)[chosenIndex]];
 
@@ -16,6 +16,24 @@
 	$: colorMapping = Array.from({ length: 9 }).map(() => 'var(--color-scale-diverging-1)');
 
 	$: screenWidth = 1000;
+
+	const copyContent = {
+		0: {
+			name: 'deaths-in-armed-conflicts',
+			title: 'deaths in armed conflicts',
+			units: 'counts'
+		},
+		1: {
+			name: 'population-historical',
+			title: 'country populations since 10,000 BCE',
+			units: 'populations'
+		},
+		2: {
+			name: 'electricity-from-gas',
+			title: 'electricity generation from natural gas',
+			units: 'generated energy'
+		}
+	};
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} />
@@ -23,7 +41,16 @@
 <section class="opening-section !gap-25 !mt-[25vh] flex flex-col">
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. For example,
-		if I were to give you this dataset of the [areas of water bodies across the globe]
+		if I were to give you this dataset of the <select
+			class="bg-scale-diverging-1 inline w-fit rounded-md px-1 py-1 text-white"
+			bind:value={chosenIndex}
+		>
+			{#each Object.entries(copyContent) as [key, content], index}
+				<option class="bg-white text-base text-[#444]" value={index}>
+					{content.title}
+				</option>
+			{/each}
+		</select>
 	</p>
 
 	<div class="table-container relative">
@@ -31,10 +58,10 @@
 	</div>
 
 	<p>
-		If I were to ask you how often the [area] would start with a 2, what would you say? Would your
-		answer change if I asked the same those starting with a 9? There is no reason why the leading
-		digit wouldn't be random so all 9 digits (0 isn't a valid starting digit) should be equal right?
-		Except in the real world it looks a bit more like this:
+		If I were to ask you how often the {copyContent[chosenIndex].units} would start with a 2, what would
+		you say? Would your answer change if I asked the same those starting with a 9? There is no reason
+		why the leading digit wouldn't be random so all 9 digits (0 isn't a valid starting digit) should
+		be equal right? Except in the real world it looks a bit more like this:
 	</p>
 
 	<div class="barchart-container relative flex w-full items-center justify-center">
