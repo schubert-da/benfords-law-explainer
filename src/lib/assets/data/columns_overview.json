@@ -2,6 +2,8 @@
   {
     "dataset":"exploration-datasets\/share-of-population-in-extreme-poverty.csv",
     "column":"Year",
+    "data_range_min":1963.0,
+    "data_range_max":2025.0,
     "magnitude_range":0.01,
     "mad_first":0.1284061795,
     "mad_first_category":"Non-conformity",
@@ -33,11 +35,24 @@
       0.0936930368,
       0.0995260664,
       0.0987969377
+    ],
+    "first_digits_counts":[
+      675,
+      2068,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/share-of-population-in-extreme-poverty.csv",
     "column":"Share of population in poverty ($3 a day, 2021 prices) - Income or consumption consolidated",
+    "data_range_min":0.0037305127,
+    "data_range_max":98.95,
     "magnitude_range":3.6,
     "mad_first":0.0163761257,
     "mad_first_category":"Non-conformity",
@@ -69,11 +84,24 @@
       0.1327672713,
       0.1003473562,
       0.0741026631
+    ],
+    "first_digits_counts":[
+      636,
+      455,
+      278,
+      304,
+      210,
+      231,
+      219,
+      134,
+      124
     ]
   },
   {
     "dataset":"exploration-datasets\/gdp-per-capita-maddison-project-database.csv",
     "column":"Year",
+    "data_range_min":1.0,
+    "data_range_max":2022.0,
     "magnitude_range":0.18,
     "mad_first":0.1161643925,
     "mad_first_category":"Non-conformity",
@@ -105,11 +133,24 @@
       0.0962660984,
       0.0965440563,
       0.096636709
+    ],
+    "first_digits_counts":[
+      17606,
+      3977,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/gdp-per-capita-maddison-project-database.csv",
     "column":"GDP per capita",
+    "data_range_min":295.0,
+    "data_range_max":160051.23,
     "magnitude_range":1.88,
     "mad_first":0.0301146352,
     "mad_first_category":"Non-conformity",
@@ -141,11 +182,24 @@
       0.1101639952,
       0.1026591309,
       0.0897340869
+    ],
+    "first_digits_counts":[
+      9255,
+      3557,
+      2181,
+      1493,
+      1044,
+      981,
+      915,
+      1004,
+      1156
     ]
   },
   {
     "dataset":"exploration-datasets\/distribution-of-population-poverty-thresholds.csv",
     "column":"Year",
+    "data_range_min":1963.0,
+    "data_range_max":2025.0,
     "magnitude_range":0.01,
     "mad_first":0.1284061795,
     "mad_first_category":"Non-conformity",
@@ -177,11 +231,24 @@
       0.0936930368,
       0.0995260664,
       0.0987969377
+    ],
+    "first_digits_counts":[
+      675,
+      2068,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/distribution-of-population-poverty-thresholds.csv",
     "column":"Number of people not in poverty (above $10 a day, 2021 prices) - Income or consumption consolidated",
+    "data_range_min":2310.0,
+    "data_range_max":3901470181.0,
     "magnitude_range":4.75,
     "mad_first":0.0155535246,
     "mad_first_category":"Non-conformity",
@@ -213,11 +280,24 @@
       0.1046469082,
       0.1009879254,
       0.1097694841
+    ],
+    "first_digits_counts":[
+      719,
+      460,
+      378,
+      260,
+      323,
+      161,
+      119,
+      164,
+      149
     ]
   },
   {
     "dataset":"exploration-datasets\/distribution-of-population-poverty-thresholds.csv",
     "column":"Number of people in poverty (between $8.30 and $10 a day, 2021 prices) - Income or consumption consolidated",
+    "data_range_min":29.0,
+    "data_range_max":565308261.0,
     "magnitude_range":5.92,
     "mad_first":0.0062247301,
     "mad_first_category":"Acceptable conformity",
@@ -249,11 +329,24 @@
       0.1041822255,
       0.0959671397,
       0.0941000747
+    ],
+    "first_digits_counts":[
+      806,
+      487,
+      341,
+      309,
+      189,
+      172,
+      159,
+      101,
+      114
     ]
   },
   {
     "dataset":"exploration-datasets\/distribution-of-population-poverty-thresholds.csv",
     "column":"Number of people in poverty (between $4.20 and $8.30 a day, 2021 prices) - Income or consumption consolidated",
+    "data_range_min":50.0,
+    "data_range_max":2252154890.0,
     "magnitude_range":6.34,
     "mad_first":0.0103434269,
     "mad_first_category":"Acceptable conformity",
@@ -285,11 +378,24 @@
       0.1014385835,
       0.0999631132,
       0.1110291405
+    ],
+    "first_digits_counts":[
+      932,
+      451,
+      317,
+      240,
+      176,
+      170,
+      152,
+      147,
+      126
     ]
   },
   {
     "dataset":"exploration-datasets\/distribution-of-population-poverty-thresholds.csv",
     "column":"Number of people in poverty (between $3 and $4.20 a day, 2021 prices) - Income or consumption consolidated",
+    "data_range_min":3.0,
+    "data_range_max":1042966859.0,
     "magnitude_range":6.63,
     "mad_first":0.0088628436,
     "mad_first_category":"Acceptable conformity",
@@ -321,11 +427,24 @@
       0.0961462058,
       0.0929678188,
       0.1025029797
+    ],
+    "first_digits_counts":[
+      722,
+      406,
+      287,
+      247,
+      226,
+      190,
+      183,
+      140,
+      116
     ]
   },
   {
     "dataset":"exploration-datasets\/distribution-of-population-poverty-thresholds.csv",
     "column":"Number of people in poverty ($3 a day, 2021 prices) - Income or consumption consolidated",
+    "data_range_min":18.0,
+    "data_range_max":2346263931.0,
     "magnitude_range":6.73,
     "mad_first":0.0082445497,
     "mad_first_category":"Acceptable conformity",
@@ -357,11 +476,24 @@
       0.0914704747,
       0.1030490158,
       0.1018911617
+    ],
+    "first_digits_counts":[
+      802,
+      392,
+      295,
+      265,
+      202,
+      190,
+      170,
+      134,
+      141
     ]
   },
   {
     "dataset":"exploration-datasets\/human-development-index.csv",
     "column":"Year",
+    "data_range_min":1990.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.01,
     "mad_first":0.1298213416,
     "mad_first_category":"Non-conformity",
@@ -393,11 +525,24 @@
       0.0878348047,
       0.0879844381,
       0.0885829717
+    ],
+    "first_digits_counts":[
+      1602,
+      5081,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/human-development-index.csv",
     "column":"Human Development Index",
+    "data_range_min":0.215,
+    "data_range_max":0.972,
     "magnitude_range":0.49,
     "mad_first":0.1218791366,
     "mad_first_category":"Non-conformity",
@@ -429,11 +574,24 @@
       0.115233192,
       0.1125075712,
       0.1061477892
+    ],
+    "first_digits_counts":[
+      0,
+      52,
+      302,
+      764,
+      863,
+      1239,
+      1598,
+      1210,
+      576
     ]
   },
   {
     "dataset":"exploration-datasets\/prevalence-of-undernourishment.csv",
     "column":"Year",
+    "data_range_min":2000.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.0,
     "mad_first":0.1830908313,
     "mad_first_category":"Non-conformity",
@@ -465,11 +623,24 @@
       0.0894725603,
       0.0894725603,
       0.089259022
+    ],
+    "first_digits_counts":[
+      0,
+      4683,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/prevalence-of-undernourishment.csv",
     "column":"2.1.1 Prevalence of undernourishment | 000000000024000 || Value | 006121 || percent",
+    "data_range_min":2.5,
+    "data_range_max":71.4,
     "magnitude_range":1.27,
     "mad_first":0.05155122,
     "mad_first_category":"Non-conformity",
@@ -501,11 +672,24 @@
       0.0811445654,
       0.0852017937,
       0.0768737988
+    ],
+    "first_digits_counts":[
+      940,
+      1911,
+      506,
+      302,
+      283,
+      266,
+      221,
+      135,
+      119
     ]
   },
   {
     "dataset":"exploration-datasets\/daily-per-capita-caloric-supply.csv",
     "column":"Year",
+    "data_range_min":1274.0,
+    "data_range_max":2022.0,
     "magnitude_range":0.02,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -537,11 +721,24 @@
       0.0988407566,
       0.0979255644,
       0.09609518
+    ],
+    "first_digits_counts":[
+      8007,
+      5105,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/daily-per-capita-caloric-supply.csv",
     "column":"Daily calorie supply per person",
+    "data_range_min":1279.0,
+    "data_range_max":4793.0635,
     "magnitude_range":0.37,
     "mad_first":0.128362394,
     "mad_first_category":"Non-conformity",
@@ -573,11 +770,24 @@
       0.1183648566,
       0.1211104332,
       0.067495424
+    ],
+    "first_digits_counts":[
+      1572,
+      7695,
+      3826,
+      19,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/share-of-the-labor-force-employed-in-agriculture.csv",
     "column":"Year",
+    "data_range_min":1300.0,
+    "data_range_max":2019.0,
     "magnitude_range":0.01,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -609,11 +819,24 @@
       0.102934735,
       0.102934735,
       0.102934735
+    ],
+    "first_digits_counts":[
+      2149,
+      4700,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/share-of-the-labor-force-employed-in-agriculture.csv",
     "column":"share_employed_agri",
+    "data_range_min":0.029999999,
+    "data_range_max":92.37000275,
     "magnitude_range":2.39,
     "mad_first":0.0346373405,
     "mad_first_category":"Non-conformity",
@@ -645,11 +868,24 @@
       0.1016206746,
       0.1080449701,
       0.1134472186
+    ],
+    "first_digits_counts":[
+      1282,
+      1194,
+      1025,
+      1039,
+      729,
+      730,
+      462,
+      264,
+      124
     ]
   },
   {
     "dataset":"exploration-datasets\/meat-consumption-vs-gdp-per-capita.csv",
     "column":"Year",
+    "data_range_min":1961.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.01,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -681,11 +917,24 @@
       0.0928743546,
       0.0930120482,
       0.093080895
+    ],
+    "first_digits_counts":[
+      8167,
+      6358,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/meat-consumption-vs-gdp-per-capita.csv",
     "column":"Meat, total | 00002943 || Food available for consumption | 0645pc || kilograms per year per capita",
+    "data_range_min":2.2096515,
+    "data_range_max":179.94745,
     "magnitude_range":1.5,
     "mad_first":0.0230488902,
     "mad_first_category":"Non-conformity",
@@ -717,11 +966,24 @@
       0.1194968553,
       0.0971348707,
       0.0799751534
+    ],
+    "first_digits_counts":[
+      3649,
+      1469,
+      1486,
+      1156,
+      926,
+      1164,
+      1093,
+      1077,
+      859
     ]
   },
   {
     "dataset":"exploration-datasets\/meat-consumption-vs-gdp-per-capita.csv",
     "column":"GDP per capita, PPP (constant 2021 international $)",
+    "data_range_min":510.8228,
+    "data_range_max":174339.0,
     "magnitude_range":2.08,
     "mad_first":0.0115701416,
     "mad_first_category":"Acceptable conformity",
@@ -753,11 +1015,24 @@
       0.120923162,
       0.0993642897,
       0.0704809287
+    ],
+    "first_digits_counts":[
+      2121,
+      1198,
+      1053,
+      813,
+      689,
+      476,
+      313,
+      270,
+      303
     ]
   },
   {
     "dataset":"exploration-datasets\/population-with-un-projections.csv",
     "column":"Year",
+    "data_range_min":1950.0,
+    "data_range_max":2100.0,
     "magnitude_range":0.03,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -789,11 +1064,24 @@
       0.0993377483,
       0.0993377483,
       0.0993377483
+    ],
+    "first_digits_counts":[
+      12800,
+      25856,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/population-with-un-projections.csv",
     "column":"Population - Sex: all - Age: all - Variant: estimates",
+    "data_range_min":489.0,
+    "data_range_max":8091734853.0,
     "magnitude_range":6.21,
     "mad_first":0.008734732,
     "mad_first_category":"Acceptable conformity",
@@ -825,11 +1113,24 @@
       0.0981841216,
       0.1010346284,
       0.1021959459
+    ],
+    "first_digits_counts":[
+      5132,
+      3167,
+      2404,
+      2011,
+      1816,
+      1389,
+      1160,
+      964,
+      901
     ]
   },
   {
     "dataset":"exploration-datasets\/population-with-un-projections.csv",
     "column":"Population - Sex: all - Age: all - Variant: medium",
+    "data_range_min":497.0,
+    "data_range_max":10289315169.0,
     "magnitude_range":6.45,
     "mad_first":0.0158482881,
     "mad_first_category":"Non-conformity",
@@ -861,11 +1162,24 @@
       0.0965401786,
       0.1025263799,
       0.0967938312
+    ],
+    "first_digits_counts":[
+      5482,
+      2583,
+      2397,
+      2310,
+      1972,
+      1411,
+      1188,
+      1180,
+      1189
     ]
   },
   {
     "dataset":"exploration-datasets\/population.csv",
     "column":"Year",
+    "data_range_min":100.0,
+    "data_range_max":10000.0,
     "magnitude_range":1.37,
     "mad_first":0.1201492757,
     "mad_first_category":"Non-conformity",
@@ -897,11 +1211,24 @@
       0.0849845808,
       0.0849845808,
       0.0849845808
+    ],
+    "first_digits_counts":[
+      49402,
+      6576,
+      387,
+      387,
+      388,
+      388,
+      389,
+      388,
+      388
     ]
   },
   {
     "dataset":"exploration-datasets\/population.csv",
     "column":"Population (historical)",
+    "data_range_min":1.0,
+    "data_range_max":8091734853.0,
     "magnitude_range":6.48,
     "mad_first":0.0055784959,
     "mad_first_category":"Close conformity",
@@ -933,11 +1260,24 @@
       0.093869927,
       0.096484972,
       0.0965528952
+    ],
+    "first_digits_counts":[
+      16700,
+      10971,
+      7836,
+      6004,
+      4765,
+      3853,
+      3235,
+      2872,
+      2654
     ]
   },
   {
     "dataset":"exploration-datasets\/children-born-per-woman.csv",
     "column":"Year",
+    "data_range_min":1891.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.02,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -969,11 +1309,24 @@
       0.0948939762,
       0.0949467243,
       0.0949994725
+    ],
+    "first_digits_counts":[
+      12886,
+      6072,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/children-born-per-woman.csv",
     "column":"Fertility rate (period), historical",
+    "data_range_min":0.662,
+    "data_range_max":8.864,
     "magnitude_range":0.85,
     "mad_first":0.0412251091,
     "mad_first_category":"Non-conformity",
@@ -1005,11 +1358,24 @@
       0.1101909484,
       0.1104019411,
       0.110349193
+    ],
+    "first_digits_counts":[
+      3998,
+      4222,
+      2256,
+      1828,
+      2205,
+      3026,
+      1272,
+      107,
+      44
     ]
   },
   {
     "dataset":"exploration-datasets\/median-age.csv",
     "column":"Year",
+    "data_range_min":1950.0,
+    "data_range_max":2100.0,
     "magnitude_range":0.03,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -1041,11 +1407,24 @@
       0.0993377483,
       0.0993377483,
       0.0993377483
+    ],
+    "first_digits_counts":[
+      12650,
+      25553,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/median-age.csv",
     "column":"Median age - Sex: all - Age: all - Variant: estimates",
+    "data_range_min":12.617,
+    "data_range_max":62.417,
     "magnitude_range":0.5,
     "mad_first":0.0794339736,
     "mad_first_category":"Non-conformity",
@@ -1077,11 +1456,24 @@
       0.1083217605,
       0.1089093046,
       0.114090375
+    ],
+    "first_digits_counts":[
+      8507,
+      5710,
+      3747,
+      716,
+      29,
+      13,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/median-age.csv",
     "column":"Median age - Sex: all - Age: all - Variant: medium",
+    "data_range_min":14.382,
+    "data_range_max":72.356,
     "magnitude_range":0.52,
     "mad_first":0.1098920846,
     "mad_first_category":"Non-conformity",
@@ -1113,11 +1505,24 @@
       0.111595914,
       0.1091833068,
       0.1140085211
+    ],
+    "first_digits_counts":[
+      494,
+      3292,
+      5240,
+      7728,
+      2530,
+      165,
+      32,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/co-emissions-per-capita.csv",
     "column":"Year",
+    "data_range_min":1750.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.05,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -1149,11 +1554,24 @@
       0.0964015655,
       0.0974655166,
       0.0982634799
+    ],
+    "first_digits_counts":[
+      20773,
+      5544,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/co-emissions-per-capita.csv",
     "column":"Annual CO\u00e2\u0082\u0082 emissions (per capita)",
+    "data_range_min":0.0000015792,
+    "data_range_max":796.3908,
     "magnitude_range":5.0,
     "mad_first":0.0073353455,
     "mad_first_category":"Acceptable conformity",
@@ -1185,11 +1603,24 @@
       0.1235485369,
       0.100054188,
       0.0726505651
+    ],
+    "first_digits_counts":[
+      7463,
+      4086,
+      3153,
+      2678,
+      2125,
+      1886,
+      1569,
+      1543,
+      1333
     ]
   },
   {
     "dataset":"exploration-datasets\/per-capita-energy-use.csv",
     "column":"Year",
+    "data_range_min":1965.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.01,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -1221,11 +1652,24 @@
       0.0951650731,
       0.0952552769,
       0.0952552769
+    ],
+    "first_digits_counts":[
+      5518,
+      5568,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/per-capita-energy-use.csv",
     "column":"Primary energy consumption per capita (kWh\/person)",
+    "data_range_min":63.008183,
+    "data_range_max":652097.4399999999,
     "magnitude_range":2.9,
     "mad_first":0.0118222257,
     "mad_first_category":"Acceptable conformity",
@@ -1257,11 +1701,24 @@
       0.1225705904,
       0.1068023469,
       0.0743491016
+    ],
+    "first_digits_counts":[
+      2937,
+      1976,
+      1528,
+      1343,
+      916,
+      752,
+      481,
+      512,
+      463
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Year",
+    "data_range_min":1800.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.05,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -1293,11 +1750,24 @@
       0.0779220779,
       0.0779220779,
       0.0779220779
+    ],
+    "first_digits_counts":[
+      52,
+      25,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Other renewables (TWh, substituted energy)",
+    "data_range_min":56.20385,
+    "data_range_max":2476.3567,
     "magnitude_range":1.61,
     "mad_first":0.0217021968,
     "mad_first_category":"Non-conformity",
@@ -1329,11 +1799,24 @@
       0.1,
       0.15,
       0.0666666667
+    ],
+    "first_digits_counts":[
+      20,
+      12,
+      3,
+      5,
+      5,
+      6,
+      3,
+      3,
+      3
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Biofuels (TWh, substituted energy)",
+    "data_range_min":9.029861,
+    "data_range_max":1366.8783,
     "magnitude_range":2.17,
     "mad_first":0.0708281462,
     "mad_first_category":"Non-conformity",
@@ -1365,11 +1848,24 @@
       0.1,
       0.0166666667,
       0.0333333333
+    ],
+    "first_digits_counts":[
+      29,
+      6,
+      3,
+      1,
+      2,
+      3,
+      2,
+      6,
+      8
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Solar (TWh, substituted energy)",
+    "data_range_min":0.008333333,
+    "data_range_max":5150.5693,
     "magnitude_range":5.59,
     "mad_first":0.0307539754,
     "mad_first_category":"Non-conformity",
@@ -1401,11 +1897,24 @@
       0.0952380952,
       0.0952380952,
       0.0476190476
+    ],
+    "first_digits_counts":[
+      14,
+      10,
+      5,
+      3,
+      3,
+      2,
+      1,
+      4,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Wind (TWh, substituted energy)",
+    "data_range_min":0.008333333,
+    "data_range_max":6124.4653,
     "magnitude_range":5.69,
     "mad_first":0.0228418902,
     "mad_first_category":"Non-conformity",
@@ -1437,11 +1946,24 @@
       0.0638297872,
       0.0638297872,
       0.0638297872
+    ],
+    "first_digits_counts":[
+      15,
+      9,
+      6,
+      3,
+      6,
+      1,
+      2,
+      2,
+      3
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Hydropower (TWh, substituted energy)",
+    "data_range_min":38.88889,
+    "data_range_max":10860.753,
     "magnitude_range":2.39,
     "mad_first":0.0586277105,
     "mad_first_category":"Non-conformity",
@@ -1473,11 +1995,24 @@
       0.0735294118,
       0.1029411765,
       0.1470588235
+    ],
+    "first_digits_counts":[
+      11,
+      4,
+      8,
+      8,
+      10,
+      6,
+      9,
+      5,
+      7
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Nuclear (TWh, substituted energy)",
+    "data_range_min":70.94367,
+    "data_range_max":7494.9478,
     "magnitude_range":1.94,
     "mad_first":0.102788152,
     "mad_first_category":"Non-conformity",
@@ -1509,11 +2044,24 @@
       0.1333333333,
       0.0666666667,
       0.0333333333
+    ],
+    "first_digits_counts":[
+      9,
+      4,
+      2,
+      4,
+      6,
+      20,
+      14,
+      0,
+      1
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Gas (TWh, substituted energy)",
+    "data_range_min":33.0,
+    "data_range_max":41278.27,
     "magnitude_range":2.88,
     "mad_first":0.0426794791,
     "mad_first_category":"Non-conformity",
@@ -1545,11 +2093,24 @@
       0.0882352941,
       0.1323529412,
       0.0882352941
+    ],
+    "first_digits_counts":[
+      22,
+      19,
+      13,
+      5,
+      0,
+      4,
+      1,
+      3,
+      1
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Oil (TWh, substituted energy)",
+    "data_range_min":6.0,
+    "data_range_max":55292.082,
     "magnitude_range":3.35,
     "mad_first":0.1108822232,
     "mad_first_category":"Non-conformity",
@@ -1581,11 +2142,24 @@
       0.1285714286,
       0.0285714286,
       0.0714285714
+    ],
+    "first_digits_counts":[
+      5,
+      6,
+      26,
+      19,
+      11,
+      1,
+      0,
+      2,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Coal (TWh, substituted energy)",
+    "data_range_min":97.0,
+    "data_range_max":45850.543,
     "magnitude_range":2.58,
     "mad_first":0.0663171776,
     "mad_first_category":"Non-conformity",
@@ -1617,11 +2191,24 @@
       0.1168831169,
       0.1428571429,
       0.025974026
+    ],
+    "first_digits_counts":[
+      22,
+      26,
+      6,
+      18,
+      2,
+      0,
+      0,
+      1,
+      2
     ]
   },
   {
     "dataset":"exploration-datasets\/global-energy-substitution.csv",
     "column":"Traditional biomass (TWh, substituted energy)",
+    "data_range_min":5556.0,
+    "data_range_max":12500.0,
     "magnitude_range":0.34,
     "mad_first":0.1100792518,
     "mad_first_category":"Non-conformity",
@@ -1653,11 +2240,24 @@
       0.0649350649,
       0.038961039,
       0.1038961039
+    ],
+    "first_digits_counts":[
+      45,
+      0,
+      0,
+      0,
+      2,
+      10,
+      4,
+      1,
+      15
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Year",
+    "data_range_min":1985.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.01,
     "mad_first":0.152409579,
     "mad_first_category":"Non-conformity",
@@ -1689,11 +2289,24 @@
       0.088188521,
       0.088188521,
       0.088188521
+    ],
+    "first_digits_counts":[
+      955,
+      5962,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Other renewables excluding bioenergy - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+    "data_range_min":0.01,
+    "data_range_max":88.92,
     "magnitude_range":3.73,
     "mad_first":0.0118783645,
     "mad_first_category":"Acceptable conformity",
@@ -1725,11 +2338,24 @@
       0.0874635569,
       0.1039844509,
       0.1311953353
+    ],
+    "first_digits_counts":[
+      324,
+      185,
+      98,
+      99,
+      106,
+      70,
+      71,
+      37,
+      39
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Electricity from bioenergy - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+    "data_range_min":0.01,
+    "data_range_max":712.16,
     "magnitude_range":4.53,
     "mad_first":0.010229145,
     "mad_first_category":"Acceptable conformity",
@@ -1761,11 +2387,24 @@
       0.0962894818,
       0.0858632321,
       0.0849432689
+    ],
+    "first_digits_counts":[
+      1026,
+      524,
+      368,
+      360,
+      320,
+      204,
+      186,
+      156,
+      117
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Electricity from solar - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+    "data_range_min":0.000002,
+    "data_range_max":2130.64,
     "magnitude_range":5.81,
     "mad_first":0.0143253756,
     "mad_first_category":"Non-conformity",
@@ -1797,11 +2436,24 @@
       0.0766731644,
       0.07179987,
       0.0802469136
+    ],
+    "first_digits_counts":[
+      1101,
+      566,
+      350,
+      255,
+      231,
+      175,
+      149,
+      133,
+      118
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Electricity from wind - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+    "data_range_min":0.0002,
+    "data_range_max":2497.25,
     "magnitude_range":6.01,
     "mad_first":0.0129910992,
     "mad_first_category":"Non-conformity",
@@ -1833,11 +2485,24 @@
       0.0918138042,
       0.0956661316,
       0.0869983949
+    ],
+    "first_digits_counts":[
+      1090,
+      489,
+      346,
+      276,
+      273,
+      212,
+      174,
+      130,
+      125
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Electricity from hydro - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+    "data_range_min":0.001,
+    "data_range_max":4418.96,
     "magnitude_range":5.39,
     "mad_first":0.0064595454,
     "mad_first_category":"Acceptable conformity",
@@ -1869,11 +2534,24 @@
       0.0993731563,
       0.0978982301,
       0.1102507375
+    ],
+    "first_digits_counts":[
+      1607,
+      898,
+      775,
+      483,
+      424,
+      404,
+      334,
+      276,
+      223
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Electricity from nuclear - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+    "data_range_min":0.055,
+    "data_range_max":2764.67,
     "magnitude_range":3.51,
     "mad_first":0.0163495316,
     "mad_first_category":"Non-conformity",
@@ -1905,11 +2583,24 @@
       0.1090024331,
       0.1104622871,
       0.1051094891
+    ],
+    "first_digits_counts":[
+      655,
+      375,
+      168,
+      171,
+      153,
+      113,
+      142,
+      148,
+      130
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Electricity from oil - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+    "data_range_min":0.0009970821,
+    "data_range_max":1366.0936,
     "magnitude_range":4.87,
     "mad_first":0.0069640108,
     "mad_first_category":"Acceptable conformity",
@@ -1941,11 +2632,24 @@
       0.0991412959,
       0.0950819672,
       0.0971116315
+    ],
+    "first_digits_counts":[
+      2060,
+      1084,
+      829,
+      595,
+      530,
+      446,
+      317,
+      281,
+      263
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+    "data_range_min":0.004,
+    "data_range_max":6795.95,
     "magnitude_range":5.54,
     "mad_first":0.0050544832,
     "mad_first_category":"Close conformity",
@@ -1977,11 +2681,24 @@
       0.1006457359,
       0.1120017813,
       0.0979737252
+    ],
+    "first_digits_counts":[
+      1375,
+      805,
+      560,
+      423,
+      395,
+      280,
+      225,
+      197,
+      231
     ]
   },
   {
     "dataset":"exploration-datasets\/electricity-prod-source-stacked.csv",
     "column":"Electricity from coal - TWh (adapted for visualization of chart electricity-prod-source-stacked)",
+    "data_range_min":0.01,
+    "data_range_max":10587.47,
     "magnitude_range":5.61,
     "mad_first":0.0128845705,
     "mad_first_category":"Non-conformity",
@@ -2013,11 +2730,24 @@
       0.1066452304,
       0.1042336549,
       0.0964630225
+    ],
+    "first_digits_counts":[
+      1151,
+      846,
+      451,
+      315,
+      264,
+      224,
+      178,
+      174,
+      129
     ]
   },
   {
     "dataset":"exploration-datasets\/life-expectancy.csv",
     "column":"Year",
+    "data_range_min":1543.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.04,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -2049,11 +2779,24 @@
       0.0949686993,
       0.0958033851,
       0.0940412706
+    ],
+    "first_digits_counts":[
+      15301,
+      6264,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/life-expectancy.csv",
     "column":"Period life expectancy at birth",
+    "data_range_min":10.9891,
+    "data_range_max":86.3724,
     "magnitude_range":0.43,
     "mad_first":0.1310692546,
     "mad_first_category":"Non-conformity",
@@ -2085,11 +2828,24 @@
       0.1121725017,
       0.1119406446,
       0.1094365871
+    ],
+    "first_digits_counts":[
+      18,
+      177,
+      1233,
+      3039,
+      3894,
+      5964,
+      6314,
+      926,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/child-mortality.csv",
     "column":"Year",
+    "data_range_min":1751.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.04,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -2121,11 +2877,24 @@
       0.0972378972,
       0.0986634987,
       0.0999703
+    ],
+    "first_digits_counts":[
+      11736,
+      5099,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/child-mortality.csv",
     "column":"Child mortality rate",
+    "data_range_min":0.14,
+    "data_range_max":76.74,
     "magnitude_range":2.15,
     "mad_first":0.015479176,
     "mad_first_category":"Non-conformity",
@@ -2157,11 +2926,24 @@
       0.1083457083,
       0.1082863083,
       0.1135135135
+    ],
+    "first_digits_counts":[
+      5360,
+      3845,
+      2058,
+      1422,
+      1014,
+      928,
+      789,
+      685,
+      734
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Year",
+    "data_range_min":1980.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.01,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -2193,11 +2975,24 @@
       0.0906226231,
       0.0907312833,
       0.0909486037
+    ],
+    "first_digits_counts":[
+      3778,
+      5425,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Share of one-year-olds who have had three doses of the hepatitis B vaccine",
+    "data_range_min":0.14741677,
+    "data_range_max":99.0,
     "magnitude_range":1.39,
     "mad_first":0.1470137305,
     "mad_first_category":"Non-conformity",
@@ -2229,11 +3024,24 @@
       0.1101217518,
       0.1190259858,
       0.1530074505
+    ],
+    "first_digits_counts":[
+      117,
+      90,
+      92,
+      159,
+      199,
+      353,
+      648,
+      1041,
+      2804
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Share of one-year-olds vaccinated against Haemophilus influenzae type b",
+    "data_range_min":0.13026486,
+    "data_range_max":99.0,
     "magnitude_range":1.58,
     "mad_first":0.147729079,
     "mad_first_category":"Non-conformity",
@@ -2265,11 +3073,24 @@
       0.1064523137,
       0.1123180534,
       0.1588094721
+    ],
+    "first_digits_counts":[
+      104,
+      87,
+      96,
+      130,
+      170,
+      243,
+      483,
+      834,
+      2456
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Share of one-year-olds who have had the one dose of the inactivated polio vaccine",
+    "data_range_min":1.0,
+    "data_range_max":99.0,
     "magnitude_range":1.09,
     "mad_first":0.149750784,
     "mad_first_category":"Non-conformity",
@@ -2301,11 +3122,24 @@
       0.1097560976,
       0.1204878049,
       0.2351219512
+    ],
+    "first_digits_counts":[
+      19,
+      22,
+      41,
+      59,
+      84,
+      126,
+      196,
+      329,
+      1174
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Share of one-year-olds who have had one dose of the measles vaccine",
+    "data_range_min":1.0,
+    "data_range_max":99.0,
     "magnitude_range":1.04,
     "mad_first":0.1341853889,
     "mad_first_category":"Non-conformity",
@@ -2337,11 +3171,24 @@
       0.1034177635,
       0.1089481252,
       0.1469970136
+    ],
+    "first_digits_counts":[
+      145,
+      191,
+      242,
+      388,
+      610,
+      798,
+      1062,
+      1772,
+      3833
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Share of one-year-olds who have had the third dose of the pneumococcal conjugate vaccine",
+    "data_range_min":0.070480496,
+    "data_range_max":99.0,
     "magnitude_range":1.52,
     "mad_first":0.1300639234,
     "mad_first_category":"Non-conformity",
@@ -2373,11 +3220,24 @@
       0.098464318,
       0.0948509485,
       0.1156278229
+    ],
+    "first_digits_counts":[
+      66,
+      70,
+      83,
+      91,
+      117,
+      201,
+      265,
+      460,
+      861
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Share of one-year-olds who have had three doses of the polio vaccine",
+    "data_range_min":1.0,
+    "data_range_max":99.0,
     "magnitude_range":1.15,
     "mad_first":0.1390865933,
     "mad_first_category":"Non-conformity",
@@ -2409,11 +3269,24 @@
       0.1065940054,
       0.1185831063,
       0.1565122616
+    ],
+    "first_digits_counts":[
+      175,
+      177,
+      209,
+      370,
+      466,
+      679,
+      1078,
+      1730,
+      4291
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Share of one-year-olds vaccinated against rubella",
+    "data_range_min":0.0024077536,
+    "data_range_max":99.0,
     "magnitude_range":2.0,
     "mad_first":0.1540576877,
     "mad_first_category":"Non-conformity",
@@ -2445,11 +3318,24 @@
       0.1095446752,
       0.1101162126,
       0.1722232806
+    ],
+    "first_digits_counts":[
+      108,
+      85,
+      131,
+      113,
+      162,
+      198,
+      374,
+      961,
+      3117
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Share of one-year-olds vaccinated against rotavirus",
+    "data_range_min":0.011590213,
+    "data_range_max":99.0,
     "magnitude_range":2.0,
     "mad_first":0.1065672966,
     "mad_first_category":"Non-conformity",
@@ -2481,11 +3367,24 @@
       0.1139549055,
       0.0877513711,
       0.1115173675
+    ],
+    "first_digits_counts":[
+      74,
+      97,
+      75,
+      116,
+      128,
+      176,
+      214,
+      374,
+      387
     ]
   },
   {
     "dataset":"exploration-datasets\/global-vaccination-coverage.csv",
     "column":"Share of one-year-olds who have had three doses of the diphtheria, tetanus and pertussis vaccine",
+    "data_range_min":1.0,
+    "data_range_max":99.0,
     "magnitude_range":1.09,
     "mad_first":0.1368543849,
     "mad_first_category":"Non-conformity",
@@ -2517,11 +3416,24 @@
       0.1059516024,
       0.1135818618,
       0.1563113146
+    ],
+    "first_digits_counts":[
+      177,
+      188,
+      239,
+      376,
+      509,
+      649,
+      1082,
+      1756,
+      4198
     ]
   },
   {
     "dataset":"exploration-datasets\/deaths-in-armed-conflicts-by-region.csv",
     "column":"Year",
+    "data_range_min":1989.0,
+    "data_range_max":2025.0,
     "magnitude_range":0.01,
     "mad_first":0.1170247653,
     "mad_first_category":"Non-conformity",
@@ -2553,11 +3465,24 @@
       0.0810810811,
       0.0810810811,
       0.1081081081
+    ],
+    "first_digits_counts":[
+      2332,
+      5512,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/deaths-in-armed-conflicts-by-region.csv",
     "column":"Deaths in ongoing conflicts (best estimate) - Conflict type: all",
+    "data_range_min":1.0,
+    "data_range_max":823499.0,
     "magnitude_range":4.98,
     "mad_first":0.0104369858,
     "mad_first_category":"Acceptable conformity",
@@ -2589,11 +3514,24 @@
       0.0987525988,
       0.0852390852,
       0.1013513514
+    ],
+    "first_digits_counts":[
+      547,
+      379,
+      275,
+      202,
+      149,
+      118,
+      107,
+      80,
+      67
     ]
   },
   {
     "dataset":"exploration-datasets\/deaths-in-armed-conflicts-by-country.csv",
     "column":"Year",
+    "data_range_min":1989.0,
+    "data_range_max":2025.0,
     "magnitude_range":0.01,
     "mad_first":0.1170247653,
     "mad_first_category":"Non-conformity",
@@ -2625,11 +3563,24 @@
       0.0810810811,
       0.0810810811,
       0.1081081081
+    ],
+    "first_digits_counts":[
+      2332,
+      5512,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/deaths-in-armed-conflicts-by-country.csv",
     "column":"Deaths in ongoing conflicts (best estimate) - Conflict type: all",
+    "data_range_min":1.0,
+    "data_range_max":823499.0,
     "magnitude_range":4.98,
     "mad_first":0.0104369858,
     "mad_first_category":"Acceptable conformity",
@@ -2661,11 +3612,24 @@
       0.0987525988,
       0.0852390852,
       0.1013513514
+    ],
+    "first_digits_counts":[
+      547,
+      379,
+      275,
+      202,
+      149,
+      118,
+      107,
+      80,
+      67
     ]
   },
   {
     "dataset":"exploration-datasets\/military-spending-as-a-share-of-gdp-sipri.csv",
     "column":"Year",
+    "data_range_min":1949.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.02,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -2697,11 +3661,24 @@
       0.0932345207,
       0.0946688979,
       0.0951470237
+    ],
+    "first_digits_counts":[
+      4479,
+      3887,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/military-spending-as-a-share-of-gdp-sipri.csv",
     "column":"Military expenditure (% of GDP)",
+    "data_range_min":0.00001715,
+    "data_range_max":117.34983,
     "magnitude_range":1.97,
     "mad_first":0.0216701131,
     "mad_first_category":"Non-conformity",
@@ -2733,11 +3710,24 @@
       0.1235900546,
       0.1034566404,
       0.0737416616
+    ],
+    "first_digits_counts":[
+      3021,
+      1709,
+      1038,
+      645,
+      472,
+      407,
+      303,
+      315,
+      335
     ]
   },
   {
     "dataset":"exploration-datasets\/homicide-rate-unodc.csv",
     "column":"Year",
+    "data_range_min":1990.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.01,
     "mad_first":0.1375258651,
     "mad_first_category":"Non-conformity",
@@ -2769,11 +3759,24 @@
       0.0872562537,
       0.089816821,
       0.0917864881
+    ],
+    "first_digits_counts":[
+      1041,
+      4036,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/homicide-rate-unodc.csv",
     "column":"Homicide rate per 100,000 population - sex: Total - age: Total",
+    "data_range_min":0.06658838,
+    "data_range_max":138.43839,
     "magnitude_range":2.31,
     "mad_first":0.0108077498,
     "mad_first_category":"Acceptable conformity",
@@ -2805,11 +3808,24 @@
       0.1200168741,
       0.0995570555,
       0.0746677916
+    ],
+    "first_digits_counts":[
+      1596,
+      849,
+      478,
+      353,
+      366,
+      317,
+      293,
+      245,
+      244
     ]
   },
   {
     "dataset":"exploration-datasets\/literate-and-illiterate-world-population.csv",
     "column":"Year",
+    "data_range_min":1475.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.12,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -2841,11 +3857,24 @@
       0.0767362797,
       0.0830500243,
       0.0864497329
+    ],
+    "first_digits_counts":[
+      895,
+      1164,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/literate-and-illiterate-world-population.csv",
     "column":"Illiteracy rate",
+    "data_range_min":0.17500305,
+    "data_range_max":100.0,
     "magnitude_range":1.99,
     "mad_first":0.0252990925,
     "mad_first_category":"Non-conformity",
@@ -2877,11 +3906,24 @@
       0.1248756219,
       0.092039801,
       0.0875621891
+    ],
+    "first_digits_counts":[
+      412,
+      319,
+      317,
+      280,
+      190,
+      164,
+      130,
+      102,
+      96
     ]
   },
   {
     "dataset":"exploration-datasets\/literate-and-illiterate-world-population.csv",
     "column":"Literacy rate",
+    "data_range_min":1.0,
+    "data_range_max":100.0,
     "magnitude_range":1.45,
     "mad_first":0.1148833046,
     "mad_first_category":"Non-conformity",
@@ -2913,11 +3955,24 @@
       0.100243309,
       0.104622871,
       0.0890510949
+    ],
+    "first_digits_counts":[
+      95,
+      55,
+      108,
+      116,
+      205,
+      246,
+      262,
+      290,
+      678
     ]
   },
   {
     "dataset":"exploration-datasets\/cross-country-literacy-rates.csv",
     "column":"Year",
+    "data_range_min":1475.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.12,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -2949,11 +4004,24 @@
       0.0767362797,
       0.0830500243,
       0.0864497329
+    ],
+    "first_digits_counts":[
+      895,
+      1164,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/cross-country-literacy-rates.csv",
     "column":"Literacy rate",
+    "data_range_min":1.0,
+    "data_range_max":100.0,
     "magnitude_range":1.45,
     "mad_first":0.1148833046,
     "mad_first_category":"Non-conformity",
@@ -2985,11 +4053,24 @@
       0.100243309,
       0.104622871,
       0.0890510949
+    ],
+    "first_digits_counts":[
+      95,
+      55,
+      108,
+      116,
+      205,
+      246,
+      262,
+      290,
+      678
     ]
   },
   {
     "dataset":"exploration-datasets\/mean-years-of-schooling-long-run.csv",
     "column":"Year",
+    "data_range_min":1870.0,
+    "data_range_max":2040.0,
     "magnitude_range":0.04,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -3021,11 +4102,24 @@
       0.0,
       0.0,
       0.0
+    ],
+    "first_digits_counts":[
+      3042,
+      1269,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/mean-years-of-schooling-long-run.csv",
     "column":"Combined - average years of education for 15-64 years male and female youth and adults",
+    "data_range_min":0.01,
+    "data_range_max":15.48,
     "magnitude_range":3.12,
     "mad_first":0.0215649585,
     "mad_first_category":"Non-conformity",
@@ -3057,11 +4151,24 @@
       0.0998374739,
       0.0965869515,
       0.0942651498
+    ],
+    "first_digits_counts":[
+      1451,
+      511,
+      436,
+      365,
+      325,
+      295,
+      329,
+      313,
+      282
     ]
   },
   {
     "dataset":"exploration-datasets\/primary-enrollment-selected-countries.csv",
     "column":"Year",
+    "data_range_min":1820.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.05,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -3093,11 +4200,24 @@
       0.0553720828,
       0.0552619991,
       0.0618670189
+    ],
+    "first_digits_counts":[
+      5273,
+      3811,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/primary-enrollment-selected-countries.csv",
     "column":"Combined total net enrolment rate, primary, both sexes",
+    "data_range_min":0.01,
+    "data_range_max":100.0,
     "magnitude_range":3.52,
     "mad_first":0.1068723788,
     "mad_first_category":"Non-conformity",
@@ -3129,11 +4249,24 @@
       0.10430839,
       0.1015873016,
       0.106122449
+    ],
+    "first_digits_counts":[
+      884,
+      518,
+      424,
+      428,
+      464,
+      494,
+      598,
+      1036,
+      3974
     ]
   },
   {
     "dataset":"exploration-datasets\/political-regime.csv",
     "column":"Year",
+    "data_range_min":1789.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.05,
     "mad_first":0.1236556712,
     "mad_first_category":"Non-conformity",
@@ -3165,11 +4298,24 @@
       0.0973553085,
       0.0975150121,
       0.1000383289
+    ],
+    "first_digits_counts":[
+      26846,
+      4462,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/political-regime.csv",
     "column":"Political regime",
+    "data_range_min":1.0,
+    "data_range_max":3.0,
     "magnitude_range":0.48,
     "mad_first":0.088431113,
     "mad_first_category":"Non-conformity",
@@ -3201,11 +4347,24 @@
       0.0,
       0.0,
       0.0
+    ],
+    "first_digits_counts":[
+      6080,
+      2737,
+      2563,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/people-living-in-democracies-autocracies.csv",
     "column":"Year",
+    "data_range_min":1789.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.05,
     "mad_first":0.131786178,
     "mad_first_category":"Non-conformity",
@@ -3237,11 +4396,24 @@
       0.0974576271,
       0.0974576271,
       0.1016949153
+    ],
+    "first_digits_counts":[
+      1477,
+      175,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/people-living-in-democracies-autocracies.csv",
     "column":"People living in countries without regime data",
+    "data_range_min":489.0,
+    "data_range_max":207364573.0,
     "magnitude_range":5.49,
     "mad_first":0.0132289177,
     "mad_first_category":"Non-conformity",
@@ -3273,11 +4445,24 @@
       0.0903328051,
       0.0958795563,
       0.1014263074
+    ],
+    "first_digits_counts":[
+      440,
+      192,
+      145,
+      135,
+      96,
+      86,
+      74,
+      59,
+      35
     ]
   },
   {
     "dataset":"exploration-datasets\/people-living-in-democracies-autocracies.csv",
     "column":"People living in closed autocracies",
+    "data_range_min":97219.0,
+    "data_range_max":2279481171.0,
     "magnitude_range":3.95,
     "mad_first":0.0420180373,
     "mad_first_category":"Non-conformity",
@@ -3309,11 +4494,24 @@
       0.1141732283,
       0.1102362205,
       0.095144357
+    ],
+    "first_digits_counts":[
+      688,
+      220,
+      152,
+      59,
+      45,
+      65,
+      115,
+      93,
+      87
     ]
   },
   {
     "dataset":"exploration-datasets\/people-living-in-democracies-autocracies.csv",
     "column":"People living in electoral autocracies",
+    "data_range_min":113016.0,
+    "data_range_max":3781238251.0,
     "magnitude_range":3.83,
     "mad_first":0.0121490526,
     "mad_first_category":"Non-conformity",
@@ -3345,11 +4543,24 @@
       0.1039068994,
       0.0955943475,
       0.1030756442
+    ],
+    "first_digits_counts":[
+      326,
+      211,
+      159,
+      151,
+      70,
+      77,
+      75,
+      69,
+      65
     ]
   },
   {
     "dataset":"exploration-datasets\/people-living-in-democracies-autocracies.csv",
     "column":"People living in electoral democracies",
+    "data_range_min":126627.0,
+    "data_range_max":2885093432.0,
     "magnitude_range":3.61,
     "mad_first":0.0178312042,
     "mad_first_category":"Non-conformity",
@@ -3381,11 +4592,24 @@
       0.0861111111,
       0.1055555556,
       0.1069444444
+    ],
+    "first_digits_counts":[
+      232,
+      108,
+      99,
+      100,
+      49,
+      30,
+      45,
+      30,
+      27
     ]
   },
   {
     "dataset":"exploration-datasets\/people-living-in-democracies-autocracies.csv",
     "column":"People living in liberal democracies",
+    "data_range_min":122951.0,
+    "data_range_max":1183880482.0,
     "magnitude_range":3.02,
     "mad_first":0.0275924876,
     "mad_first_category":"Non-conformity",
@@ -3417,11 +4641,24 @@
       0.0837912088,
       0.1126373626,
       0.103021978
+    ],
+    "first_digits_counts":[
+      195,
+      190,
+      110,
+      61,
+      17,
+      41,
+      46,
+      43,
+      25
     ]
   },
   {
     "dataset":"exploration-datasets\/number-of-countries-with-key-economic-and-social-rights-for-women.csv",
     "column":"Year",
+    "data_range_min":1970.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.01,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -3453,11 +4690,24 @@
       0.0925925926,
       0.0925925926,
       0.0925925926
+    ],
+    "first_digits_counts":[
+      210,
+      168,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/number-of-countries-with-key-economic-and-social-rights-for-women.csv",
     "column":"Employment discrimination based on gender prohibited - Yes (Count)",
+    "data_range_min":1.0,
+    "data_range_max":161.0,
     "magnitude_range":2.19,
     "mad_first":0.0208883619,
     "mad_first_category":"Non-conformity",
@@ -3489,11 +4739,24 @@
       0.0718232044,
       0.0745856354,
       0.0773480663
+    ],
+    "first_digits_counts":[
+      108,
+      49,
+      56,
+      52,
+      35,
+      24,
+      11,
+      15,
+      12
     ]
   },
   {
     "dataset":"exploration-datasets\/number-of-countries-with-key-economic-and-social-rights-for-women.csv",
     "column":"Law mandates equal pay for work of equal value for women and men - Yes (Count)",
+    "data_range_min":1.0,
+    "data_range_max":97.0,
     "magnitude_range":1.96,
     "mad_first":0.02130481,
     "mad_first_category":"Non-conformity",
@@ -3525,11 +4788,24 @@
       0.0614886731,
       0.0453074434,
       0.0614886731
+    ],
+    "first_digits_counts":[
+      109,
+      62,
+      37,
+      36,
+      17,
+      16,
+      16,
+      9,
+      7
     ]
   },
   {
     "dataset":"exploration-datasets\/number-of-countries-with-key-economic-and-social-rights-for-women.csv",
     "column":"Paid leave of at least 14 weeks available to mothers (1=yes; 0=no) - Yes (Count)",
+    "data_range_min":1.0,
+    "data_range_max":122.0,
     "magnitude_range":2.06,
     "mad_first":0.0322817716,
     "mad_first_category":"Non-conformity",
@@ -3561,11 +4837,24 @@
       0.0707964602,
       0.1297935103,
       0.0619469027
+    ],
+    "first_digits_counts":[
+      77,
+      71,
+      59,
+      45,
+      16,
+      10,
+      19,
+      26,
+      16
     ]
   },
   {
     "dataset":"exploration-datasets\/number-of-countries-with-key-economic-and-social-rights-for-women.csv",
     "column":"There is legislation specifically addressing domestic violence - Yes (Count)",
+    "data_range_min":1.0,
+    "data_range_max":164.0,
     "magnitude_range":2.2,
     "mad_first":0.0280235197,
     "mad_first_category":"Non-conformity",
@@ -3597,11 +4886,24 @@
       0.1,
       0.0416666667,
       0.0625
+    ],
+    "first_digits_counts":[
+      91,
+      52,
+      31,
+      24,
+      8,
+      7,
+      10,
+      6,
+      11
     ]
   },
   {
     "dataset":"exploration-datasets\/number-of-countries-with-key-economic-and-social-rights-for-women.csv",
     "column":"Women and men have the same rights to own property - Yes (Count)",
+    "data_range_min":3.0,
+    "data_range_max":170.0,
     "magnitude_range":1.53,
     "mad_first":0.0637492675,
     "mad_first_category":"Non-conformity",
@@ -3633,11 +4935,24 @@
       0.0317460317,
       0.0740740741,
       0.0846560847
+    ],
+    "first_digits_counts":[
+      96,
+      56,
+      30,
+      113,
+      62,
+      2,
+      2,
+      8,
+      9
     ]
   },
   {
     "dataset":"exploration-datasets\/number-of-countries-with-key-economic-and-social-rights-for-women.csv",
     "column":"Women can register a business on the same terms as men - Yes (Count)",
+    "data_range_min":5.0,
+    "data_range_max":184.0,
     "magnitude_range":1.42,
     "mad_first":0.075590051,
     "mad_first_category":"Non-conformity",
@@ -3669,11 +4984,24 @@
       0.0661375661,
       0.0423280423,
       0.0423280423
+    ],
+    "first_digits_counts":[
+      139,
+      54,
+      15,
+      140,
+      8,
+      2,
+      15,
+      2,
+      3
     ]
   },
   {
     "dataset":"exploration-datasets\/countries-protecting-core-lgbt-rights.csv",
     "column":"Year",
+    "data_range_min":1760.0,
+    "data_range_max":2025.0,
     "magnitude_range":0.06,
     "mad_first":0.1336056985,
     "mad_first_category":"Non-conformity",
@@ -3705,11 +5033,24 @@
       0.0977443609,
       0.0977443609,
       0.0977443609
+    ],
+    "first_digits_counts":[
+      1680,
+      182,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/countries-protecting-core-lgbt-rights.csv",
     "column":"Number of countries where homosexuality is legal",
+    "data_range_min":1.0,
+    "data_range_max":142.0,
     "magnitude_range":2.09,
     "mad_first":0.0451900174,
     "mad_first_category":"Non-conformity",
@@ -3741,11 +5082,24 @@
       0.1110340042,
       0.1075641915,
       0.067314365
+    ],
+    "first_digits_counts":[
+      658,
+      135,
+      110,
+      97,
+      110,
+      140,
+      56,
+      99,
+      36
     ]
   },
   {
     "dataset":"exploration-datasets\/countries-protecting-core-lgbt-rights.csv",
     "column":"Adoption - Legal (Count)",
+    "data_range_min":1.0,
+    "data_range_max":45.0,
     "magnitude_range":1.57,
     "mad_first":0.0391041627,
     "mad_first_category":"Non-conformity",
@@ -3777,11 +5131,24 @@
       0.0806451613,
       0.064516129,
       0.0080645161
+    ],
+    "first_digits_counts":[
+      51,
+      29,
+      11,
+      13,
+      7,
+      4,
+      3,
+      5,
+      1
     ]
   },
   {
     "dataset":"exploration-datasets\/countries-protecting-core-lgbt-rights.csv",
     "column":"Marriage - Legal (Count)",
+    "data_range_min":1.0,
+    "data_range_max":39.0,
     "magnitude_range":1.56,
     "mad_first":0.0444542444,
     "mad_first_category":"Non-conformity",
@@ -3813,11 +5180,24 @@
       0.0393700787,
       0.0157480315,
       0.0472440945
+    ],
+    "first_digits_counts":[
+      63,
+      23,
+      15,
+      6,
+      7,
+      8,
+      3,
+      1,
+      1
     ]
   },
   {
     "dataset":"exploration-datasets\/countries-protecting-core-lgbt-rights.csv",
     "column":"Changing_gender - Legal, no restrictions (Count)",
+    "data_range_min":1.0,
+    "data_range_max":31.0,
     "magnitude_range":1.49,
     "mad_first":0.0582600631,
     "mad_first_category":"Non-conformity",
@@ -3849,11 +5229,24 @@
       0.0777777778,
       0.0,
       0.0222222222
+    ],
+    "first_digits_counts":[
+      45,
+      16,
+      15,
+      1,
+      3,
+      2,
+      7,
+      0,
+      1
     ]
   },
   {
     "dataset":"exploration-datasets\/countries-protecting-core-lgbt-rights.csv",
     "column":"Non_binary_gender_recognition - Recognized (Count)",
+    "data_range_min":1.0,
+    "data_range_max":17.0,
     "magnitude_range":1.21,
     "mad_first":0.0679317074,
     "mad_first_category":"Non-conformity",
@@ -3885,11 +5278,24 @@
       0.0285714286,
       0.0,
       0.0142857143
+    ],
+    "first_digits_counts":[
+      31,
+      5,
+      11,
+      16,
+      2,
+      3,
+      1,
+      0,
+      1
     ]
   },
   {
     "dataset":"exploration-datasets\/population-using-at-least-basic-drinking-water.csv",
     "column":"Year",
+    "data_range_min":2000.0,
+    "data_range_max":2022.0,
     "magnitude_range":0.0,
     "mad_first":0.1830908313,
     "mad_first_category":"Non-conformity",
@@ -3921,11 +5327,24 @@
       0.0884027037,
       0.0868018499,
       0.0871575952
+    ],
+    "first_digits_counts":[
+      0,
+      5622,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/population-using-at-least-basic-drinking-water.csv",
     "column":"Share of the population using at least basic drinking water services",
+    "data_range_min":18.682302,
+    "data_range_max":100.0,
     "magnitude_range":0.45,
     "mad_first":0.1209206651,
     "mad_first_category":"Non-conformity",
@@ -3957,11 +5376,24 @@
       0.0787975809,
       0.0796869441,
       0.0711490573
+    ],
+    "first_digits_counts":[
+      680,
+      23,
+      89,
+      223,
+      370,
+      346,
+      287,
+      733,
+      2871
     ]
   },
   {
     "dataset":"exploration-datasets\/share-of-the-population-with-access-to-electricity.csv",
     "column":"Year",
+    "data_range_min":1990.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.01,
     "mad_first":0.1359907799,
     "mad_first_category":"Non-conformity",
@@ -3993,11 +5425,24 @@
       0.0901331019,
       0.0911458333,
       0.0921585648
+    ],
+    "first_digits_counts":[
+      1465,
+      5447,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/share-of-the-population-with-access-to-electricity.csv",
     "column":"Access to electricity (% of population)",
+    "data_range_min":0.53389853,
+    "data_range_max":100.0,
     "magnitude_range":1.33,
     "mad_first":0.0829616339,
     "mad_first_category":"Non-conformity",
@@ -4029,11 +5474,24 @@
       0.0694444444,
       0.0661168981,
       0.0747974537
+    ],
+    "first_digits_counts":[
+      3105,
+      232,
+      278,
+      262,
+      251,
+      258,
+      300,
+      416,
+      1810
     ]
   },
   {
     "dataset":"exploration-datasets\/share-of-population-with-improved-sanitation-faciltities.csv",
     "column":"Year",
+    "data_range_min":2000.0,
+    "data_range_max":2022.0,
     "magnitude_range":0.0,
     "mad_first":0.1830908313,
     "mad_first_category":"Non-conformity",
@@ -4065,11 +5523,24 @@
       0.0882717141,
       0.0866796391,
       0.0866796391
+    ],
+    "first_digits_counts":[
+      0,
+      5653,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/share-of-population-with-improved-sanitation-faciltities.csv",
     "column":"Share of the population using at least basic sanitation services, improved sanitation facilities which are not shared",
+    "data_range_min":2.7938972,
+    "data_range_max":100.0,
     "magnitude_range":1.07,
     "mad_first":0.1045792488,
     "mad_first_category":"Non-conformity",
@@ -4101,11 +5572,24 @@
       0.0907482753,
       0.0886255086,
       0.0658057668
+    ],
+    "first_digits_counts":[
+      647,
+      288,
+      346,
+      285,
+      207,
+      344,
+      386,
+      821,
+      2329
     ]
   },
   {
     "dataset":"exploration-datasets\/time-spent-with-relationships-by-age-us.csv",
     "column":"Code",
+    "data_range_min":null,
+    "data_range_max":null,
     "magnitude_range":null,
     "mad_first":null,
     "mad_first_category":"Non-conformity",
@@ -4137,11 +5621,24 @@
       null,
       null,
       null
+    ],
+    "first_digits_counts":[
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/time-spent-with-relationships-by-age-us.csv",
     "column":"Year",
+    "data_range_min":15.0,
+    "data_range_max":85.0,
     "magnitude_range":0.75,
     "mad_first":0.071177761,
     "mad_first_category":"Non-conformity",
@@ -4173,11 +5670,24 @@
       0.1044776119,
       0.1044776119,
       0.1044776119
+    ],
+    "first_digits_counts":[
+      15,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      6,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/time-spent-with-relationships-by-age-us.csv",
     "column":"Time spent with other people throughout life - Alone",
+    "data_range_min":3.383387,
+    "data_range_max":9.048797,
     "magnitude_range":0.38,
     "mad_first":0.1343205869,
     "mad_first_category":"Non-conformity",
@@ -4209,11 +5719,24 @@
       0.1641791045,
       0.0348258706,
       0.0348258706
+    ],
+    "first_digits_counts":[
+      0,
+      0,
+      8,
+      44,
+      48,
+      32,
+      58,
+      10,
+      1
     ]
   },
   {
     "dataset":"exploration-datasets\/time-spent-with-relationships-by-age-us.csv",
     "column":"Time spent with other people throughout life - Friend",
+    "data_range_min":0.38602817,
+    "data_range_max":2.2632344,
     "magnitude_range":0.71,
     "mad_first":0.1011530911,
     "mad_first_category":"Non-conformity",
@@ -4245,11 +5768,24 @@
       0.1044776119,
       0.07960199,
       0.0547263682
+    ],
+    "first_digits_counts":[
+      35,
+      4,
+      2,
+      39,
+      67,
+      34,
+      12,
+      5,
+      3
     ]
   },
   {
     "dataset":"exploration-datasets\/time-spent-with-relationships-by-age-us.csv",
     "column":"Time spent with other people throughout life - Children",
+    "data_range_min":0.1970677,
+    "data_range_max":5.4435353,
     "magnitude_range":1.29,
     "mad_first":0.0227250021,
     "mad_first_category":"Non-conformity",
@@ -4281,11 +5817,24 @@
       0.1243781095,
       0.0696517413,
       0.0547263682
+    ],
+    "first_digits_counts":[
+      54,
+      29,
+      28,
+      24,
+      13,
+      9,
+      18,
+      10,
+      16
     ]
   },
   {
     "dataset":"exploration-datasets\/time-spent-with-relationships-by-age-us.csv",
     "column":"Time spent with other people throughout life - Family",
+    "data_range_min":0.47322696,
+    "data_range_max":4.5801535,
     "magnitude_range":0.83,
     "mad_first":0.0788918484,
     "mad_first_category":"Non-conformity",
@@ -4317,11 +5866,24 @@
       0.1293532338,
       0.0895522388,
       0.1243781095
+    ],
+    "first_digits_counts":[
+      83,
+      12,
+      7,
+      8,
+      0,
+      11,
+      16,
+      29,
+      35
     ]
   },
   {
     "dataset":"exploration-datasets\/time-spent-with-relationships-by-age-us.csv",
     "column":"Time spent with other people throughout life - Partner",
+    "data_range_min":0.0000774078,
+    "data_range_max":5.790513,
     "magnitude_range":3.53,
     "mad_first":0.1033377638,
     "mad_first_category":"Non-conformity",
@@ -4353,11 +5915,24 @@
       0.1717171717,
       0.0808080808,
       0.0757575758
+    ],
+    "first_digits_counts":[
+      15,
+      28,
+      113,
+      23,
+      11,
+      2,
+      1,
+      2,
+      3
     ]
   },
   {
     "dataset":"exploration-datasets\/time-spent-with-relationships-by-age-us.csv",
     "column":"Time spent with other people throughout life - Co-worker",
+    "data_range_min":0.036491696,
+    "data_range_max":4.1949472,
     "magnitude_range":1.87,
     "mad_first":0.0900972591,
     "mad_first_category":"Non-conformity",
@@ -4389,11 +5964,24 @@
       0.1194029851,
       0.1243781095,
       0.0945273632
+    ],
+    "first_digits_counts":[
+      29,
+      94,
+      48,
+      11,
+      5,
+      5,
+      4,
+      4,
+      1
     ]
   },
   {
     "dataset":"exploration-datasets\/share-of-individuals-using-the-internet.csv",
     "column":"Year",
+    "data_range_min":1960.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.01,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -4425,11 +6013,24 @@
       0.0900573346,
       0.0864214795,
       0.08893861
+    ],
+    "first_digits_counts":[
+      2238,
+      4913,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/share-of-individuals-using-the-internet.csv",
     "column":"Individuals using the Internet (% of population)",
+    "data_range_min":0.0000175,
+    "data_range_max":100.0,
     "magnitude_range":4.76,
     "mad_first":0.0339679971,
     "mad_first_category":"Non-conformity",
@@ -4461,11 +6062,24 @@
       0.1081569014,
       0.1130805843,
       0.1004431315
+    ],
+    "first_digits_counts":[
+      1171,
+      864,
+      702,
+      614,
+      545,
+      594,
+      613,
+      538,
+      452
     ]
   },
   {
     "dataset":"exploration-datasets\/research-spending-gdp.csv",
     "column":"Year",
+    "data_range_min":1996.0,
+    "data_range_max":2023.0,
     "magnitude_range":0.01,
     "mad_first":0.1589492233,
     "mad_first_category":"Non-conformity",
@@ -4497,11 +6111,24 @@
       0.1101727447,
       0.1078694818,
       0.1090211132
+    ],
+    "first_digits_counts":[
+      283,
+      2322,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/research-spending-gdp.csv",
     "column":"Research and development expenditure (% of GDP)",
+    "data_range_min":0.00544,
+    "data_range_max":6.01924,
     "magnitude_range":2.17,
     "mad_first":0.013623608,
     "mad_first_category":"Non-conformity",
@@ -4533,11 +6160,24 @@
       0.1097888676,
       0.1001919386,
       0.1105566219
+    ],
+    "first_digits_counts":[
+      790,
+      607,
+      317,
+      205,
+      166,
+      180,
+      145,
+      109,
+      86
     ]
   },
   {
     "dataset":"exploration-datasets\/yearly-number-of-objects-launched-into-outer-space.csv",
     "column":"Year",
+    "data_range_min":1957.0,
+    "data_range_max":2024.0,
     "magnitude_range":0.01,
     "mad_first":0.1161952767,
     "mad_first_category":"Non-conformity",
@@ -4569,11 +6209,24 @@
       0.0889070147,
       0.1052202284,
       0.0938009788
+    ],
+    "first_digits_counts":[
+      458,
+      768,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/yearly-number-of-objects-launched-into-outer-space.csv",
     "column":"Annual number of objects launched into outer space",
+    "data_range_min":1.0,
+    "data_range_max":2895.0,
     "magnitude_range":2.63,
     "mad_first":0.0596428026,
     "mad_first_category":"Non-conformity",
@@ -4605,11 +6258,24 @@
       0.0252854812,
       0.0318107667,
       0.0342577488
+    ],
+    "first_digits_counts":[
+      656,
+      258,
+      121,
+      60,
+      29,
+      25,
+      28,
+      21,
+      28
     ]
   },
   {
     "dataset":"exploration-datasets\/cost-of-sequencing-a-full-human-genome.csv",
     "column":"Year",
+    "data_range_min":2001.0,
+    "data_range_max":2022.0,
     "magnitude_range":0.0,
     "mad_first":0.1830908313,
     "mad_first_category":"Non-conformity",
@@ -4641,11 +6307,24 @@
       0.0909090909,
       0.0909090909,
       0.0909090909
+    ],
+    "first_digits_counts":[
+      0,
+      22,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   {
     "dataset":"exploration-datasets\/cost-of-sequencing-a-full-human-genome.csv",
     "column":"Cost of sequencing a full human genome",
+    "data_range_min":454.05,
+    "data_range_max":95263070.0,
     "magnitude_range":5.28,
     "mad_first":0.0581280827,
     "mad_first_category":"Non-conformity",
@@ -4677,6 +6356,17 @@
       0.0454545455,
       0.1363636364,
       0.0454545455
+    ],
+    "first_digits_counts":[
+      7,
+      1,
+      1,
+      3,
+      4,
+      2,
+      3,
+      0,
+      1
     ]
   }
 ]
