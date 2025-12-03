@@ -1,6 +1,9 @@
 <script>
+	import ChartDetails from '$components/DialogBox/ChartDetails.svelte';
 	import BarChart from './BarChart/BarChart.svelte';
 	import ProportionPlot from './ProportionPlot/ProportionPlot.svelte';
+	import { diaglogBoxContent } from '$utils/stores';
+	import { resetDialogBox } from '$utils/utils';
 
 	export let data;
 	export let isCompact = false;
@@ -31,12 +34,25 @@
 
 		return styleParams;
 	}
+
+	function handleMouseOver() {
+		if ($diaglogBoxContent?.data.column === data.column) return;
+		diaglogBoxContent.set({ component: ChartDetails, data: data });
+	}
+
+	function handleMouseLeave() {
+		resetDialogBox();
+	}
 </script>
 
 <div
 	class:compact-chart={isCompact}
 	class="chart-container flex h-full flex-col justify-between rounded-2xl border-[1px] border-[#ccc] px-4 py-4"
 	style:max-width="{maxWidth}px"
+	role="region"
+	aria-label="Chart container"
+	on:mouseover={handleMouseOver}
+	on:focus={handleMouseOver}
 >
 	<div class="title-content min-w-0">
 		<div class="title-wrapper w-full border-b-[3px] border-b-[#363636] pb-1.5">

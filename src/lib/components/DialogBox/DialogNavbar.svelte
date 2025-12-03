@@ -6,9 +6,7 @@
 	let selectedChartType = 'bar';
 </script>
 
-<div
-	class="navbar pointer-events-auto w-full overflow-hidden rounded border-[1px] border-[#666] bg-white"
->
+<div class="navbar pointer-events-auto w-full">
 	<div
 		class="title-row flex w-full items-center justify-between border-b-[1px] border-b-[#555] px-4 py-2 pr-2"
 	>
@@ -49,18 +47,14 @@
 	<div class="progress-bar h-3 w-full bg-[#eee]">
 		<div
 			class="bar h-full"
-			style="width: {$scrollerState.progress *
-				100}%; background-color: var(--color-scale-diverging-0); opacity: {0.75 +
+			style="width: {$scrollerState.progress * 100 +
+				1}%; background-color: var(--color-scale-diverging-0); opacity: {0.75 +
 				$scrollerState.progress * 0.25}"
 		></div>
 	</div>
 </div>
 
 <style>
-	.navbar {
-		max-width: min(850px, 80vw);
-	}
-
 	.bar {
 		transition: width 0.25s ease-out;
 	}
