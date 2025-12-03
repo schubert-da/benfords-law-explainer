@@ -3,6 +3,7 @@
 	import tableData from '$assets/data/opening-table-samples.json';
 	import columnData from '$assets/data/columns_overview.json';
 	import ChartContainer from '$components/charts/ChartContainer.svelte';
+	import { resetDialogBox } from '$utils/utils';
 
 	$: chosenIndex = 0;
 
@@ -83,9 +84,11 @@
 	</p>
 </section>
 
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
 	class="plot-grid grid w-full justify-center gap-2"
 	style:grid-template-columns="repeat({Math.ceil(screenWidth / 350)}, minmax(0, 1fr))"
+	on:mouseleave={() => resetDialogBox()}
 >
 	{#each filteredColumnData.slice() as column}
 		<div class="proportion-plot-container">
