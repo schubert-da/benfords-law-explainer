@@ -30,7 +30,7 @@
 	bind:offset
 	bind:progress={$scrollerState.progress}
 >
-	<div slot="foreground" class="relative z-10">
+	<div slot="foreground" class="pb-50 relative z-10">
 		<OpeningSection></OpeningSection>
 
 		<TitleSection></TitleSection>
