@@ -5,6 +5,7 @@
 	import DeepDiveTextCard from '$components/layout/DeepDiveTextCard.svelte';
 	import BarChart from '$components/charts/BarChart/BarChart.svelte';
 	import SiteRectanglesImage from '$assets/image/rects-screenshot.png';
+	import { resetDialogBox } from '$utils/utils';
 
 	$: filteredColumnData = columnData
 		.filter((col) => col.column.toLocaleLowerCase().includes('year') === false)
@@ -15,7 +16,8 @@
 		showTitle: true,
 		maxWidth: 400,
 		isCompact: true,
-		chartType: 'barchart'
+		chartType: 'barchart',
+		enabledInteractions: true
 	};
 
 	const rectsProportions = [0.3022, 0.0969, 0.1343, 0.03321, 0.0128, 0.0469, 0.0387, 0.012, 0.0241];
@@ -32,9 +34,11 @@
 	</p>
 </section>
 
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
 	class="plot-grid grid w-full justify-center gap-2"
 	style:grid-template-columns="repeat({Math.ceil(screenWidth / 350)}, minmax(0, 1fr))"
+	on:mouseleave={resetDialogBox}
 >
 	{#each [12, 19, 3] as chartIndex}
 		<ChartContainer {...chartProps} data={filteredColumnData[chartIndex]}></ChartContainer>

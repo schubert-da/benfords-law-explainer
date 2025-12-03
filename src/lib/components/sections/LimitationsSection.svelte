@@ -2,6 +2,7 @@
 	import SectionTitle from '$components/common/SectionTitle.svelte';
 	import columnData from '$assets/data/columns_overview.json';
 	import ChartContainer from '$components/charts/ChartContainer.svelte';
+	import { resetDialogBox } from '$utils/utils';
 
 	const yearColumns = columnData.filter((c) => c.column.toLowerCase() === 'year').slice(0, 15);
 
@@ -45,13 +46,20 @@
 	</div>
 </section>
 
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
 	class="plot-grid grid w-full justify-center gap-2"
 	style="grid-template-columns: repeat(auto-fit, {COLS_WIDTH}px)"
+	on:mouseleave={resetDialogBox}
 >
 	{#each yearColumns.slice() as column}
 		<div class="proportion-plot-container w-full">
-			<ChartContainer data={column} isCompact={true} maxWidth={COLS_WIDTH} chartType="proportion"
+			<ChartContainer
+				data={column}
+				isCompact={true}
+				maxWidth={COLS_WIDTH}
+				enabledInteractions={true}
+				chartType="proportion"
 			></ChartContainer>
 		</div>
 	{/each}

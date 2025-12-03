@@ -11,6 +11,7 @@
 	export let maxWidth = 400;
 	export let chartType = 'proportion';
 	export let colorMapping = null;
+	export let enabledInteractions = false;
 
 	function getResultStyling(result) {
 		let styleParams = {};
@@ -36,18 +37,19 @@
 	}
 
 	function handleMouseOver() {
-		if ($diaglogBoxContent?.data.column === data.column) return;
+		if (!enabledInteractions) return;
+		if (
+			$diaglogBoxContent?.data.column === data.column &&
+			$diaglogBoxContent?.data.title === data.title
+		)
+			return;
 		diaglogBoxContent.set({ component: ChartDetails, data: data });
-	}
-
-	function handleMouseLeave() {
-		resetDialogBox();
 	}
 </script>
 
 <div
 	class:compact-chart={isCompact}
-	class="chart-container flex h-full flex-col justify-between rounded-2xl border-[1px] border-[#ccc] px-4 py-4"
+	class="chart-container hover:hovered-chart flex h-full flex-col justify-between rounded-2xl border-[1px] border-[#ccc] px-4 py-4"
 	style:max-width="{maxWidth}px"
 	role="region"
 	aria-label="Chart container"
