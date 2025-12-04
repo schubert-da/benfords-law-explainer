@@ -122,3 +122,9 @@ p {
 svelte-scroller-background-container {
     z-index: 1000 !important;
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}

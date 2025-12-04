@@ -49,7 +49,7 @@
 
 <div
 	class:compact-chart={isCompact}
-	class="chart-container flex h-full flex-col justify-between rounded-2xl border-[1px] border-[#ccc] px-4 py-4"
+	class="chart-container flex h-full flex-col justify-between rounded-2xl border-[1px] border-[#ccc] p-1 md:p-4"
 	style:max-width="{maxWidth}px"
 	role="region"
 	aria-label="Chart container"
@@ -135,6 +135,18 @@
 		line-height: 1.1;
 		font-size: 18px;
 	}
+
+	@media (max-width: 768px) {
+		.chart-container.compact-chart {
+			padding: 10px 6px;
+		}
+
+		.chart-container.compact-chart .title {
+			line-height: 1.1;
+			font-size: 16px;
+		}
+	}
+
 	.chart-container.compact-chart .title span {
 		line-height: 1.1;
 	}

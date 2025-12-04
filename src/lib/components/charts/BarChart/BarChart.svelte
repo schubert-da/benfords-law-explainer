@@ -58,7 +58,7 @@
 
 {#if xScale && yScale}
 	<div
-		class="barchart min-w-50 relative mb-2 min-h-[160px] w-full overflow-hidden rounded-md border-[1px] border-[#888]"
+		class="barchart min-w-25 min-h-25 relative mb-2 w-full overflow-hidden rounded-md border-[1px] border-[#888]"
 		style:height={chartHeight + 'px'}
 		bind:clientWidth={chartWidth}
 	>
@@ -101,7 +101,7 @@
 				{@const currentProportionValue = currentProportions[index]}
 				<div class="label flex w-full items-center justify-center">
 					<p
-						class="text-sm font-semibold leading-[1] text-[#333]"
+						class="text-xs font-semibold leading-[1] text-[#333] sm:text-sm"
 						class:opacity-0={Math.floor(currentProportionValue * 100) === 0}
 						style:color={pathStyles?.annotationColor}
 					>
@@ -115,7 +115,7 @@
 	<div class="plot-labels mb-[-4px] flex w-full flex-row items-center justify-center">
 		{#each currentProportions as _, index}
 			<div class="label flex w-full items-center justify-center">
-				<p class="text-sm font-medium leading-[1] text-[#333]">{index + 1}</p>
+				<p class="text-xs font-medium leading-[1] text-[#333] md:text-sm">{index + 1}</p>
 			</div>
 		{/each}
 	</div>
