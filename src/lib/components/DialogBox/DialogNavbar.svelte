@@ -11,7 +11,7 @@
 		class="title-row flex w-full items-center justify-between gap-2 border-b-[1px] border-b-[#555] px-2 py-2 pr-2 md:px-4"
 	>
 		<div class="title-content">
-			<h2 class="title !mb-0.5 text-[22px] leading-[1.2] md:text-3xl lg:text-5xl">Benford’s Law</h2>
+			<h2 class="title !mb-0.5 text-[22px] leading-[1.2] md:text-3xl lg:text-4xl">Benford’s Law</h2>
 			<p class="subtitle text-[15px] leading-[1.2] text-[#444] md:text-[17px]">
 				A visual explainer by Schubert de Abreu
 			</p>

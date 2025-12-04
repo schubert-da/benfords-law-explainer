@@ -10,7 +10,8 @@
 	$: chosenDataset = tableData[Object.keys(tableData)[chosenIndex]];
 
 	$: filteredColumnData = columnData
-		.filter((col) => col.column.toLocaleLowerCase().includes('year') === false)
+		.filter((col) => col.column.toLocaleLowerCase().includes('year') === false && col.mad_first)
+		.sort((a, b) => -b.mad_first + a.mad_first)
 		.slice(0, 30);
 
 	$: colorMapping = Array.from({ length: 9 }).map(() => 'var(--color-scale-diverging-1)');
@@ -77,7 +78,7 @@
 	<p>
 		So the numbers do pool around a certain value and their probability drops off as you move away
 		from that digit. We could have gotten lucky here, so let's try again with another dataset. This
-		time we're looking at the [ages of all buildings in Narnia]
+		time we're looking at {copyContent[(chosenIndex + 1) % 3].title}
 	</p>
 
 	<div class="barchart-container relative flex w-full items-center justify-between gap-4">

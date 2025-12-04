@@ -53,7 +53,7 @@
 	<ExplanationGrid {interest}></ExplanationGrid>
 
 	<p>
-		As you can see, multiplying by {interest}% generates a bunch of numbers starting with 1s, 2s but
+		As you can see, compounding by {interest}% generates a bunch of numbers starting with 1s, 2s but
 		largely skips over the larger digits as the sequence progresses.
 	</p>
 </section>
