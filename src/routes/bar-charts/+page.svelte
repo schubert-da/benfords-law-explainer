@@ -1,8 +1,6 @@
 <script>
 	import columnData from '$assets/data/columns_overview.json';
 	import ChartContainer from '$components/charts/ChartContainer.svelte';
-
-	console.log(columnData);
 </script>
 
 <section class="components-grid !max-w-[90vw]">

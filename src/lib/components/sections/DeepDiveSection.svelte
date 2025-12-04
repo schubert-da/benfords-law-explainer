@@ -90,7 +90,7 @@
 
 	<div class="image-container">
 		<img
-			class="mb-1 rounded border-[1px] border-[#555]"
+			class="shadow-inset mb-1 overflow-hidden rounded border-[1px] border-[#555]"
 			src={SiteRectanglesImage}
 			alt="site with all the individual HTML elements border box drawn"
 		/>

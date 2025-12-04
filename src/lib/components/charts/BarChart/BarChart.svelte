@@ -48,7 +48,7 @@
 
 		let styleParams = {
 			fill: `var(--color-scale-diverging-${index})`,
-			stroke: index === 2 ? '#222' : 'transparent',
+			stroke: +index === 2 ? '#222' : 'transparent',
 			annotationColor: index < 2 && proportions[pathIndex] > 0.06 ? '#fff' : '#444'
 		};
 
@@ -86,7 +86,7 @@
 					y={yScale(currentProportionValue)}
 					width={xScale.bandwidth()}
 					height={chartHeight - yScale(currentProportionValue)}
-					stroke={pathStyles.stroke}
+					stroke={colorMapping ? '#222' : pathStyles.stroke}
 					stroke-width="0.6"
 					fill={colorMapping ? colorMapping[index] : pathStyles.fill}
 				></rect>
@@ -103,7 +103,7 @@
 					<p
 						class="text-xs font-semibold leading-[1] text-[#333] sm:text-sm"
 						class:opacity-0={Math.floor(currentProportionValue * 100) === 0}
-						style:color={pathStyles?.annotationColor}
+						style:color={colorMapping ? (index < 4 ? '#fff' : '#444') : pathStyles?.annotationColor}
 					>
 						{Math.floor(currentProportionValue * 100)}
 					</p>
