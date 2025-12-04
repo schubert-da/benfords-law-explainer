@@ -9,7 +9,12 @@
 		class="text-content flex w-full max-w-[60%] flex-col items-start justify-between gap-4 overflow-hidden rounded border-[1px] border-[#555] p-2 pb-1"
 	>
 		<div class="title-content">
-			<h2 class="title">{chartData?.title}</h2>
+			<h2 class="colname border-b-[1px] pb-1">{chartData?.column}</h2>
+			<h3
+				class="title font-body !mt-1 text-base !font-semibold uppercase leading-tight !tracking-tight text-[#444]"
+			>
+				{chartData?.title}
+			</h3>
 			<p class="description text-[17px] leading-snug text-[#444]">
 				{chartData?.description}
 			</p>
@@ -19,8 +24,11 @@
 			<div
 				class="detail line-clamp-1 flex flex-row items-baseline justify-between gap-2 overflow-hidden text-ellipsis whitespace-nowrap border-b-[1px] py-[1px]"
 			>
-				<span class="detail-label text-[17px] font-semibold uppercase text-[#444]">Source:</span>
-				<span class="detail-value text-[17px] text-[#444]">{chartData?.source}</span>
+				<span class="detail-label text-[17px] font-bold uppercase text-[#444]">Source:</span>
+				<span
+					class="detail-value overflow-hidden text-ellipsis whitespace-nowrap text-[17px] text-[#444]"
+					>{chartData?.source}</span
+				>
 			</div>
 
 			{#if chartData?.data_range_min !== undefined && chartData?.data_range_max !== undefined}
@@ -30,7 +38,8 @@
 					<span class="detail-label text-[17px] font-semibold uppercase text-[#444]"
 						>RANGE OF VALUES:</span
 					>
-					<span class="detail-value text-[17px] text-[#444]"
+					<span
+						class="detail-value overflow-hidden text-ellipsis whitespace-nowrap text-[17px] text-[#444]"
 						>{chartData?.data_range_min.toFixed(2)} - {chartData?.data_range_max.toFixed(2)}</span
 					>
 				</div>
@@ -41,7 +50,10 @@
 				<span class="detail-label text-[17px] font-semibold uppercase text-[#444]"
 					>CONFORMS TO BENFORD’S LAW:</span
 				>
-				<span class="detail-value text-[17px] text-[#444]">{chartData?.mad_first_category}</span>
+				<span
+					class="detail-value overflow-hidden text-ellipsis whitespace-nowrap text-[17px] text-[#444]"
+					>{chartData?.mad_first_category}</span
+				>
 			</div>
 		</div>
 	</div>
