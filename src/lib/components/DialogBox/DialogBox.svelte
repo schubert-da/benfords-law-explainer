@@ -27,8 +27,6 @@
 <style>
 	.dialog-box {
 		width: min(1100px, 90vw);
-		transition:
-			height 0.3s ease-in-out,
-			top 0 linear;
+		transition: height 0.3s ease-in-out;
 	}
 </style>
