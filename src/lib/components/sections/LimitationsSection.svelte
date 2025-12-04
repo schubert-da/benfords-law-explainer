@@ -26,10 +26,10 @@
 		<h3 class="text-xl leading-tight md:text-2xl">1. Data that is measured rather than assigned</h3>
 
 		<p>
-			Phone numbers in a state wouldn’t follow Benford’s law because being an assigned (and not
-			“measured”), they would simply run down their list of available numbers causing numbers to be
-			assigned with equal probabilities. Additionally they may even have a fixed area code as the
-			prefix, further throwing off the leading digit distribution.
+			Phone numbers in a state wouldn’t follow Benford’s law because being an assigned, they would
+			simply run down their list of available numbers, each being assigned with equal probabilities.
+			Additionally they may even have a fixed area code as the prefix, further throwing off the
+			leading digit distribution.
 		</p>
 	</div>
 

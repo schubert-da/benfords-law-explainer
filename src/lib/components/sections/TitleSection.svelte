@@ -13,16 +13,16 @@
 	<p>
 		So what is Benford's Law and how does it magically govern the distributions of datasets in the
 		wild? The basic principle of this law is that the leading digit of numbers in a dataset are more
-		frequently smaller going to be small.
+		frequently going to be small.
 	</p>
 
-	<p>“How small”, you ask? Well the math behind the exact probability of a leading digit is:</p>
+	<p>“How small”, you ask? Well Benford's Law puts the probability of a leading digit as:</p>
 
-	<FormulaBox formula="P(d) = \\log_10(d + 1) - \\log_10(d)"></FormulaBox>
+	<p class="mx-auto block">P(d) = log<sub>10</sub>(d + 1) − log<sub>10</sub>(d)</p>
 
 	<p>
-		where d is the digit we want to find the probability of. So essentially this boils down to the
-		difference between the logarithm of the next digit and that of the current digit.
+		where d is the leading digit we want to find the probability of. So essentially this boils down
+		to the difference between the logarithm of the next digit and that of the current digit.
 	</p>
 
 	<p>When graphed, this formula produces the following distribution:</p>
