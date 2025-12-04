@@ -1,6 +1,27 @@
 <script>
 	import ExplanationGrid from '$components/charts/ExplanationGrid.svelte';
 	import SectionTitle from '$components/common/SectionTitle.svelte';
+
+	$: interest = 5;
+
+	const copyContent = {
+		2: {
+			interest: 2,
+			description: 'a less-than-stellar'
+		},
+		5: {
+			interest: 5,
+			description: 'a good'
+		},
+		10: {
+			interest: 10,
+			description: 'a questionablely generous'
+		},
+		25: {
+			interest: 25,
+			description: 'a definitely fradulent'
+		}
+	};
 </script>
 
 <section class="deep-dive">
@@ -16,14 +37,23 @@
 	<p>
 		What we find in multiplicative growth is that the leading digit tends to stick around at lower
 		values for a lot longer than digits on the higher end of the range. For example, suppose you
-		deposit 100 dollars in a bank which gives you a [questionably generous] [10% - dropdown to
-		change value] interest per year. This is what the next 100 years would look like.
+		deposit 100 dollars in a bank which gives you {copyContent[interest].description}
+		<select
+			class="bg-scale-diverging-1 inline w-fit rounded-md px-1 py-1 text-[17px] text-base text-white"
+			bind:value={interest}
+		>
+			{#each Object.entries(copyContent) as [key, content], index}
+				<option class="bg-white text-base text-[#444]" value={content.interest}>
+					{content.interest}%
+				</option>
+			{/each}
+		</select> interest per year. This is what the next 100 years would look like.
 	</p>
 
-	<ExplanationGrid></ExplanationGrid>
+	<ExplanationGrid {interest}></ExplanationGrid>
 
 	<p>
-		As you can see in the range [100, … 10 digits ] multiplying by [x] generates a bunch of 1s, 2s
-		but largely skips over the larger digits.
+		As you can see, multiplying by {interest}% generates a bunch of numbers starting with 1s, 2s but
+		largely skips over the larger digits as the sequence progresses.
 	</p>
 </section>
