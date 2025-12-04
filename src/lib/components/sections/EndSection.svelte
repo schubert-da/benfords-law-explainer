@@ -41,4 +41,22 @@
 		still in the process of cleaning up the codebase (said every dev ever...), but rest assured that
 		all the frontend and analysis code is available there.
 	</p>
+
+	<p>
+		<span class="font-semibold">AI Usage:</span> In general I use coding Github Copilot as a coding assistant
+		to speed through the boilerplate parts of the code and analysis. No LLMs were used in the writing
+		of this text content or research and analysis.
+	</p>
+
+	<p class="mx-auto text-center text-lg opacity-90">
+		PS I am by no means a statistics expert, I just get easily excited by pointless math. If you
+		spot any issues feel free to reach out to me on any of my socials!
+	</p>
+
+	<p class="mx-auto text-center text-lg opacity-90">
+		Schubert de Abreu | <a href="https://schubertcreates.xyz/" target="_blank">Personal site</a> |
+		<a href="https://bsky.app/profile/schubert-da.bsky.social" target="_blank">BlueSky</a> |
+		<a href="https://x.com/schubertda1" target="_blank">Twitter</a> |
+		<a href="https://www.linkedin.com/in/schubert-de-abreu-47a56037/" target="_blank">LinkedIn</a>
+	</p>
 </section>
