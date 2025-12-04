@@ -42,7 +42,7 @@
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. For example,
 		if I were to give you this dataset of <select
-			class="bg-scale-diverging-0 inline w-fit rounded-md px-1 py-1 text-white"
+			class="bg-scale-diverging-0 inline w-fit rounded-md border-2 border-[#555] px-1 py-1 text-base text-white"
 			bind:value={chosenIndex}
 		>
 			{#each Object.entries(copyContent) as [key, content], index}

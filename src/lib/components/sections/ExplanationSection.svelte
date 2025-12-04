@@ -19,7 +19,7 @@
 		},
 		25: {
 			interest: 25,
-			description: 'a definitely fradulent'
+			description: 'a definitely fraudulent'
 		}
 	};
 </script>

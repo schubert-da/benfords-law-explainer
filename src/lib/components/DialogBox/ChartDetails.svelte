@@ -2,20 +2,23 @@
 	import { diaglogBoxContent } from '$utils/stores';
 
 	$: chartData = $diaglogBoxContent?.data;
+	$: screenWidth = 1000;
 </script>
 
-<div class="navbar flex w-full flex-row items-stretch justify-between gap-2 p-2">
+<svelte:window bind:innerWidth={screenWidth} />
+
+<div class="navbar flex w-full flex-col items-stretch justify-between gap-2 p-2 sm:flex-row">
 	<div
-		class="text-content flex w-full max-w-[60%] flex-col items-start justify-between gap-4 overflow-hidden rounded border-[1px] border-[#555] p-2 pb-1"
+		class="text-content shadow-internal flex w-full flex-col items-start justify-between gap-4 overflow-hidden rounded border-[1px] border-[#555] p-2 pb-1 sm:max-w-[60%]"
 	>
 		<div class="title-content">
-			<h2 class="colname border-b-[1px] pb-1">{chartData?.column}</h2>
+			<h2 class="colname border-b-[1px] pb-1 leading-tight">{chartData?.column}</h2>
 			<h3
 				class="title font-body !mt-1 text-base !font-semibold uppercase leading-tight !tracking-tight text-[#444]"
 			>
 				{chartData?.title}
 			</h3>
-			<p class="description text-[17px] leading-snug text-[#444]">
+			<p class="description text-base leading-snug text-[#444] sm:text-[17px]">
 				{chartData?.description}
 			</p>
 		</div>
@@ -24,9 +27,11 @@
 			<div
 				class="detail line-clamp-1 flex flex-row items-baseline justify-between gap-2 overflow-hidden text-ellipsis whitespace-nowrap border-b-[1px] py-[1px]"
 			>
-				<span class="detail-label text-[17px] font-bold uppercase text-[#444]">Source:</span>
+				<span class="detail-label text-base font-semibold uppercase text-[#444] sm:text-[17px]"
+					>Source:</span
+				>
 				<span
-					class="detail-value overflow-hidden text-ellipsis whitespace-nowrap text-[17px] text-[#444]"
+					class="detail-value overflow-hidden text-ellipsis whitespace-nowrap text-base text-[#444] sm:text-[17px]"
 					>{chartData?.source}</span
 				>
 			</div>
@@ -35,11 +40,11 @@
 				<div
 					class="detail line-clamp-1 flex flex-row items-baseline justify-between gap-2 overflow-hidden text-ellipsis whitespace-nowrap border-b-[1px] py-[1px]"
 				>
-					<span class="detail-label text-[17px] font-semibold uppercase text-[#444]"
+					<span class="detail-label text-base font-semibold uppercase text-[#444] sm:text-[17px]"
 						>RANGE OF VALUES:</span
 					>
 					<span
-						class="detail-value overflow-hidden text-ellipsis whitespace-nowrap text-[17px] text-[#444]"
+						class="detail-value overflow-hidden text-ellipsis whitespace-nowrap text-base text-[#444] sm:text-[17px]"
 						>{chartData?.data_range_min.toFixed(2)} - {chartData?.data_range_max.toFixed(2)}</span
 					>
 				</div>
@@ -47,11 +52,11 @@
 			<div
 				class="detail line-clamp-1 flex flex-row items-baseline justify-between gap-2 overflow-hidden text-ellipsis whitespace-nowrap py-[1px]"
 			>
-				<span class="detail-label text-[17px] font-semibold uppercase text-[#444]"
-					>CONFORMS TO BENFORD’S LAW:</span
-				>
+				<span class="detail-label text-base font-semibold uppercase text-[#444] sm:text-[17px]">
+					{screenWidth < 650 ? 'Conforms:' : "Conforms to Benford's Law:"}
+				</span>
 				<span
-					class="detail-value overflow-hidden text-ellipsis whitespace-nowrap text-[17px] text-[#444]"
+					class="detail-value overflow-hidden text-ellipsis whitespace-nowrap text-base text-[#444] sm:text-[17px]"
 					>{chartData?.mad_first_category}</span
 				>
 			</div>
@@ -59,7 +64,7 @@
 	</div>
 
 	<div
-		class="chart-content flex w-full max-w-[500px] flex-col items-start justify-between gap-4 overflow-hidden rounded border-[1px] border-[#555] p-0"
+		class="chart-content shadow-internal flex w-full flex-col items-start justify-between gap-4 overflow-hidden rounded border-[1px] border-[#555] p-0 sm:max-w-[500px]"
 	>
 		<div class="values-grid w-full">
 			<div class="header flex h-7 items-center justify-center border-b-2 border-b-[#555] px-1">
@@ -76,11 +81,11 @@
 				{@const percentage = chartData?.first_digits_proportions[index] * 100}
 				{@const maxValue = Math.max(...chartData?.first_digits_proportions, 0.35) * 100}
 				<div class="cell flex items-center justify-center border-b-[1px] border-[#999]">
-					<span class="text-right text-[17px] text-[#555]">{index + 1}</span>
+					<span class="text-right text-base text-[#555] sm:text-[17px]">{index + 1}</span>
 				</div>
 
 				<div class="cell flex items-center justify-end border-b-[1px] border-[#999]">
-					<span class="text-right text-[17px] text-[#555]"
+					<span class="text-right text-base text-[#555] sm:text-[17px]"
 						>{chartData?.first_digits_counts?.[index]}</span
 					>
 				</div>
