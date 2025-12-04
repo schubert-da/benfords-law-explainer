@@ -62,13 +62,13 @@
 				<h2
 					class="title mb-1 !line-clamp-2 min-w-0 overflow-hidden whitespace-normal text-[26px] leading-[1.15]"
 				>
-					{data.title}
+					{data.nice_column_name ? data.nice_column_name : data.title}
 				</h2>
 			{:else}
 				<h2
 					class="title mb-1 !line-clamp-2 min-w-0 overflow-hidden whitespace-normal text-[26px] leading-[1.15]"
 				>
-					{data.column}
+					{data.nice_column_name ? data.nice_column_name : data.column}
 					<span class=" text-base text-[#333]"> {isCompact ? `(${data.title})` : ''}</span>
 				</h2>
 			{/if}

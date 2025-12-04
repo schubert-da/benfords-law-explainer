@@ -115,6 +115,7 @@
 				maxWidth={300}
 				data={column}
 				isCompact={true}
+				enabledInteractions={false}
 				chartType="barchart"
 			></ChartContainer>
 		</div>
