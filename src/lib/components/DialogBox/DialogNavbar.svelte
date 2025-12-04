@@ -28,7 +28,7 @@
 				class="chart-type-picker flex items-center justify-center gap-1.5 rounded border-[1px] border-[#888] p-1 pt-1.5 sm:p-1.5 sm:pt-2"
 			>
 				<button
-					class="chart-type-button w-15 h-15 relative overflow-hidden rounded border-[1px] border-[#555] bg-gray-400 text-base md:h-20 md:w-20"
+					class="chart-type-button w-15 h-15 relative overflow-hidden rounded border-[1px] border-[#888] bg-gray-400 text-base md:h-20 md:w-20"
 					class:selected={selectedChartType === 'bar'}
 					on:click={() => (selectedChartType = 'bar')}
 				>
@@ -36,7 +36,7 @@
 				</button>
 
 				<button
-					class="chart-type-button w-15 h-15 relative overflow-hidden rounded border-[1px] border-[#555] bg-gray-400 text-base md:h-20 md:w-20"
+					class="chart-type-button w-15 h-15 relative overflow-hidden rounded border-[1px] border-[#888] bg-gray-400 text-base md:h-20 md:w-20"
 					class:selected={selectedChartType === 'proportion'}
 					on:click={() => (selectedChartType = 'proportion')}
 				>
@@ -69,6 +69,6 @@
 		width: 100%;
 		height: 100%;
 		pointer-events: none;
-		box-shadow: inset -4px 5px 7px rgba(0, 0, 0, 0.32);
+		box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 	}
 </style>
