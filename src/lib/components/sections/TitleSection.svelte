@@ -6,7 +6,7 @@
 
 <section class="title-section">
 	<SectionTitle
-		title="Benford's Law Explainer"
+		title="Benford's Law"
 		subtitle="An exploration of how real-world data often deviates from randomness."
 	></SectionTitle>
 

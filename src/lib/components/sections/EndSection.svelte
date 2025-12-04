@@ -10,7 +10,7 @@
 		<a href="https://ourworldindata.org/" target="_blank">Our World in Data</a> and their Grapher
 		Chart API. For a random selection of datasets, I used a python script to select featured
 		datasets on OWID's data page and then pull in the actual data via their API. In total 139
-		columns, from 41 datasets were analysed and chart in some capacity throughout the project. The
+		columns, from 41 datasets were analysed and charted in some capacity throughout the project. The
 		proportion plot example uses data from National Sample Surveys, National Statistics Office via
 		<a href="https://www.dataforindia.com/" target="_blank">Data For India</a>.
 	</p>
@@ -49,8 +49,8 @@
 	</p>
 
 	<p class="mx-auto text-center text-lg opacity-90">
-		PS I am by no means a statistics expert, I just get easily excited by pointless math. If you
-		spot any issues feel free to reach out to me on any of my socials!
+		P.S. I am by no means a statistics expert, I just get easily distracted by pointless math. If
+		you spot any issues feel free to reach out to me on any of my socials!
 	</p>
 
 	<p class="mx-auto text-center text-lg opacity-90">
