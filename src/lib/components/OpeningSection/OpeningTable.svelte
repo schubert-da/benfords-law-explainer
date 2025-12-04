@@ -15,7 +15,7 @@
 	<!-- Column Headers -->
 	{#each headers as col}
 		<div
-			class="header bg-scale-diverging-0 overflow-hidden overflow-ellipsis whitespace-nowrap px-2 py-1 text-lg font-semibold uppercase text-white"
+			class="header bg-scale-diverging-0 overflow-hidden overflow-ellipsis whitespace-nowrap px-2 py-1 text-base font-semibold uppercase text-white md:text-lg"
 			style:max-width="{COL_WIDTH}px"
 		>
 			{col}
@@ -26,7 +26,7 @@
 	{#each dataRows as row, rowIndex}
 		{#each headers as col}
 			<div
-				class="cell overflow-hidden overflow-ellipsis whitespace-nowrap px-2 py-1 text-lg"
+				class="cell overflow-hidden overflow-ellipsis whitespace-nowrap px-2 py-1 text-sm md:text-lg"
 				class:even-row={rowIndex % 2 === 0}
 			>
 				{row[col]}
