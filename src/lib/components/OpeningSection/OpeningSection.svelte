@@ -39,7 +39,7 @@
 
 <svelte:window bind:innerWidth={screenWidth} />
 
-<section class="opening-section !mt-0 flex flex-col !gap-10 !pt-[25vh]">
+<section class="opening-section !mt-0 flex flex-col !gap-24 !pt-[25vh]">
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. For example,
 		if I were to give you this dataset of <select

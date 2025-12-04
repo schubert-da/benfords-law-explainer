@@ -15,8 +15,7 @@
 	<!-- Column Headers -->
 	{#each headers as col}
 		<div
-			class="header bg-scale-diverging-0 overflow-hidden overflow-ellipsis whitespace-nowrap px-2 py-1 text-base font-semibold uppercase text-white md:text-lg"
-			style:max-width="{COL_WIDTH}px"
+			class="header bg-scale-diverging-0 overflow-hidden overflow-ellipsis whitespace-nowrap px-2 py-1 text-center text-base font-semibold uppercase text-white md:text-lg"
 		>
 			{col}
 		</div>
@@ -26,7 +25,7 @@
 	{#each dataRows as row, rowIndex}
 		{#each headers as col}
 			<div
-				class="cell overflow-hidden overflow-ellipsis whitespace-nowrap px-2 py-1 text-sm md:text-lg"
+				class="cell overflow-hidden overflow-ellipsis whitespace-nowrap px-2 py-1 text-center text-sm md:text-lg"
 				class:even-row={rowIndex % 2 === 0}
 			>
 				{row[col]}
@@ -38,7 +37,7 @@
 <style>
 	.grid-table {
 		display: grid;
-		grid-template-columns: repeat(var(--num-cols), minmax(0, var(--col-width)));
+		grid-template-columns: repeat(3, 1fr) 1.5fr;
 		justify-content: center;
 		border-collapse: collapse;
 		overflow: hidden;
@@ -52,5 +51,10 @@
 
 	.cell.even-row {
 		background-color: #eeeeee;
+	}
+
+	.cell:nth-of-type(4n) {
+		text-align: right;
+		padding-right: 16px;
 	}
 </style>
