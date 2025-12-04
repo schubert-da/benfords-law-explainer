@@ -114,7 +114,7 @@
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
 	class="plot-grid grid w-full justify-center gap-2"
-	style:grid-template-columns="repeat({Math.ceil(screenWidth / 350)}, minmax(0, 1fr))"
+	style:grid-template-columns="repeat({Math.ceil(screenWidth / 300)}, minmax(0, 1fr))"
 	on:mouseleave={() => resetDialogBox()}
 >
 	{#each filteredColumnData.slice() as column}
@@ -122,7 +122,7 @@
 			<ChartContainer
 				{colorMapping}
 				showTitle={true}
-				maxWidth={350}
+				maxWidth={300}
 				data={column}
 				isCompact={true}
 				chartType="barchart"
