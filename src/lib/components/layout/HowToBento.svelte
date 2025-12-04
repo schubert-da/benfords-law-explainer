@@ -5,6 +5,10 @@
 	import porportionExampleBad from '$assets/image/proportion-example-bad.jpg';
 	import proportionExampleColors from '$assets/image/proportion-example-colors.jpg';
 	import proportionGoodEnough from '$assets/image/proportion-good-enough.jpg';
+
+	import { chosenChart } from '$utils/stores';
+	import toggleBarchartImage from '$assets/image/toggle-barchart.jpg';
+	import toggleProportionImage from '$assets/image/toggle-proportions.jpg';
 </script>
 
 <div class="bento-grid w-full">
@@ -15,7 +19,7 @@
 			<img
 				src={workforceProportionImage}
 				alt="proportion plot showing the differences in the nature of male and female employment"
-				class="rounded border-[1px] border-[#555] object-contain"
+				class="mx-auto max-w-[400px] rounded border-[1px] border-[#555] object-contain"
 			/>
 			<div class="title-content h-full">
 				<h2 class="!mb-4">Proportion Plots</h2>
@@ -52,7 +56,7 @@
 				<img
 					src={exampleProportionImage}
 					alt="example of how a proportion looks with all annotations"
-					class="h-full w-full object-contain"
+					class="mx-auto h-full w-full max-w-[400px] object-contain"
 				/>
 			</div>
 			<div class="text-col flex h-full flex-col justify-between">
@@ -79,23 +83,23 @@
 				chart as opposed to heavily sloping bands when the two sides don't match.
 			</p>
 
-			<div class="flex flex-row gap-3">
+			<div class="flex flex-row justify-center gap-3">
 				<div
-					class="image-container h-full max-h-full w-1/2 overflow-hidden rounded border-[1px] border-[#555]"
+					class="image-container h-full max-h-full w-1/2 !max-w-[200px] overflow-hidden rounded border-[1px] border-[#555]"
 				>
 					<img
 						src={porportionExampleGood}
 						alt="example of a good proportion plot"
-						class="h-full w-full object-contain"
+						class="mx-auto h-full w-full object-contain"
 					/>
 				</div>
 				<div
-					class="image-container h-full max-h-full w-1/2 overflow-hidden rounded border-[1px] border-[#555]"
+					class="image-container h-full max-h-full w-1/2 !max-w-[200px] overflow-hidden rounded border-[1px] border-[#555]"
 				>
 					<img
 						src={porportionExampleBad}
 						alt="example of a bad proportion plot"
-						class="h-full w-full object-contain"
+						class="mx-auto h-full w-full object-contain"
 					/>
 				</div>
 			</div>
@@ -112,7 +116,7 @@
 					<img
 						src={proportionExampleColors}
 						alt="example of how colours are used in proportion plot"
-						class="h-full w-full object-contain"
+						class="mx-auto h-full w-full max-w-[400px] object-contain"
 					/>
 				</div>
 
@@ -122,29 +126,29 @@
 					</h3>
 					<div class="legend-item flex flex-row items-center gap-2">
 						<div
-							class="h-[20px] w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-0)]"
+							class="h-[20px] !w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-0)]"
 						></div>
 						<span class="whitespace-nowrap text-[14px]">Good fit</span>
 					</div>
 					<div class="legend-item flex flex-row items-center gap-2">
 						<div
-							class="h-[20px] w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-1)]"
+							class="h-[20px] !w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-1)]"
 						></div>
 					</div>
 					<div class="legend-item flex flex-row items-center gap-2">
 						<div
-							class="h-[20px] w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-2)]"
+							class="h-[20px] !w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-2)]"
 						></div>
 						<span class="whitespace-nowrap text-[14px]">Acceptable</span>
 					</div>
 					<div class="legend-item flex flex-row items-center gap-2">
 						<div
-							class="h-[20px] w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-3)]"
+							class="h-[20px] !w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-3)]"
 						></div>
 					</div>
 					<div class="legend-item flex flex-row items-center gap-2">
 						<div
-							class="h-[20px] w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-4)]"
+							class="h-[20px] !w-4 border-[1px] border-[#444] bg-[var(--color-scale-diverging-4)]"
 						></div>
 						<span class="whitespace-nowrap text-[14px]">Major deviation</span>
 					</div>
@@ -189,7 +193,7 @@
 					<img
 						src={proportionGoodEnough}
 						alt="example of a convincingly close benford's graph which fails the test"
-						class="h-full w-full object-contain"
+						class="mx-auto h-full w-full max-w-[400px] object-contain"
 					/>
 				</div>
 
@@ -217,16 +221,23 @@
 		</div>
 
 		<div
-			class="card-content flex h-full w-full flex-row items-center justify-center gap-2 rounded border-[1px] bg-[var(--color-scale-diverging-1)]"
+			class="chart-type-picker flex items-center justify-center gap-1.5 rounded border-[1px] border-[#888] p-1 pt-1.5 sm:p-1.5 sm:pt-2"
 		>
 			<button
-				class="border-1 min-w-50 font-display rounded-sm border-[#444] bg-[var(--color-scale-diverging-4)] px-2 py-1 text-[18px] text-white"
-				>Proportion Plot</button
+				class="chart-type-button w-15 h-15 relative cursor-pointer overflow-hidden rounded border-[1px] border-[#888] bg-gray-400 text-base hover:border-2 hover:border-gray-500 md:h-20 md:w-20"
+				class:selected={$chosenChart === 'barchart'}
+				on:click={() => ($chosenChart = 'barchart')}
 			>
+				<img src={toggleBarchartImage} alt="Bar Chart" />
+			</button>
+
 			<button
-				class="border-1 min-w-50 font-display rounded-sm border-[#444] bg-[var(--color-scale-diverging-2)] px-2 py-1 text-[18px] text-[#444]"
-				>Bar Chart</button
+				class="chart-type-button w-15 h-15 relative cursor-pointer overflow-hidden rounded border-[1px] border-[#888] bg-gray-400 text-base hover:border-2 hover:border-gray-500 md:h-20 md:w-20"
+				class:selected={$chosenChart === 'proportion'}
+				on:click={() => ($chosenChart = 'proportion')}
 			>
+				<img src={toggleProportionImage} alt="Proportion Chart" />
+			</button>
 		</div>
 	</div>
 </div>
@@ -235,7 +246,7 @@
 	.bento-grid {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: 300px repeat(5, 200px) 200px;
+		grid-template-rows: 300px repeat(5, 200px) 220px;
 		gap: 12px;
 	}
 
@@ -264,6 +275,21 @@
 		font-size: 17px;
 		line-height: 1.25;
 		color: #555;
+	}
+
+	button.chart-type-button::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+	}
+
+	button.chart-type-button:not(.selected) {
+		opacity: 0.6;
 	}
 
 	@media (max-width: 850px) {

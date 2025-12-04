@@ -25,22 +25,22 @@
 				Chart Toggle
 			</span>
 			<div
-				class="chart-type-picker flex items-center justify-center gap-1.5 rounded border-[1px] border-[#888] p-1 pt-1.5 sm:p-1.5 sm:pt-2"
+				class="chart-type-picker shadow-internal flex items-center justify-center gap-1.5 rounded border-[1px] border-[#888] p-1 pt-1.5 sm:p-1.5 sm:pt-2"
 			>
 				<button
-					class="chart-type-button hover:border-scale-diverging-0 w-15 h-15 relative cursor-pointer overflow-hidden rounded border-[1px] border-[#888] bg-gray-400 text-base hover:border-2 md:h-20 md:w-20"
+					class="chart-type-button w-15 h-15 relative cursor-pointer overflow-hidden rounded border-[1px] border-[#888] bg-gray-400 text-base hover:border-2 hover:border-gray-500 md:h-20 md:w-20"
 					class:selected={$chosenChart === 'barchart'}
 					on:click={() => ($chosenChart = 'barchart')}
 				>
-					<img src={toggleBarchartImage} alt="Bar Chart" />
+					<img class="will-change-transform" src={toggleBarchartImage} alt="Bar Chart" />
 				</button>
 
 				<button
-					class="chart-type-button hover:border-scale-diverging-0 w-15 h-15 relative cursor-pointer overflow-hidden rounded border-[1px] border-[#888] bg-gray-400 text-base hover:border-2 md:h-20 md:w-20"
+					class="chart-type-button w-15 h-15 relative cursor-pointer overflow-hidden rounded border-[1px] border-[#888] bg-gray-400 text-base hover:border-2 hover:border-gray-500 md:h-20 md:w-20"
 					class:selected={$chosenChart === 'proportion'}
 					on:click={() => ($chosenChart = 'proportion')}
 				>
-					<img src={toggleProportionImage} alt="Proportion Chart" />
+					<img class="will-change-transform" src={toggleProportionImage} alt="Proportion Chart" />
 				</button>
 			</div>
 		</div>
@@ -72,8 +72,7 @@
 		box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 	}
 
-	button:not(.selected) {
+	button.chart-type-button:not(.selected) {
 		opacity: 0.6;
-		filter: grayscale(0.5);
 	}
 </style>

@@ -6,7 +6,7 @@
 
 <div class="chart-container mx-auto max-w-[1200px]">
 	<div class="title-content mb-2">
-		<h2 class="title !mb-2 text-4xl md:text-5xl">Benford’s Law</h2>
+		<h2 class="title !mb-2 text-4xl md:text-4xl">Benford’s Law</h2>
 		<p
 			class="subtitle block !max-w-[60ch] text-pretty text-lg leading-tight text-[#444] md:text-xl"
 		>
