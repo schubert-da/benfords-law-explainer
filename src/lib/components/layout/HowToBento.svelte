@@ -216,7 +216,7 @@
 
 			<p class="description-text">
 				There is no one-size fits all here, so if you’re more comfortable with a bar chart you can
-				toggle between it and the proportion plot here.
+				toggle between it and the proportion plot here and in the navbar below.
 			</p>
 		</div>
 
@@ -246,7 +246,7 @@
 	.bento-grid {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: 300px repeat(5, 200px) 220px;
+		grid-template-rows: 300px repeat(5, 200px) auto;
 		gap: 12px;
 	}
 

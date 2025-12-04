@@ -4,6 +4,9 @@
 </script>
 
 <section class="how-to">
-	<SectionTitle title="Reading the charts"></SectionTitle>
+	<SectionTitle
+		title="Reading the charts"
+		subtitle="In case you haven't used a proportion plot before, here's a quick guide."
+	></SectionTitle>
 	<HowToBento></HowToBento>
 </section>
