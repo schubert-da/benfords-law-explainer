@@ -48,12 +48,12 @@
 		of this text content or research and analysis.
 	</p>
 
-	<p class="mx-auto text-center text-lg opacity-90">
+	<p class="mx-auto text-center text-sm opacity-90 sm:text-lg">
 		P.S. I am by no means a statistics expert, I just get easily distracted by pointless math. If
-		you spot any issues feel free to reach out to me on any of my socials!
+		you spot any issues feel free to reach out to me on any of my socials listed below.
 	</p>
 
-	<p class="mx-auto text-center text-lg opacity-90">
+	<p class="mx-auto text-center text-sm opacity-90 sm:text-lg">
 		Schubert de Abreu | <a href="https://schubertcreates.xyz/" target="_blank">Personal site</a> |
 		<a href="https://bsky.app/profile/schubert-da.bsky.social" target="_blank">BlueSky</a> |
 		<a href="https://x.com/schubertda1" target="_blank">Twitter</a> |

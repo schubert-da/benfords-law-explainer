@@ -60,9 +60,9 @@
 	</div>
 
 	<p>
-		Would your answer change if I asked the same those starting with a 9? There is no reason why the
-		leading digit wouldn't be random so all 9 digits (0 isn't a valid starting digit) should be
-		equal right? Except when chart the leading digits, we get the following:
+		Would your answer change if I asked the same about those starting with a 9? There shouldn't be
+		any reason why the leading digit wouldn't be random, so all 9 digits should be equally common
+		right? Except when chart the leading digits, we get the following:
 	</p>
 
 	<div class="barchart-container relative flex w-full items-center justify-center">
@@ -106,7 +106,7 @@
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
-	class="plot-grid grid w-full justify-center gap-2"
+	class="plot-grid grid w-full justify-center gap-2 !px-0"
 	style:grid-template-columns="repeat({Math.ceil(screenWidth / 300)}, minmax(0, 1fr))"
 	on:mouseleave={() => resetDialogBox()}
 >

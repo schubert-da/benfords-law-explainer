@@ -138,7 +138,7 @@
 
 	@media (max-width: 768px) {
 		.chart-container {
-			padding: 10px 6px;
+			padding: 10px 6px !important;
 		}
 
 		.chart-container.compact-chart .title {
