@@ -2,7 +2,7 @@
 	import ChartDetails from '$components/DialogBox/ChartDetails.svelte';
 	import BarChart from './BarChart/BarChart.svelte';
 	import ProportionPlot from './ProportionPlot/ProportionPlot.svelte';
-	import { diaglogBoxContent } from '$utils/stores';
+	import { diaglogBoxContent, chosenChart } from '$utils/stores';
 	import { resetDialogBox } from '$utils/utils';
 
 	export let data;
@@ -49,7 +49,7 @@
 
 <div
 	class:compact-chart={isCompact}
-	class="chart-container flex h-full flex-col justify-between rounded-2xl border-[1px] border-[#ccc] p-1 md:p-4"
+	class="chart-container flex h-full cursor-pointer flex-col justify-between rounded-2xl border-[1px] border-[#ccc] p-1 md:p-4"
 	style:max-width="{maxWidth}px"
 	role="region"
 	aria-label="Chart container"
@@ -109,9 +109,9 @@
 	</div>
 
 	<div class="chart relative w-full">
-		{#if chartType === 'proportion'}
+		{#if $chosenChart === 'proportion'}
 			<ProportionPlot {data} />
-		{:else if chartType === 'barchart'}
+		{:else if $chosenChart === 'barchart'}
 			<BarChart {colorMapping} {data}></BarChart>
 		{/if}
 	</div>

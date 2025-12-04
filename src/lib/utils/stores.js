@@ -5,3 +5,5 @@ export let scrollerState = new writable({
     progress: 0,
     index: 0
 });
+
+export let chosenChart = new writable("barchart");

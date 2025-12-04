@@ -132,4 +132,9 @@ svelte-scroller-background-container {
     body {
         font-size: 17px;
     }
+
+    section {
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+    }
 }
