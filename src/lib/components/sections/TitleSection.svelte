@@ -16,7 +16,7 @@
 		frequently going to be small.
 	</p>
 
-	<p>“How small”, you ask? Well Benford's Law puts the probability of a leading digit as:</p>
+	<p>“How frequently”, you ask? Well Benford's Law puts the probability of a leading digit as:</p>
 
 	<p class="mx-auto block">P(d) = log<sub>10</sub>(d + 1) − log<sub>10</sub>(d)</p>
 

@@ -39,7 +39,7 @@
 
 <svelte:window bind:innerWidth={screenWidth} />
 
-<section class="opening-section !gap-25 !mt-0 flex flex-col !pt-[25vh]">
+<section class="opening-section !mt-0 flex flex-col !gap-10 !pt-[25vh]">
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. For example,
 		if I were to give you this dataset of <select
@@ -68,7 +68,7 @@
 	<div class="barchart-container relative flex w-full items-center justify-center">
 		<ChartContainer
 			{colorMapping}
-			isCompact={true}
+			isCompact={false}
 			showTitle={true}
 			chartType={'barchart'}
 			data={{ ...chosenDataset }}
@@ -81,25 +81,14 @@
 		time we're looking at {copyContent[(chosenIndex + 1) % 3].title}
 	</p>
 
-	<div class="barchart-container relative flex w-full items-center justify-between gap-4">
-		<div class="wrapper h-full w-1/2">
-			<ChartContainer
-				{colorMapping}
-				isCompact={true}
-				showTitle={true}
-				chartType={'barchart'}
-				data={chosenDataset}
-			></ChartContainer>
-		</div>
-		<div class="wrapper h-full w-1/2">
-			<ChartContainer
-				{colorMapping}
-				isCompact={true}
-				showTitle={true}
-				chartType={'barchart'}
-				data={tableData[Object.keys(tableData)[(chosenIndex + 1) % 3]]}
-			></ChartContainer>
-		</div>
+	<div class="barchart-container relative flex w-full items-center justify-center">
+		<ChartContainer
+			{colorMapping}
+			isCompact={false}
+			showTitle={true}
+			chartType={'barchart'}
+			data={tableData[Object.keys(tableData)[(chosenIndex + 1) % 3]]}
+		></ChartContainer>
 	</div>
 
 	<p>

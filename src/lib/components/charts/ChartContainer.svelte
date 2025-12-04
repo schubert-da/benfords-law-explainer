@@ -92,7 +92,7 @@
 
 				{#if data.mad_first_category}
 					{@const resultStyling = getResultStyling(data.mad_first_category)}
-					<div
+					<!-- <div
 						class="chart-details-result flex min-w-40 items-center justify-center rounded-sm border-[1px] border-[#444] px-4 py-1"
 						style="background: {resultStyling.background};"
 					>
@@ -102,7 +102,7 @@
 						>
 							{data.mad_first_category}
 						</p>
-					</div>
+					</div> -->
 				{/if}
 			</div>
 		{/if}
@@ -112,7 +112,7 @@
 		{#if $chosenChart === 'proportion'}
 			<ProportionPlot {data} />
 		{:else if $chosenChart === 'barchart'}
-			<BarChart {colorMapping} {data}></BarChart>
+			<BarChart {colorMapping} {data} showAnnotations={isCompact === false}></BarChart>
 		{/if}
 	</div>
 </div>
@@ -137,7 +137,7 @@
 	}
 
 	@media (max-width: 768px) {
-		.chart-container.compact-chart {
+		.chart-container {
 			padding: 10px 6px;
 		}
 

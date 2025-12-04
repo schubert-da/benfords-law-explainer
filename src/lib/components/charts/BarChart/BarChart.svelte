@@ -4,6 +4,7 @@
 	export let data;
 	export let customHeight = null;
 	export let colorMapping = null;
+	export let showAnnotations = false;
 
 	const benfordProportions = [0.301, 0.176, 0.125, 0.097, 0.079, 0.067, 0.058, 0.051, 0.046];
 	$: currentProportions = data?.first_digits_proportions || [];
@@ -110,6 +111,18 @@
 				</div>
 			{/each}
 		</div>
+
+		{#if showAnnotations}
+			<div
+				class="plot-labels absolute right-2 top-2 mb-[-4px] flex w-full flex-row items-center justify-end"
+			>
+				<p
+					class="block !max-w-[20ch] text-right text-xs font-semibold leading-[1.2] text-[#555] sm:text-sm"
+				>
+					Percentage of total with given starting digit
+				</p>
+			</div>
+		{/if}
 	</div>
 
 	<div class="plot-labels mb-[-4px] flex w-full flex-row items-center justify-center">
