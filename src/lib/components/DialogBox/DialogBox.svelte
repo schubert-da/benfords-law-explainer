@@ -11,9 +11,13 @@
 
 <svelte:window bind:scrollY bind:innerHeight={screenHeight} />
 
-<div
+<!-- <div
 	class="dialog-box pointer-events-none absolute left-1/2 z-50 -translate-x-1/2 -translate-y-[100%] overflow-hidden rounded border-[1px] border-[#666] bg-white shadow-lg"
 	style="height: {elementHeight}px; top: {screenHeight + scrollY - 8}px; "
+> -->
+<div
+	class="dialog-box pointer-events-none fixed bottom-2 left-1/2 z-50 -translate-x-1/2 overflow-hidden rounded border-[1px] border-[#666] bg-white shadow-lg"
+	style="height: {elementHeight}px; "
 >
 	<div class="content-wrapper h-fit w-full" bind:clientHeight={elementHeight}>
 		{#if $diaglogBoxContent && $diaglogBoxContent?.component !== null}

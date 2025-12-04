@@ -19,7 +19,7 @@
 			<img
 				src={workforceProportionImage}
 				alt="proportion plot showing the differences in the nature of male and female employment"
-				class="mx-auto max-w-[400px] rounded border-[1px] border-[#555] object-contain"
+				class="mx-auto max-w-[100%] rounded border-[1px] border-[#555] object-contain"
 			/>
 			<div class="title-content h-full">
 				<h2 class="!mb-4">Proportion Plots</h2>
