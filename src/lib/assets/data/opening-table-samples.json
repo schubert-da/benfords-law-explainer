@@ -294,124 +294,124 @@
         "url": "https:\/\/ourworldindata.org\/grapher\/electricity-prod-source-stacked",
         "data": [
             {
-                "Entity": "Honduras",
-                "Code": "HND",
+                "Entity": "Angola",
+                "Code": "AGO",
+                "Year": 2021,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 1.66
+            },
+            {
+                "Entity": "Morocco",
+                "Code": "MAR",
+                "Year": 2010,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 2.81
+            },
+            {
+                "Entity": "Czechia",
+                "Code": "CZE",
+                "Year": 2012,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 1.49
+            },
+            {
+                "Entity": "EU (Ember)",
+                "Code": null,
+                "Year": 2012,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 482.7
+            },
+            {
+                "Entity": "CIS (EI)",
+                "Code": null,
+                "Year": 2009,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 587.20526
+            },
+            {
+                "Entity": "Estonia",
+                "Code": "EST",
+                "Year": 2008,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 0.42
+            },
+            {
+                "Entity": "Latvia",
+                "Code": "LVA",
+                "Year": 1993,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 0.56
+            },
+            {
+                "Entity": "Oman",
+                "Code": "OMN",
                 "Year": 2018,
-                "Population (historical)": 9765162
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 36.58
             },
             {
-                "Entity": "Belize",
-                "Code": "BLZ",
-                "Year": 1898,
-                "Population (historical)": 36642
-            },
-            {
-                "Entity": "United Kingdom",
-                "Code": "GBR",
-                "Year": 1813,
-                "Population (historical)": 14263733
-            },
-            {
-                "Entity": "Burundi",
-                "Code": "BDI",
-                "Year": 1965,
-                "Population (historical)": 3141333
-            },
-            {
-                "Entity": "Tuvalu",
-                "Code": "TUV",
-                "Year": 1932,
-                "Population (historical)": 4320
-            },
-            {
-                "Entity": "Serbia and Montenegro",
-                "Code": "OWID_SRM",
-                "Year": 1840,
-                "Population (historical)": 1892065
-            },
-            {
-                "Entity": "Tanzania",
-                "Code": "TZA",
-                "Year": 200,
-                "Population (historical)": 212023
-            },
-            {
-                "Entity": "Lithuania",
-                "Code": "LTU",
-                "Year": -3000,
-                "Population (historical)": 5806
-            },
-            {
-                "Entity": "Malawi",
-                "Code": "MWI",
-                "Year": 1964,
-                "Population (historical)": 3997271
-            },
-            {
-                "Entity": "Guinea-Bissau",
-                "Code": "GNB",
-                "Year": 1896,
-                "Population (historical)": 285775
-            },
-            {
-                "Entity": "Israel",
-                "Code": "ISR",
-                "Year": 1938,
-                "Population (historical)": 810947
-            },
-            {
-                "Entity": "Central African Republic",
-                "Code": "CAF",
-                "Year": 2012,
-                "Population (historical)": 4610805
-            },
-            {
-                "Entity": "Mauritania",
-                "Code": "MRT",
-                "Year": 1949,
-                "Population (historical)": 644899
-            },
-            {
-                "Entity": "Iceland",
-                "Code": "ISL",
-                "Year": 1997,
-                "Population (historical)": 271147
-            },
-            {
-                "Entity": "Low-income countries",
+                "Entity": "South America",
                 "Code": null,
-                "Year": 1818,
-                "Population (historical)": 52063407
+                "Year": 2006,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 117.78
             },
             {
-                "Entity": "Europe",
+                "Entity": "Romania",
+                "Code": "ROU",
+                "Year": 2024,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 9.84
+            },
+            {
+                "Entity": "Canada",
+                "Code": "CAN",
+                "Year": 2019,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 72.94
+            },
+            {
+                "Entity": "Qatar",
+                "Code": "QAT",
+                "Year": 2008,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 21.62
+            },
+            {
+                "Entity": "Bahrain",
+                "Code": "BHR",
+                "Year": 2009,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 22.56
+            },
+            {
+                "Entity": "Bangladesh",
+                "Code": "BGD",
+                "Year": 2004,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 22.47
+            },
+            {
+                "Entity": "Spain",
+                "Code": "ESP",
+                "Year": 1996,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 6.79
+            },
+            {
+                "Entity": "Trinidad and Tobago",
+                "Code": "TTO",
+                "Year": 2009,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 7.8
+            },
+            {
+                "Entity": "Iran",
+                "Code": "IRN",
+                "Year": 2016,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 225.32
+            },
+            {
+                "Entity": "Bosnia and Herzegovina",
+                "Code": "BIH",
+                "Year": 2014,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 0.03
+            },
+            {
+                "Entity": "Luxembourg",
+                "Code": "LUX",
+                "Year": 2006,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 3.25
+            },
+            {
+                "Entity": "European Union (27)",
                 "Code": null,
-                "Year": 1835,
-                "Population (historical)": 254265378
-            },
-            {
-                "Entity": "Libya",
-                "Code": "LBY",
-                "Year": 1839,
-                "Population (historical)": 256137
-            },
-            {
-                "Entity": "Liberia",
-                "Code": "LBR",
-                "Year": 2012,
-                "Population (historical)": 4373007
-            },
-            {
-                "Entity": "North Korea",
-                "Code": "PRK",
-                "Year": 1999,
-                "Population (historical)": 23497555
-            },
-            {
-                "Entity": "Nigeria",
-                "Code": "NGA",
-                "Year": 1805,
-                "Population (historical)": 12100860
+                "Year": 2002,
+                "Electricity from gas - TWh (adapted for visualization of chart electricity-prod-source-stacked)": 374.6
             }
         ],
         "mad_first": 0.0050544832,
