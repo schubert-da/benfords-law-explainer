@@ -14,7 +14,7 @@
 	$: firstDigitsList = computedValues.map((v) => getFirstDigit(v));
 
 	$: gridWidth = 1000;
-	$: tileHeight = gridWidth / 10;
+	$: tileHeight = screenWidth < 600 ? gridWidth / 5 : gridWidth / 10;
 
 	function getTileStyling(value) {
 		const firstDigit = getFirstDigit(value);
@@ -71,7 +71,11 @@
 	$: colorMapping = Array.from({ length: 9 }).map((value, index) => {
 		return getTileStyling(index + 1).color;
 	});
+
+	$: screenWidth = 1000;
 </script>
+
+<svelte:window bind:innerWidth={screenWidth} />
 
 <div class="charts flex flex-col items-center justify-center gap-5">
 	<div class="values-grid" bind:clientWidth={gridWidth}>
@@ -83,7 +87,13 @@
 			>
 				<span
 					class="text-lg font-medium text-[#333] first-letter:text-xl first-letter:font-semibold first-letter:text-gray-800"
-					>{tile.toFixed(2).toString()}</span
+					style:font-size={screenWidth < 500
+						? tile.toFixed(2) > 1000
+							? '12px'
+							: '16px'
+						: tile.toFixed(2) > 1000
+							? '13px'
+							: '17px'}>{tile.toFixed(2).toString()}</span
 				>
 			</div>
 		{/each}
@@ -108,6 +118,14 @@
 		grid-template-columns: repeat(10, minmax(0, 70px));
 		justify-content: center;
 		gap: 4px;
+
+		width: 100%;
+	}
+
+	@media (max-width: 600px) {
+		.values-grid {
+			grid-template-columns: repeat(5, minmax(0, 1fr));
+		}
 	}
 
 	:global(.custom-barchart-container .barchart::after) {
