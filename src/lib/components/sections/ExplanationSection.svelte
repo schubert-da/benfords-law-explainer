@@ -39,7 +39,7 @@
 		values for a lot longer than digits on the higher end of the range. For example, suppose you
 		deposit 100 dollars in a bank which gives you {copyContent[interest].description}
 		<select
-			class="bg-scale-diverging-1 inline w-fit rounded-md px-1 py-1 text-[17px] text-base text-white"
+			class="bg-scale-diverging-0 inline w-fit rounded-md px-1 py-1 text-[17px] text-base text-white"
 			bind:value={interest}
 		>
 			{#each Object.entries(copyContent) as [key, content], index}

@@ -64,7 +64,5 @@
 		</section>
 	</div>
 
-	<div slot="background" class="relative z-50">
-		<DialogBox {index} {progress}></DialogBox>
-	</div>
+	<div slot="background" class="relative z-50"></div>
 </Scroller>

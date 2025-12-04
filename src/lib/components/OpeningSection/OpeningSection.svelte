@@ -38,11 +38,11 @@
 
 <svelte:window bind:innerWidth={screenWidth} />
 
-<section class="opening-section !gap-25 !mt-[25vh] flex flex-col">
+<section class="opening-section !gap-25 !mt-0 flex flex-col !pt-[25vh]">
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. For example,
 		if I were to give you this dataset of <select
-			class="bg-scale-diverging-1 inline w-fit rounded-md px-1 py-1 text-white"
+			class="bg-scale-diverging-0 inline w-fit rounded-md px-1 py-1 text-white"
 			bind:value={chosenIndex}
 		>
 			{#each Object.entries(copyContent) as [key, content], index}
