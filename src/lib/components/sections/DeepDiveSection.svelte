@@ -29,8 +29,15 @@
 	<SectionTitle title="A Deeper Dive"></SectionTitle>
 
 	<p>
-		Let's see how Benford's Law plays out in the wild. For starters here's the data I pulled from
-		Our World in Data's homepage via their nifty API.
+		Let's see how Benford's Law plays out in the wild. It's not just numbers in datasets that
+		conform to Benford's Law, but we will start there.
+	</p>
+
+	<h3 class="mx-auto !mt-20 text-center text-3xl">Our World in Data</h3>
+	<p>
+		Let's take a closer look at some of the columns we looked at in previous sections. While most
+		seem to fit the bill we also notice a couple patterns among those that don't quite follow
+		Benford's Law. We will dive deeper into those in a later section though.
 	</p>
 </section>
 

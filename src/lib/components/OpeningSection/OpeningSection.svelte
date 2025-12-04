@@ -41,8 +41,8 @@
 
 <section class="opening-section !mt-0 flex flex-col !gap-24 !pt-[25vh]">
 	<p>
-		This is a story about how numbers in the wild follow certain unexpected patterns. For example,
-		if I were to give you this dataset of <select
+		This is a story about how numbers in the wild follow certain unexpected patterns. To start off,
+		let me ask you this. If I were to give you this dataset of <select
 			class="bg-scale-diverging-0 inline w-fit rounded-md border-2 border-[#555] px-1 py-1 text-base text-white"
 			bind:value={chosenIndex}
 		>
@@ -51,7 +51,8 @@
 					{content.title}
 				</option>
 			{/each}
-		</select>
+		</select>, how often would you expect the leading digit in the {copyContent[chosenIndex].units} column
+		to be a 2?
 	</p>
 
 	<div class="table-container relative">
@@ -59,10 +60,9 @@
 	</div>
 
 	<p>
-		If I were to ask you how often the {copyContent[chosenIndex].units} would start with a 2, what would
-		you say? Would your answer change if I asked the same those starting with a 9? There is no reason
-		why the leading digit wouldn't be random so all 9 digits (0 isn't a valid starting digit) should
-		be equal right? Except in the real world it looks a bit more like this:
+		Would your answer change if I asked the same those starting with a 9? There is no reason why the
+		leading digit wouldn't be random so all 9 digits (0 isn't a valid starting digit) should be
+		equal right? Except when chart the leading digits, we get the following:
 	</p>
 
 	<div class="barchart-container relative flex w-full items-center justify-center">
@@ -76,9 +76,11 @@
 	</div>
 
 	<p>
-		So the numbers do pool around a certain value and their probability drops off as you move away
-		from that digit. We could have gotten lucky here, so let's try again with another dataset. This
-		time we're looking at {copyContent[(chosenIndex + 1) % 3].title}
+		So the leading digits are <span class="font-semibold"
+			>more focused around the smaller values</span
+		>
+		and drop off as we go further out. This could be a one off result, so let's try again with another
+		dataset. This time we're looking at {copyContent[(chosenIndex + 1) % 3].title}
 	</p>
 
 	<div class="barchart-container relative flex w-full items-center justify-center">
@@ -96,8 +98,9 @@
 		if we look at a couple more datasets, you will find similar behaviour. The fact that the numbers
 		are more likely to have a certain leading digit isn’t very surprising - sometimes numbers can
 		fall into ranges which have the same leading digit or sometimes it's just a quirk of how they
-		are recorded. What is surprising however, is that however many datasets you look at - the
-		distribution stays roughly the same…
+		are recorded. What is surprising however, is that however many datasets you look at - <span
+			class="font-semibold">the distribution of the leading digits stays roughly the same</span
+		>…
 	</p>
 </section>
 

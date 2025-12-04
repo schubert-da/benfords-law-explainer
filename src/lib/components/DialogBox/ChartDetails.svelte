@@ -93,12 +93,15 @@
 				<div class="cell flex items-center justify-end border-b-[1px] border-[#999] pl-2">
 					<div class="bar-container h-full w-full bg-[#EFEFEF] pb-0.5">
 						<div
-							class="bar bg-scale-diverging-1 h-full pl-2"
+							class="bar bg-scale-diverging-1 h-full"
 							style:width={(percentage * 100) / maxValue + '%'}
 						>
-							<span class="text-base font-medium {percentage < 5 ? 'text-black' : 'text-white'}"
-								>{Math.round(percentage)}%</span
-							>
+							{#if Math.round(percentage) !== 0}
+								<span
+									class="pl-2 text-base font-medium {percentage < 5 ? 'text-black' : 'text-white'}"
+									>{Math.round(percentage)}%</span
+								>
+							{/if}
 						</div>
 					</div>
 				</div>

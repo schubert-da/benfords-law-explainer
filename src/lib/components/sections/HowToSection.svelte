@@ -6,7 +6,7 @@
 <section class="how-to">
 	<SectionTitle
 		title="Reading the charts"
-		subtitle="In case you haven't used a proportion plot before, here's a quick guide."
+		subtitle="In case you haven't used a proportion plot before, here's a (not really) quick guide."
 	></SectionTitle>
 	<HowToBento></HowToBento>
 </section>

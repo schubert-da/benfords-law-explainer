@@ -32,7 +32,8 @@
 	<p>
 		In an even distribution we would expect each to have a probability of 11.11%, but in practice
 		Benford's law puts the odds of a leading digit of 1 to be 30.1% - almost three times more
-		likely! Additionally, you are more than 6 times more likely to find a digit with a leading digit
-		of 1 than a 9!
+		likely! Additionally, you are more than <span class="font-semibold"
+			>6 times more likely to find a leading digit of 1 than a 9</span
+		>!
 	</p>
 </section>
