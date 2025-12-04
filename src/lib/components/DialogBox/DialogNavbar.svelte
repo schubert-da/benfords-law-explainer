@@ -8,25 +8,27 @@
 
 <div class="navbar pointer-events-auto w-full">
 	<div
-		class="title-row flex w-full items-center justify-between border-b-[1px] border-b-[#555] px-4 py-2 pr-2"
+		class="title-row flex w-full items-center justify-between gap-2 border-b-[1px] border-b-[#555] px-2 py-2 pr-2 md:px-4"
 	>
 		<div class="title-content">
-			<h2 class="title mb-0.5 text-5xl">Benford’s Law</h2>
-			<p class="subtitle text-[17px] text-[#444]">A visual explainer by Schubert de Abreu</p>
+			<h2 class="title !mb-0.5 text-[22px] leading-[1.2] md:text-5xl">Benford’s Law</h2>
+			<p class="subtitle text-[15px] leading-[1.2] text-[#444] md:text-[17px]">
+				A visual explainer by Schubert de Abreu
+			</p>
 		</div>
 
 		<div class="chart-toggle relative mt-1 flex flex-col items-end gap-1 shadow-sm">
 			<span
 				style="top: -2px; "
-				class="absolute right-2 top-0 -translate-y-1/2 bg-white px-1 text-base font-medium leading-[1] text-[#555]"
+				class="absolute right-2 top-0 -translate-y-1/2 bg-white px-1 text-sm font-medium leading-[1] text-[#555] md:text-base"
 			>
 				Chart Toggle
 			</span>
 			<div
-				class="chart-type-picker flex items-center justify-center gap-1.5 rounded border-[1px] border-[#888] p-1.5 pt-2"
+				class="chart-type-picker flex items-center justify-center gap-1.5 rounded border-[1px] border-[#888] p-1 pt-1.5 sm:p-1.5 sm:pt-2"
 			>
 				<button
-					class="chart-type-button relative h-20 w-20 overflow-hidden rounded border-[1px] border-[#555] bg-gray-400 text-base"
+					class="chart-type-button w-15 h-15 relative overflow-hidden rounded border-[1px] border-[#555] bg-gray-400 text-base md:h-20 md:w-20"
 					class:selected={selectedChartType === 'bar'}
 					on:click={() => (selectedChartType = 'bar')}
 				>
@@ -34,7 +36,7 @@
 				</button>
 
 				<button
-					class="chart-type-button relative h-20 w-20 overflow-hidden rounded border-[1px] border-[#555] bg-gray-400 text-base"
+					class="chart-type-button w-15 h-15 relative overflow-hidden rounded border-[1px] border-[#555] bg-gray-400 text-base md:h-20 md:w-20"
 					class:selected={selectedChartType === 'proportion'}
 					on:click={() => (selectedChartType = 'proportion')}
 				>
