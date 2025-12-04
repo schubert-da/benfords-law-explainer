@@ -9,11 +9,13 @@
 
 <div class="bento-grid w-full">
 	<div class="bento-card bg-gray-300" style="grid-row: 1 / 2; grid-column: 1 / 6;">
-		<div class="card-content flex h-full flex-row items-stretch justify-between gap-4">
+		<div
+			class="card-content flex h-full flex-row-reverse items-stretch justify-between gap-4 md:flex-row"
+		>
 			<img
 				src={workforceProportionImage}
 				alt="proportion plot showing the differences in the nature of male and female employment"
-				class="rounded border-[1px] border-[#555]"
+				class="rounded border-[1px] border-[#555] object-contain"
 			/>
 			<div class="title-content h-full">
 				<h2 class="!mb-4">Proportion Plots</h2>
@@ -65,6 +67,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="bento-card bg-gray-300" style="grid-row: 4 / 7; grid-column: 1 / 3;">
 		<div class="title-content">
 			<h2>The Good and the Bad...</h2>
@@ -149,6 +152,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="bento-card bg-gray-300" style="grid-row: 4 / 7; grid-column: 3 / 6;">
 		<div class="title-content">
 			<h2>... and the good enough</h2>
@@ -180,7 +184,7 @@
 				to many seemingly close results failing the test:
 			</p>
 
-			<div class="flex flex-row items-center gap-3">
+			<div class="flex flex-col items-center gap-3 md:flex-row">
 				<div class="image-container h-full max-h-full w-1/2 overflow-hidden">
 					<img
 						src={proportionGoodEnough}
@@ -260,5 +264,45 @@
 		font-size: 17px;
 		line-height: 1.25;
 		color: #555;
+	}
+
+	@media (max-width: 850px) {
+		.bento-grid {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.bento-card {
+			width: 100%;
+			padding: 8px 12px;
+		}
+
+		.bento-card .card-content {
+			flex-direction: column;
+			justify-content: start;
+			align-items: stretch;
+
+			width: 100%;
+			max-width: unset;
+		}
+		.bento-card .card-content {
+			flex-direction: column;
+			justify-content: start;
+			align-items: stretch;
+
+			width: 100%;
+			max-width: unset;
+		}
+
+		.bento-card .card-content div,
+		.bento-card .card-content p {
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+
+		.bento-card .card-content p {
+			font-size: 16px;
+		}
 	}
 </style>
