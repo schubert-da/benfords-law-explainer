@@ -7,7 +7,7 @@
 	class="chart-container compact-chart flex h-full flex-col items-center justify-center rounded-2xl border-[1px] border-[#ccc] px-4 py-4"
 	style:max-width="{maxwWidth}px"
 >
-	<p class="text-lg">
+	<p class="text-base leading-snug md:text-lg">
 		{@html text}
 	</p>
 </div>

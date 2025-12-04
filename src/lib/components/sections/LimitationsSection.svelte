@@ -6,8 +6,11 @@
 
 	const yearColumns = columnData.filter((c) => c.column.toLowerCase() === 'year').slice(0, 15);
 
-	const COLS_WIDTH = 250;
+	const COLS_WIDTH = 350;
+	$: screenWidth = 1000;
 </script>
+
+<svelte:window bind:innerWidth={screenWidth} />
 
 <section class="limitations">
 	<SectionTitle title="Limitations" description="Where Benford' Law starts to fall apart"
@@ -20,7 +23,7 @@
 	</p>
 
 	<div class="limitation flex flex-col gap-4">
-		<h3 class="text-2xl">1. Data that is measured rather than assigned</h3>
+		<h3 class="text-xl leading-tight md:text-2xl">1. Data that is measured rather than assigned</h3>
 
 		<p>
 			Phone numbers in a state wouldn’t follow Benford’s law because being an assigned (and not
@@ -31,7 +34,7 @@
 	</div>
 
 	<div class="limitation flex flex-col gap-4">
-		<h3 class="text-2xl">2. Ranges over orders of magnitudes</h3>
+		<h3 class="text-xl leading-tight md:text-2xl">2. Ranges over orders of magnitudes</h3>
 
 		<p>
 			Another requirement is that the numerical values should span several ranges of magnitude. A
@@ -49,7 +52,7 @@
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
 	class="plot-grid grid w-full justify-center gap-2"
-	style="grid-template-columns: repeat(auto-fit, {COLS_WIDTH}px)"
+	style:grid-template-columns="repeat({Math.ceil(screenWidth / 350)}, minmax(0, 1fr))"
 	on:mouseleave={resetDialogBox}
 >
 	{#each yearColumns.slice() as column}
@@ -67,7 +70,9 @@
 
 <section>
 	<div class="limitation flex flex-col gap-4">
-		<h3 class="text-2xl">3. Not artificially restricted by minimums or maximums</h3>
+		<h3 class="text-xl leading-tight md:text-2xl">
+			3. Not artificially restricted by minimums or maximums
+		</h3>
 		<p>
 			The dataset should be generated from a natural process. If it is restricted or forced to fit
 			into a specific size or cutoff, it fails to follow Benford's Law
@@ -75,7 +80,10 @@
 	</div>
 
 	<div class="limitation flex flex-col gap-4">
-		<h3 class="text-2xl">4. Larger datasets work better</h3>
-		<p>Because when do they not.</p>
+		<h3 class="text-xl leading-tight md:text-2xl">4. Larger datasets work better</h3>
+		<p>
+			Because when do they not. But yes, larger datasets tend to provide a more accurate
+			representation of Benford's Law.
+		</p>
 	</div>
 </section>

@@ -126,6 +126,6 @@ svelte-scroller-background-container {
 
 @media (max-width: 768px) {
     body {
-        font-size: 18px;
+        font-size: 17px;
     }
 }
