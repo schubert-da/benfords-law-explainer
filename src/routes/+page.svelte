@@ -10,6 +10,7 @@
 	import FormulaBox from '$lib/components/FormulaBox.svelte';
 	import Scroller from '@sveltejs/svelte-scroller';
 	import { scrollerState } from '$utils/stores';
+	import EndSection from '$components/sections/EndSection.svelte';
 
 	// params for scroller
 	let count;
@@ -44,7 +45,7 @@
 		<LimitationsSection></LimitationsSection>
 
 		<section class="applications">
-			<SectionTitle title="Applications" description="So what can I do with this?"></SectionTitle>
+			<SectionTitle title="Application"></SectionTitle>
 
 			<p>
 				Naturally occurring datasets which fit the above criteria can be expected to have their
@@ -62,6 +63,8 @@
 				is merely indicative of foul play.
 			</p>
 		</section>
+
+		<EndSection></EndSection>
 	</div>
 
 	<div slot="background" class="relative z-50"></div>

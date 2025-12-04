@@ -89,6 +89,10 @@ p {
     max-width: 80ch;
 }
 
+a {
+    text-decoration: underline;
+}
+
 .placeholder {
     display: flex;
     align-items: center;
