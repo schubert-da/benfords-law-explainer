@@ -1,6 +1,12 @@
 <script>
 	import columnData from '$assets/data/columns_overview.json';
 	import ChartContainer from '$components/charts/ChartContainer.svelte';
+	import { scrollerState } from '$utils/stores';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		$scrollerState.index = 3;
+	});
 </script>
 
 <section class="components-grid !max-w-[90vw]">
