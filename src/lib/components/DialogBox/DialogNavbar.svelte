@@ -11,7 +11,7 @@
 
 <div class="navbar pointer-events-auto w-full">
 	<div
-		class="title-row flex w-full items-center justify-between gap-2 border-b-[1px] border-b-[#555] px-2 py-2 pr-2 md:px-4"
+		class="title-row flex min-h-[95px] w-full items-center justify-between gap-2 border-b-[1px] border-b-[#555] px-2 py-2 pr-2 md:px-4"
 	>
 		{#if !(screenWidth < 600 && ($scrollerState.index === 2 || $scrollerState.index === 4 || $scrollerState.index === 7))}
 			<div class="title-content">
