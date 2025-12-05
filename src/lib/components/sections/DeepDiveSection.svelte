@@ -1,10 +1,12 @@
 <script>
 	import ChartContainer from '$components/charts/ChartContainer.svelte';
 	import columnData from '$assets/data/columns_overview.json';
+	import natgeoData from '$assets/data/natgeo_results.json';
 	import SectionTitle from '$components/common/SectionTitle.svelte';
 	import DeepDiveTextCard from '$components/layout/DeepDiveTextCard.svelte';
 	import BarChart from '$components/charts/BarChart/BarChart.svelte';
 	import SiteRectanglesImage from '$assets/image/rects-screenshot.png';
+	import NatgeoPagesImage from '$assets/image/natgeo-pages.jpg';
 	import { resetDialogBox } from '$utils/utils';
 
 	$: filteredColumnData = columnData
@@ -19,6 +21,12 @@
 		chartType: 'barchart',
 		enabledInteractions: true
 	};
+
+	$: natgeoNumbers = natgeoData.find((d) => d.column === 'natgeo-numbers');
+
+	$: natgeoFirstDigits = Array.from({ length: 9 }).map(
+		(_, i) => natgeoNumbers['first_digit_' + (i + 1)]
+	);
 
 	const rectsProportions = [0.3022, 0.0969, 0.1343, 0.03321, 0.0128, 0.0469, 0.0387, 0.012, 0.0241];
 </script>
@@ -97,12 +105,12 @@
 
 	<div class="image-container">
 		<img
-			class="shadow-inset mb-1 overflow-hidden rounded border-[1px] border-[#555]"
+			class="shadow-inset mx-auto mb-1 overflow-hidden rounded border-[1px] border-[#555]"
 			src={SiteRectanglesImage}
 			alt="site with all the individual HTML elements border box drawn"
 		/>
 		<p class="caption mx-auto text-center text-base opacity-60">
-			All HTML elements with their boundary boxes drawn in different colours
+			HTML elements with their boundary boxes highlighted
 		</p>
 	</div>
 
@@ -114,3 +122,59 @@
 		<BarChart customHeight="200" data={{ first_digits_proportions: rectsProportions }}></BarChart>
 	</div>
 </section>
+
+<section class="deep-dive-continued !mt-30">
+	<h3 class="mx-auto text-center text-3xl">Flipping Pages</h3>
+	<p>
+		I have a pile of old National Geographic magazines that I like to flip through from time to
+		time. I decided to pick one up and record every number I could find. This lead to me spending an
+		hour logging and categorizing numbers from National Geographic's October 2010 issue before I
+		ended up with a set of 239 valid numbers.
+	</p>
+
+	<div class="image-container">
+		<img
+			class="shadow-inset mx-auto mb-1 overflow-hidden rounded border-[1px] border-[#555]"
+			src={NatgeoPagesImage}
+			alt="site with all the individual HTML elements border box drawn"
+		/>
+		<p class="caption mx-auto text-center text-base opacity-60">
+			Categorized pages from National Geographic's October 2010 issue
+		</p>
+	</div>
+
+	<p>
+		The numbers excluded from this set include assigned values like <span class="excluded-number"
+			>page numbers, phone numbers, address markers, dates and years</span
+		>. Note that while normally values like percentages are problematic for Benford's Law since they
+		have a limited range (0-100), in this case since we are lumping them in with different types of
+		numbers of varying scales, this constraint is a lot less of a concern. Finally, when charted
+		these are the results:
+	</p>
+
+	<div
+		class="custom-barchart-container mx-auto flex w-full max-w-[600px] flex-col items-center justify-center"
+	>
+		<h3 class="!mb-2 block">Distribution of Leading Digits</h3>
+
+		<BarChart
+			customHeight="200"
+			data={{
+				first_digits_proportions: natgeoFirstDigits
+			}}
+		></BarChart>
+	</div>
+</section>
+
+<style>
+	.excluded-number {
+		background-color: var(--color-scale-diverging-3);
+		color: white;
+		padding: 0.25rem 0.5rem;
+		border-radius: 0.375rem;
+	}
+
+	img {
+		max-width: min(800px, 90vw) !important;
+	}
+</style>

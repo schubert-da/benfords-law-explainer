@@ -99,9 +99,8 @@
 		if we look at a couple more datasets, you will find similar behaviour. The fact that the numbers
 		are more likely to have a certain leading digit isn’t very surprising - sometimes numbers can
 		fall into ranges which have the same leading digit or sometimes it's just a quirk of how they
-		are recorded. What is surprising however, is that however many datasets you look at - <span
-			class="font-semibold">the distribution of the leading digits stays roughly the same</span
-		>…
+		are recorded. What is surprising however, is that however many datasets you look at - the
+		distribution of the leading digits <span class="font-semibold">stays roughly the same</span>…
 	</p>
 
 	<div

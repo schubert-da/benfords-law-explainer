@@ -51,6 +51,12 @@
 		margin-top: -80px;
 	}
 
+	@media (max-width: 640px) {
+		.title-section {
+			margin-top: -20px;
+		}
+	}
+
 	.title-section::before {
 		content: '';
 		position: absolute;
