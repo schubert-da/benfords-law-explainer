@@ -43,6 +43,11 @@
 	</p>
 
 	<p>
+		Also here's a link to the <a href="/all-charts" target="_blank">chart gallery</a> for this page.
+		Remember that you can toggle between chart types using the navbar.
+	</p>
+
+	<p>
 		<span class="font-semibold">AI Usage:</span> In general I use coding Github Copilot as a coding assistant
 		to speed through the boilerplate parts of the code and analysis. No LLMs were used in the writing
 		of this text content or research and analysis.
