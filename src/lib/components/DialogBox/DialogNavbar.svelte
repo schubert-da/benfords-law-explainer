@@ -5,7 +5,6 @@
 
 	let selectedChartType = 'bar';
 	$: screenWidth = 1000;
-	$: console.log('scrollerState index:', $scrollerState.index);
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} />
@@ -131,7 +130,7 @@
 					</div>
 				</div>
 			</div>
-		{:else}
+		{:else if $scrollerState.index >= 3}
 			<div class="chart-toggle relative mt-1 flex flex-col items-end gap-1 shadow-sm">
 				<span
 					style="top: -2px; "
