@@ -18,9 +18,11 @@
 	></SectionTitle>
 
 	<p>
-		While the previous examples showed you how well this works in practice, but there are a few
-		exceptions to the rule. Benford’s law generally applies to data that fit some of the following
-		guidelines:
+		While the previous examples showed you how well this works in practice, there are a few
+		exceptions to the rule. <a
+			href="https://statisticsbyjim.com/probability/benfords-law/"
+			target="_blank">Jim Frost has a great writeup on this</a
+		> if you want to dive deeper.
 	</p>
 
 	<div class="limitation flex flex-col gap-4">
