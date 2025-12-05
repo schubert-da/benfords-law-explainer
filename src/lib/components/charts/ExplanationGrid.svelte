@@ -78,6 +78,7 @@
 <svelte:window bind:innerWidth={screenWidth} />
 
 <div class="charts flex flex-col items-center justify-center gap-5">
+	<h3 class="!mb-2 block text-balance text-center">Compounding by {interest}% over 100 Years</h3>
 	<div class="values-grid" bind:clientWidth={gridWidth}>
 		{#each computedValues as tile}
 			{@const tileStyling = getTileStyling(tile)}
