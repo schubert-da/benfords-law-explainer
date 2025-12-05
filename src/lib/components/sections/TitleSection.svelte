@@ -7,7 +7,7 @@
 
 <section class="title-section relative !overflow-visible">
 	<div
-		class="background-container absolute bottom-0 left-1/2 h-[90vw] w-[90vw] -translate-x-1/2 translate-y-[-20%]"
+		class="background-container absolute bottom-0 left-1/2 h-[90vw] w-[90vw] -translate-x-1/2 translate-y-[5%]"
 		style="z-index: -1;"
 	>
 		{@html OpeningBackground}
@@ -48,7 +48,7 @@
 
 <style>
 	.title-section {
-		margin-top: -80px;
+		margin-top: -60px;
 	}
 
 	@media (max-width: 640px) {
@@ -62,7 +62,7 @@
 		position: absolute;
 		left: 50%;
 		top: 0;
-		transform: translate(-50%, -70%);
+		transform: translate(-50%, -100%);
 		width: 100vw;
 		height: 50vh;
 		pointer-events: none;

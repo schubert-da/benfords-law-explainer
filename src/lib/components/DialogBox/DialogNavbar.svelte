@@ -35,7 +35,7 @@
 				>
 					<span
 						style="top: -4px; "
-						class="absolute right-2 top-0 -translate-y-1/2 bg-white px-1 text-sm font-medium leading-[1] text-[#555] md:text-base"
+						class="absolute right-2 top-0 -translate-y-1/2 whitespace-nowrap bg-white px-1 text-sm font-medium leading-[1] text-[#555] md:text-base"
 					>
 						Leading digit is
 					</span>
@@ -88,7 +88,7 @@
 				>
 					<span
 						style="top: -3px; "
-						class="absolute right-2 top-0 -translate-y-1/2 bg-white px-1 text-sm font-medium leading-[1] text-[#555] md:text-base"
+						class="absolute right-2 top-0 -translate-y-1/2 whitespace-nowrap bg-white px-1 text-sm font-medium leading-[1] text-[#555] md:text-base"
 					>
 						How close to Benford's expected value?
 					</span>
@@ -134,7 +134,7 @@
 			<div class="chart-toggle relative mt-1 flex flex-col items-end gap-1 shadow-sm">
 				<span
 					style="top: -2px; "
-					class="absolute right-2 top-0 -translate-y-1/2 bg-white px-1 text-sm font-medium leading-[1] text-[#555] md:text-base"
+					class="absolute right-2 top-0 -translate-y-1/2 whitespace-nowrap bg-white px-1 text-sm font-medium leading-[1] text-[#555] md:text-base"
 				>
 					Chart Toggle
 				</span>

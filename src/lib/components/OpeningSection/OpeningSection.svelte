@@ -104,7 +104,7 @@
 	</p>
 
 	<div
-		class="background-container absolute bottom-0 left-1/2 h-[90vw] w-[90vw] -translate-x-1/2 translate-y-[30%]"
+		class="background-container absolute bottom-0 left-1/2 h-[90vw] w-[90vw] -translate-x-1/2 translate-y-[20%]"
 		style="z-index: -1;"
 	>
 		{@html OpeningBackground}

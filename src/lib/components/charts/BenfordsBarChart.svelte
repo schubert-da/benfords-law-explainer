@@ -10,8 +10,9 @@
 		<p
 			class="subtitle block !max-w-[60ch] text-pretty text-lg leading-tight text-[#444] md:text-xl"
 		>
-			In a distribution of naturally occurring values, the leading digit is more likely to be a
-			smaller digit
+			In a distribution of naturally occurring values, the <span class="font-semibold"
+				>leading digit is more likely to be a smaller digit</span
+			>.
 		</p>
 	</div>
 
