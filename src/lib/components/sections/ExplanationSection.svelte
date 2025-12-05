@@ -15,7 +15,7 @@
 		},
 		10: {
 			interest: 10,
-			description: 'a questionablely generous'
+			description: 'a questionably generous'
 		},
 		25: {
 			interest: 25,

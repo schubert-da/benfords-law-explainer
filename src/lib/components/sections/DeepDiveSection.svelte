@@ -129,7 +129,7 @@
 		I have a pile of old National Geographic magazines that I like to flip through from time to
 		time. I decided to pick one up and record every number I could find. This lead to me spending an
 		hour logging and categorizing numbers from National Geographic's October 2010 issue before I
-		ended up with a set of 239 valid numbers.
+		ended up with a set of 239 <span class="valid-number">valid numbers</span>.
 	</p>
 
 	<div class="image-container">
@@ -169,6 +169,14 @@
 <style>
 	.excluded-number {
 		background-color: var(--color-scale-diverging-3);
+		border: 1px solid white;
+		color: white;
+		padding: 0.25rem 0.5rem;
+		border-radius: 0.375rem;
+	}
+
+	.valid-number {
+		background-color: var(--color-scale-diverging-0);
 		color: white;
 		padding: 0.25rem 0.5rem;
 		border-radius: 0.375rem;
