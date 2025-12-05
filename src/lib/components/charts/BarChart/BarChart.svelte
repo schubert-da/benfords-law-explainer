@@ -119,7 +119,7 @@
 				<p
 					class="block !max-w-[20ch] text-right text-xs font-semibold leading-[1.2] text-[#555] sm:text-sm"
 				>
-					Percentage of total with given starting digit
+					Percentage of total having the given starting digit
 				</p>
 			</div>
 		{/if}

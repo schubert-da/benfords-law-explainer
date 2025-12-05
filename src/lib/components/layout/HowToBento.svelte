@@ -215,8 +215,9 @@
 			<h2>Flipping the Switch</h2>
 
 			<p class="description-text">
-				There is no one-size fits all here, so if you’re more comfortable with a bar chart you can
-				toggle between it and the proportion plot here and in the navbar below.
+				That said, in quite a few cases it easier to spot benford's patterns with a standard bar
+				chart, which is why you can toggle between it and the proportion plot here and in the navbar
+				below.
 			</p>
 		</div>
 
