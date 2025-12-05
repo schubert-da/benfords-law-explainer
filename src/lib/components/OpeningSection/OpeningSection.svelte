@@ -3,6 +3,7 @@
 	import tableData from '$assets/data/opening-table-samples.json';
 	import columnData from '$assets/data/columns_overview.json';
 	import ChartContainer from '$components/charts/ChartContainer.svelte';
+	import OpeningBackground from '$assets/image/opening-background.svg?raw';
 	import { resetDialogBox } from '$utils/utils';
 
 	$: chosenIndex = 1;
@@ -39,7 +40,7 @@
 
 <svelte:window bind:innerWidth={screenWidth} />
 
-<section class="opening-section !mt-0 flex flex-col !gap-24 !pt-[25vh]">
+<section class="opening-section relative !mt-0 flex flex-col !gap-24 !overflow-visible !pt-[25vh]">
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. To start off,
 		let me ask you this. If I were to give you this dataset of <select
@@ -102,11 +103,18 @@
 			class="font-semibold">the distribution of the leading digits stays roughly the same</span
 		>…
 	</p>
+
+	<div
+		class="background-container absolute bottom-0 left-1/2 h-[90vw] w-[90vw] -translate-x-1/2 translate-y-[30%]"
+		style="z-index: -1;"
+	>
+		{@html OpeningBackground}
+	</div>
 </section>
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
-	class="plot-grid grid w-full justify-center gap-2 !px-0"
+	class="plot-grid relative -z-10 grid w-full justify-center gap-2 !px-0"
 	style:grid-template-columns="repeat({Math.ceil(screenWidth / 300)}, minmax(0, 1fr))"
 	on:mouseleave={() => resetDialogBox()}
 >
@@ -126,6 +134,24 @@
 </div>
 
 <style>
+	.opening-section::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 70%);
+		width: 100vw;
+		height: 40vh;
+		pointer-events: none;
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 0.5) 40%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		z-index: -1;
+	}
+
 	.table-container::after {
 		content: '';
 		position: absolute;
@@ -140,6 +166,16 @@
 			rgba(255, 255, 255, 1) 80%,
 			rgba(255, 255, 255, 1) 100%
 		);
+	}
+
+	.plot-grid {
+		margin-top: -50px;
+	}
+
+	@media (max-width: 768px) {
+		.plot-grid {
+			margin-top: -20px;
+		}
 	}
 
 	:global(.opening-section .label p, .opening-section + div .label p) {

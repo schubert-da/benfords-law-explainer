@@ -2,9 +2,17 @@
 	import BenfordsBarChart from '$components/charts/BenfordsBarChart.svelte';
 	import SectionTitle from '$components/common/SectionTitle.svelte';
 	import FormulaBox from '$components/FormulaBox.svelte';
+	import OpeningBackground from '$assets/image/opening-background.svg?raw';
 </script>
 
-<section class="title-section">
+<section class="title-section relative !overflow-visible">
+	<div
+		class="background-container absolute bottom-0 left-1/2 h-[90vw] w-[90vw] -translate-x-1/2 translate-y-[-20%]"
+		style="z-index: -1;"
+	>
+		{@html OpeningBackground}
+	</div>
+
 	<SectionTitle
 		title="Benford's Law"
 		subtitle="An exploration of how real-world data often deviates from randomness."
@@ -37,3 +45,27 @@
 		>!
 	</p>
 </section>
+
+<style>
+	.title-section {
+		margin-top: -80px;
+	}
+
+	.title-section::before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, -70%);
+		width: 100vw;
+		height: 50vh;
+		pointer-events: none;
+		background: linear-gradient(
+			to top,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 0.5) 40%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		z-index: -1;
+	}
+</style>
