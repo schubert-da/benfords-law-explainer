@@ -23,7 +23,7 @@
 	 * Description for SEO purposes.
 	 * @type {string}
 	 */
-	export let seoDesc = '';
+	export let seoDesc = 'An exploration of how real-world data often deviates from randomness';
 
 	/**
 	 * Path to the image used for sharing.
