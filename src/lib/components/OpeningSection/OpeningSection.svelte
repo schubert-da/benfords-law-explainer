@@ -43,7 +43,7 @@
 <section class="opening-section relative !mt-0 flex flex-col !gap-24 !overflow-visible !pt-[25vh]">
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. To start off,
-		let me ask you this. If I were to give you this dataset of <select
+		let me ask you this: if I were to give you this dataset of <select
 			class="bg-scale-diverging-0 inline w-fit rounded-md border-2 border-[#555] px-1 py-1 text-base text-white"
 			bind:value={chosenIndex}
 		>
@@ -99,8 +99,7 @@
 		if we look at a couple more datasets, you will find similar behaviour. The fact that the numbers
 		are more likely to have a certain leading digit isn’t very surprising - sometimes numbers can
 		fall into ranges which have the same leading digit or sometimes it's just a quirk of how they
-		are recorded. What is surprising however, is that however many datasets you look at - the
-		distribution of the leading digits <span class="font-semibold">stays roughly the same</span>…
+		are recorded. What is surprising however, is that however many datasets you look at…
 	</p>
 
 	<div
@@ -130,6 +129,14 @@
 			></ChartContainer>
 		</div>
 	{/each}
+
+	<div
+		class="grid-overlay-text pointer-events-none absolute left-1/2 top-1/2 z-10 w-fit -translate-x-1/2 -translate-y-1/2 text-balance rounded border-[1px] border-[#888] bg-white px-5 py-5 text-center shadow-lg"
+	>
+		... the distribution of the leading digits <span class="font-semibold"
+			>stays roughly the same</span
+		>
+	</div>
 </div>
 
 <style>
@@ -171,9 +178,18 @@
 		margin-top: -50px;
 	}
 
+	.grid-overlay-text {
+		top: 30%;
+		width: min(80vw, 400px);
+	}
+
 	@media (max-width: 768px) {
 		.plot-grid {
 			margin-top: -20px;
+		}
+
+		.grid-overlay-text {
+			top: 15%;
 		}
 	}
 
