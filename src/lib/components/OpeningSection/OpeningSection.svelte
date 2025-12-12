@@ -27,12 +27,12 @@
 		},
 		1: {
 			name: 'population-historical',
-			title: 'country populations since 10,000 BCE',
+			title: 'populations since 10,000 BCE',
 			units: 'populations'
 		},
 		2: {
 			name: 'electricity-from-gas',
-			title: 'electricity generation from natural gas',
+			title: 'electricity from natural gas',
 			units: 'generated energy'
 		}
 	};
@@ -44,7 +44,7 @@
 	<p>
 		This is a story about how numbers in the wild follow certain unexpected patterns. To start off,
 		let me ask you this: if I were to give you this dataset of <select
-			class="bg-scale-diverging-0 inline w-fit rounded-md border-2 border-[#555] px-1 py-1 text-base text-white"
+			class="bg-scale-diverging-0 inline max-w-[80vw] rounded-md border-2 border-[#555] px-1 py-1 text-base text-white"
 			bind:value={chosenIndex}
 		>
 			{#each Object.entries(copyContent) as [key, content], index}

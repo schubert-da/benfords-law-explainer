@@ -30,8 +30,9 @@
 			target="_blank">Nigrini</a
 		>'s thresholds as a baseline for conformity. While this worked better than Chi-Squared, there
 		were still quite a few datasets which looked close but had high MAD values. So I ultimately
-		decided to visualize each of the datasets and let the reader decided if "smaller leading digits
-		do occur more frequently than larger ones".
+		decided that while I will still show these results, I would also visualize each of the datasets
+		and urge the reader to decide if "smaller leading digits do occur more frequently than larger
+		ones".
 	</p>
 
 	<p>
