@@ -133,9 +133,7 @@
 	<div
 		class="grid-overlay-text pointer-events-none absolute left-1/2 top-1/2 z-10 w-fit -translate-x-1/2 -translate-y-1/2 text-balance rounded border-[1px] border-[#888] bg-white px-5 py-5 text-center shadow-lg"
 	>
-		... the distribution of the leading digits <span class="font-semibold"
-			>stays roughly the same</span
-		>
+		... the distribution of the leading digits <span class="font-semibold">stays the same</span>
 	</div>
 </div>
 
