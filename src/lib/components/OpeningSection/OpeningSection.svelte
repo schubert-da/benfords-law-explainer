@@ -13,7 +13,7 @@
 	$: filteredColumnData = columnData
 		.filter((col) => col.column.toLocaleLowerCase().includes('year') === false && col.mad_first)
 		.sort((a, b) => -b.mad_first + a.mad_first)
-		.slice(0, 30);
+		.slice(0, screenWidth < 600 ? 15 : 30);
 
 	$: colorMapping = Array.from({ length: 9 }).map(() => 'var(--color-scale-diverging-1)');
 
@@ -181,13 +181,15 @@
 		width: min(80vw, 400px);
 	}
 
+	@media (max-width: 600px) {
+		.grid-overlay-text {
+			top: 15%;
+		}
+	}
+
 	@media (max-width: 768px) {
 		.plot-grid {
 			margin-top: -20px;
-		}
-
-		.grid-overlay-text {
-			top: 15%;
 		}
 	}
 

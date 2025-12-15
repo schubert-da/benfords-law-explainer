@@ -14,7 +14,7 @@
 <svelte:window bind:innerWidth={screenWidth} />
 
 <section class="limitations">
-	<SectionTitle title="Limitations" subtitle="Where Benford' Law starts to fall apart"
+	<SectionTitle title="Limitations" subtitle="Where Benford's Law starts to fall apart"
 	></SectionTitle>
 
 	<p>

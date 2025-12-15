@@ -9,7 +9,7 @@
 	});
 </script>
 
-<section class="components-grid !max-w-[90vw]">
+<section class="components-grid mb-10 !max-w-[90vw]">
 	<h1 class="text-4xl">The Page with all the Plots</h1>
 
 	<div
