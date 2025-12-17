@@ -63,7 +63,7 @@
 	<p>
 		Would your answer change if I asked the same about those starting with a 9? There shouldn't be
 		any reason why the leading digit wouldn't be random, so all 9 digits should be equally common
-		right? Except when chart the leading digits, we get the following:
+		right? Except when we chart the leading digits, we get the following:
 	</p>
 
 	<div class="barchart-container relative flex w-full items-center justify-center">
