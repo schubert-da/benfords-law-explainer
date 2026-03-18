@@ -19,7 +19,11 @@
 					Benford’s Law
 				</h2>
 				<p class="subtitle text-[15px] leading-[1.2] text-[#444] md:text-[17px]">
-					A visual explainer by Schubert de Abreu
+					A visual explainer by <a
+						href="https://schubertcreates.xyz"
+						target="_blank"
+						rel="noopener noreferrer">Schubert de Abreu</a
+					>
 				</p>
 			</div>
 		{/if}
