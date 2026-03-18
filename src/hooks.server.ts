@@ -1,12 +1,8 @@
-import type { Handle } from '@sveltejs/kit';
-
-export const handle: Handle = async ({ event, resolve }) => {
+export async function handle({ event, resolve }) {
+	const base = import.meta.env.PROD ? 'https://benfords-law-explainer.netlify.app/' : '';
 	return resolve(event, {
 		transformPageChunk: ({ html }) => {
-			if (process.env.NODE_ENV === 'production') {
-				return html.replace('%baseURL%', 'https://benfords-law-explainer.netlify.app/');
-			}
-			return html.replace('%baseURL%', '/');
+			return html.replace('%baseURL%', base);
 		}
 	});
-};
+}
